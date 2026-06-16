@@ -1,0 +1,417 @@
+{
+  "name": "Doctor Who",
+  "slug": "doctor-who",
+  "description": "Doctor Who",
+  "enabled": true,
+  "items": [
+    // Doctor Who (2005) - S01E01 - Rose
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S01E02 - The End of the World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S01E03 - The Unquiet Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S01E04 - Aliens of London
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S01E05 - World War Three
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S01E06 - Dalek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S01E07 - The Long Game
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S01E08 - Father's Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S01E09 - The Empty Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S01E10 - The Doctor Dances
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S01E11 - Boom Town
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S01E12 - Bad Wolf
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S01E13 - The Parting of the Ways
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Doctor Who (2005) - S00E01 - Children in Need: Born Again
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S00E02 - The Christmas Invasion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S02E01 - New Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S02E02 - Tooth and Claw
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S02E03 - School Reunion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S02E04 - The Girl in the Fireplace
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S02E05 - Rise of the Cybermen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S02E06 - The Age of Steel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S02E07 - The Idiot's Lantern
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S02E08 - The Impossible Planet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S02E09 - The Satan Pit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S02E10 - Love & Monsters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S02E11 - Fear Her
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S02E12 - Army of Ghosts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S02E13 - Doomsday
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Torchwood - S01E01 - Everything Changes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Torchwood - S01E02 - Day One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Torchwood - S01E03 - Ghost Machine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Torchwood - S01E04 - Cyberwoman
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Torchwood - S01E05 - Small Worlds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Torchwood - S01E06 - Countrycide
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Torchwood - S01E07 - Greeks Bearing Gifts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Torchwood - S01E08 - They Keep Killing Suzie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Torchwood - S01E09 - Random Shoes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Torchwood - S01E10 - Out of Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Torchwood - S01E11 - Combat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Torchwood - S01E12 - Captain Jack Harkness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Torchwood - S01E13 - End of Days
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    }
+  ]
+}
