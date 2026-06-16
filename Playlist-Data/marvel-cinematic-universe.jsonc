@@ -4812,6 +4812,418 @@
       "providers": {
         "tmdbMovieId": "429617"
       }
+    },
+
+    // Spider-Man: No Way Home
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "634649"
+      }
+    },
+
+    // Doctor Strange in the Multiverse of Madness
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "453395"
+      }
+    },
+
+    // Hawkeye - S01E01 - Never Meet Your Heroes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Hawkeye - S01E02 - Hide and Seek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Hawkeye - S01E03 - Echoes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Hawkeye - S01E04 - Partners, Am I Right?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Hawkeye - S01E05 - Ronin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Hawkeye - S01E06 - So This Is Christmas?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367146"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Moon Knight - S01E01 - The Goldfish Problem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Moon Knight - S01E02 - Summon the Suit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Moon Knight - S01E03 - The Friendly Type
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Moon Knight - S01E04 - The Tomb
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Moon Knight - S01E05 - Asylum
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Moon Knight - S01E06 - Gods and Monsters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368611"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Black Panther: Wakanda Forever
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "505642"
+      }
+    },
+
+    // Echo - S01E01 - Chafa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412431"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Echo - S01E02 - Lowak
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412431"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Echo - S01E03 - Tuklo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412431"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Echo - S01E04 - Taloa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412431"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Echo - S01E05 - Maya
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412431"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // She-Hulk: Attorney at Law - S01E01 - A Normal Amount of Rage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // She-Hulk: Attorney at Law - S01E02 - Superhuman Law
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // She-Hulk: Attorney at Law - S01E03 - The People vs. Emil Blonsky
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // She-Hulk: Attorney at Law - S01E04 - Is This Not Real Magic?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // She-Hulk: Attorney at Law - S01E05 - Mean, Green, and Straight Poured into These Jeans
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // She-Hulk: Attorney at Law - S01E06 - Just Jen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // She-Hulk: Attorney at Law - S01E07 - The Retreat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // She-Hulk: Attorney at Law - S01E08 - Ribbit and Rip It
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // She-Hulk: Attorney at Law - S01E09 - Whose Show Is This?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368613"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Ms. Marvel - S01E01 - Generation Why
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Ms. Marvel - S01E02 - Crushed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Ms. Marvel - S01E03 - Destined
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Ms. Marvel - S01E04 - Seeing Red
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Ms. Marvel - S01E05 - Time and Again
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Ms. Marvel - S01E06 - No Normal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "368612"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Thor: Love and Thunder
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "616037"
+      }
+    },
+
+    // Ironheart - S01E01 - Take Me Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Ironheart - S01E02 - Will the Real Natalie Please Stand Up?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Ironheart - S01E03 - We in Danger, Girl
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Ironheart - S01E04 - Bad Magic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Ironheart - S01E05 - Karma's a Glitch
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Ironheart - S01E06 - The Past Is the Past
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393204"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
     }
   ]
 }
