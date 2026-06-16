@@ -2802,6 +2802,216 @@
       },
       "seasonNumber": 0,
       "episodeNumber": 210
+    },
+
+    // Doctor Who (2023) - S00E01 - The Star Beast
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2023) - S00E02 - Wild Blue Yonder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2023) - S00E03 - The Giggle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2023) - S00E04 - The Church on Ruby Road
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2023) - S01E01 - Space Babies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2023) - S01E02 - The Devil's Chord
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2023) - S01E03 - Boom
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2023) - S01E04 - 73 Yards
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2023) - S01E05 - Dot and Bubble
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2023) - S01E06 - Rogue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2023) - S01E07 - The Legend of Ruby Sunday
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2023) - S01E08 - Empire of Death
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2023) - S00E05 - Joy to the World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2023) - S02E01 - The Robot Revolution
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2023) - S02E02 - Lux
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2023) - S02E03 - The Well
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2023) - S02E04 - Lucky Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2023) - S02E05 - The Story & the Engine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2023) - S02E06 - The Interstellar Song Contest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2023) - S02E07 - Wish World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2023) - S02E08 - The Reality War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "449991"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
     }
   ]
 }
