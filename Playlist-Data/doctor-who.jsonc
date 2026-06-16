@@ -2132,6 +2132,676 @@
       },
       "seasonNumber": 8,
       "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E142 - Last Christmas
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 142
+    },
+
+    // Doctor Who (2005) - S09E01 - The Magician's Apprentice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S09E02 - The Witch's Familiar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S09E03 - Under the Lake
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S09E04 - Before the Flood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S09E05 - The Girl Who Died
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S09E06 - The Woman Who Lived
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S09E07 - The Zygon Invasion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S09E08 - The Zygon Inversion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S09E09 - Sleep No More
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S09E10 - Face the Raven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S09E11 - Heaven Sent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S09E12 - Hell Bent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E148 - The Husbands of River Song
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 148
+    },
+
+    // Class - S01E01 - For Tonight We Might Die
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Class - S01E02 - The Coach with the Dragon Tattoo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Class - S01E03 - Nightvisiting
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Class - S01E04 - Co-Owner of a Lonely Heart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Class - S01E05 - Brave-ish Heart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Class - S01E06 - Detained
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Class - S01E07 - The Metaphysical Engine, or What Quill Did
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Class - S01E08 - The Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "309893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S00E149 - The Return of Doctor Mysterio
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 149
+    },
+
+    // Doctor Who (2005) - S10E01 - The Pilot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S10E02 - Smile
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S10E03 - Thin Ice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S10E04 - Knock Knock
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S10E05 - Oxygen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S10E06 - Extremis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S10E07 - The Pyramid at the End of the World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S10E08 - The Lie of the Land
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S10E09 - Empress of Mars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S10E10 - The Eaters of Light
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S10E11 - World Enough and Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S10E12 - The Doctor Falls
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E154 - Twice Upon a Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 154
+    },
+
+    // Doctor Who (2005) - S11E01 - The Woman Who Fell to Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S11E02 - The Ghost Monument
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S11E03 - Rosa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S11E04 - Arachnids in the UK
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S11E05 - The Tsuranga Conundrum
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S11E06 - Demons of the Punjab
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S11E07 - Kerblam!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S11E08 - The Witchfinders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S11E09 - It Takes You Away
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S11E10 - The Battle of Ranskoor Av Kolos
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S00E156 - Resolution
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 156
+    },
+
+    // Doctor Who (2005) - S12E01 - Spyfall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S12E02 - Spyfall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S12E03 - Orphan 55
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S12E04 - Nikola Tesla's Night of Terror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S12E05 - Fugitive of the Judoon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S12E06 - Praxeus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S12E07 - Can You Hear Me?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S12E08 - The Haunting of Villa Diodati
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S12E09 - Ascension of the Cybermen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S12E10 - The Timeless Children
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S00E158 - Revolution of the Daleks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 158
+    },
+
+    // Doctor Who (2005) - S13E01 - The Halloween Apocalypse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S13E02 - War of the Sontarans
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S13E03 - Once, Upon Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S13E04 - Village of the Angels
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S13E05 - Survivors of the Flux
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S13E06 - The Vanquishers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S00E208 - Eve of the Daleks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 208
+    },
+
+    // Doctor Who (2005) - S00E209 - Legend of the Sea Devils
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 209
+    },
+
+    // Doctor Who (2005) - S00E210 - The Power of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 210
     }
   ]
 }
