@@ -1,5 +1,8 @@
 using Continuum.Models;
 using Continuum.Services;
+using MediaBrowser.Common.Configuration;
+using MediaBrowser.Controller.Library;
+using MediaBrowser.Controller.Playlists;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,24 +16,37 @@ namespace Continuum.Controllers;
 [Authorize(Policy = "RequiresElevation")]
 [Route("Continuum/Admin")]
 public sealed class ContinuumAdminController(
-    IContinuumRefreshService refreshService,
+    IApplicationPaths applicationPaths,
+    ILibraryManager libraryManager,
+    IUserManager userManager,
+    IUserDataManager userDataManager,
+    IPlaylistManager playlistManager,
+    ILoggerFactory loggerFactory,
     ILogger<ContinuumAdminController> logger) : ControllerBase
 {
+    private readonly IContinuumRefreshService _refreshService = ContinuumRuntime.GetRefreshService(
+        applicationPaths,
+        libraryManager,
+        userManager,
+        userDataManager,
+        playlistManager,
+        loggerFactory);
+
     /// <summary>
     /// Gets the current list summaries and last refresh status.
     /// </summary>
     [HttpGet("Lists")]
     public async Task<ActionResult<ContinuumAdminDashboard>> GetLists(CancellationToken cancellationToken)
     {
-        IReadOnlyList<ContinuumAdminListSummary> lists = await refreshService
+        IReadOnlyList<ContinuumAdminListSummary> lists = await _refreshService
             .GetListSummariesAsync(cancellationToken)
             .ConfigureAwait(false);
 
         return Ok(new ContinuumAdminDashboard
         {
             Lists = lists,
-            OperationStatus = refreshService.CurrentOperationStatus,
-            LastResult = refreshService.LastResult
+            OperationStatus = _refreshService.CurrentOperationStatus,
+            LastResult = _refreshService.LastResult
         });
     }
 
@@ -44,7 +60,7 @@ public sealed class ContinuumAdminController(
         {
             logger.LogInformation("Manual Continuum refresh requested for all lists.");
 
-            ContinuumRefreshResult result = await refreshService
+            ContinuumRefreshResult result = await _refreshService
                 .RefreshAllAsync(progress: null, cancellationToken)
                 .ConfigureAwait(false);
 
@@ -72,7 +88,7 @@ public sealed class ContinuumAdminController(
         {
             logger.LogInformation("Manual Continuum refresh requested for list {Slug}.", slug);
 
-            ContinuumRefreshResult result = await refreshService
+            ContinuumRefreshResult result = await _refreshService
                 .RefreshListAsync(slug, progress: null, cancellationToken)
                 .ConfigureAwait(false);
 

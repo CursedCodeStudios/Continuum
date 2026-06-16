@@ -1,5 +1,8 @@
 using Continuum.Configuration;
 using Continuum.Services;
+using MediaBrowser.Common.Configuration;
+using MediaBrowser.Controller.Library;
+using MediaBrowser.Controller.Playlists;
 using MediaBrowser.Model.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -17,11 +20,21 @@ public sealed class RefreshContinuumPlaylistsTask : IScheduledTask
     /// Initializes a new instance of the <see cref="RefreshContinuumPlaylistsTask"/> class.
     /// </summary>
     public RefreshContinuumPlaylistsTask(
-        IContinuumRefreshService refreshService,
+        IApplicationPaths applicationPaths,
+        ILibraryManager libraryManager,
+        IUserManager userManager,
+        IUserDataManager userDataManager,
+        IPlaylistManager playlistManager,
         ILoggerFactory loggerFactory)
     {
         _logger = loggerFactory.CreateLogger<RefreshContinuumPlaylistsTask>();
-        _refreshService = refreshService;
+        _refreshService = ContinuumRuntime.GetRefreshService(
+            applicationPaths,
+            libraryManager,
+            userManager,
+            userDataManager,
+            playlistManager,
+            loggerFactory);
     }
 
     /// <inheritdoc />

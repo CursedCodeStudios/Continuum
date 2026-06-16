@@ -1,4 +1,5 @@
 using MediaBrowser.Model.Plugins;
+using System.Xml.Serialization;
 
 namespace Continuum.Configuration;
 
@@ -40,5 +41,6 @@ public class PluginConfiguration : BasePluginConfiguration
     /// <summary>
     /// Gets or sets optional playlist image paths keyed by list slug.
     /// </summary>
+    [XmlIgnore]
     public Dictionary<string, string> PlaylistImagePaths { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 }
