@@ -82,6 +82,66 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 8
+    },
+
+    // Star Wars: Tales of the Jedi - S01E01 - Life and Death
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: Tales of the Jedi - S01E02 - Justice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: Tales of the Jedi - S01E03 - Choices
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: Tales of the Jedi - S01E04 - The Sith Lord
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: Tales of the Jedi - S01E05 - Practice Makes Perfect
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: Tales of the Jedi - S01E06 - Resolve
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420659"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
     }
   ]
 }
