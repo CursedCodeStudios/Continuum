@@ -116,6 +116,60 @@ dotnet test Continuum.slnx
 
 The project targets `net9.0` and references Jellyfin `10.11.3` packages to match the current official plugin template guidance.
 
+## Releasing
+
+Continuum releases are built by GitHub Actions.
+
+### Required secret
+
+This repo requires:
+
+- `MANIFEST_REPO_TOKEN`
+
+The token must be able to call `repository_dispatch` on:
+
+`mrfrydae/jellyfin-plugin-repo`
+
+### Create a release
+
+```bash
+git tag v0.1.0.0
+git push origin v0.1.0.0
+```
+
+The release workflow will:
+
+1. build the plugin;
+2. create `Jellyfin.Plugin.Continuum_0.1.0.0.zip`;
+3. calculate SHA256;
+4. create/update the GitHub Release;
+5. trigger `mrfrydae/jellyfin-plugin-repo`;
+6. update the Jellyfin plugin manifest through that repo’s workflow.
+
+### Jellyfin repository URL
+
+Add this to Jellyfin:
+
+```text
+https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
+```
+
+In Jellyfin:
+
+`Dashboard → Plugins → Repositories → Add`
+
+Name:
+
+```text
+mrfrydae Jellyfin Plugin Repository
+```
+
+URL:
+
+```text
+https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
+```
+
 ## Manual Install
 
 1. Build the project.

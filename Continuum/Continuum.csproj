@@ -6,7 +6,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Description>Creates rolling per-user playlists from manually ordered movie and episode lists.</Description>
     <RootNamespace>Continuum</RootNamespace>
-    <AssemblyName>Continuum</AssemblyName>
+    <AssemblyName>Jellyfin.Plugin.Continuum</AssemblyName>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
   </PropertyGroup>
 

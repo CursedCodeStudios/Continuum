@@ -1,0 +1,260 @@
+name: Release Continuum
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, without leading v. Example: 0.1.0.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+env:
+  PLUGIN_NAME: Continuum
+  PLUGIN_ID: Jellyfin.Plugin.Continuum
+  PROJECT_PATH: Continuum/Continuum.csproj
+  TARGET_ABI: 10.11.0.0
+  MANIFEST_REPO: mrfrydae/jellyfin-plugin-repo
+  MANIFEST_REPOSITORY_NAME: mrfrydae Jellyfin Plugin Repository
+  MANIFEST_REPOSITORY_URL: https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
+  SOURCE_URL: https://github.com/mrfrydae/Jellyfin.Plugin.Continuum
+  OWNER_NAME: mrfrydae
+  CATEGORY: General
+  PLUGIN_DESCRIPTION: Creates rolling per-user playlists from manually ordered movie and episode lists.
+  PLUGIN_OVERVIEW: Continuum turns manually maintained chronological or canonical watch orders into per-user rolling Jellyfin playlists.
+
+jobs:
+  release:
+    name: Release Continuum
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then
+            TAG_NAME="${GITHUB_REF_NAME}"
+            VERSION="${TAG_NAME#v}"
+          else
+            VERSION="${{ inputs.version }}"
+            if [[ -z "${VERSION}" ]]; then
+              echo "workflow_dispatch requires the version input." >&2
+              exit 1
+            fi
+
+            TAG_NAME="v${VERSION}"
+
+            if git rev-parse "${TAG_NAME}" >/dev/null 2>&1; then
+              echo "Tag ${TAG_NAME} already exists locally."
+            elif git ls-remote --exit-code --tags origin "refs/tags/${TAG_NAME}" >/dev/null 2>&1; then
+              echo "Tag ${TAG_NAME} already exists on origin."
+              git fetch --tags origin "${TAG_NAME}"
+            else
+              git tag "${TAG_NAME}"
+              git push origin "${TAG_NAME}"
+            fi
+
+            git checkout "${TAG_NAME}"
+          fi
+
+          ZIP_NAME="${PLUGIN_ID}_${VERSION}.zip"
+          ZIP_PATH="artifacts/${ZIP_NAME}"
+          RELEASE_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG_NAME}/${ZIP_NAME}"
+          TIMESTAMP="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+
+          {
+            echo "version=${VERSION}"
+            echo "tag_name=${TAG_NAME}"
+            echo "zip_name=${ZIP_NAME}"
+            echo "zip_path=${ZIP_PATH}"
+            echo "release_url=${RELEASE_URL}"
+            echo "timestamp=${TIMESTAMP}"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Resolve plugin GUID
+        id: plugin_guid
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          PLUGIN_GUID="$(python3 - <<'PY'
+import pathlib
+import re
+import sys
+
+plugin_file = pathlib.Path("Continuum/Plugin.cs")
+text = plugin_file.read_text(encoding="utf-8")
+
+patterns = [
+    r'Guid\.Parse\("([0-9a-fA-F-]{36})"\)',
+    r'new Guid\("([0-9a-fA-F-]{36})"\)'
+]
+
+for pattern in patterns:
+    match = re.search(pattern, text)
+    if match:
+        print(match.group(1).lower())
+        sys.exit(0)
+
+sys.exit(1)
+PY
+)"
+
+          if [[ -z "${PLUGIN_GUID}" ]]; then
+            echo "Failed to determine the Continuum plugin GUID from Continuum/Plugin.cs." >&2
+            exit 1
+          fi
+
+          echo "plugin_guid=${PLUGIN_GUID}" >> "${GITHUB_OUTPUT}"
+
+      - name: Restore
+        run: dotnet restore "${PROJECT_PATH}"
+
+      - name: Build
+        run: dotnet build "${PROJECT_PATH}" -c Release --no-restore
+
+      - name: Publish
+        run: dotnet publish "${PROJECT_PATH}" -c Release --no-build -o ./artifacts/publish
+
+      - name: Validate publish output
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -f "artifacts/publish/${PLUGIN_ID}.dll" ]]; then
+            echo "Expected publish output artifacts/publish/${PLUGIN_ID}.dll was not found." >&2
+            ls -la artifacts/publish || true
+            exit 1
+          fi
+
+      - name: Create ZIP
+        id: zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          cd artifacts/publish
+          zip -r "../${{ steps.version.outputs.zip_name }}" .
+          cd ../..
+          if [[ ! -f "${{ steps.version.outputs.zip_path }}" ]]; then
+            echo "Release ZIP was not created at ${{ steps.version.outputs.zip_path }}." >&2
+            exit 1
+          fi
+
+      - name: Calculate checksum
+        id: checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHECKSUM="$(sha256sum "${{ steps.version.outputs.zip_path }}" | awk '{print $1}')"
+          echo "checksum=${CHECKSUM}" >> "${GITHUB_OUTPUT}"
+
+      - name: Create release body
+        id: release_body
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo "body<<'EOF'"
+            echo "## ${PLUGIN_NAME} ${{ steps.version.outputs.version }}"
+            echo
+            echo "Jellyfin plugin release."
+            echo
+            echo "### Install"
+            echo
+            echo "Add this Jellyfin plugin repository:"
+            echo
+            echo "${MANIFEST_REPOSITORY_URL}"
+            echo
+            echo "Then install ${PLUGIN_NAME} from the Jellyfin plugin catalog and restart Jellyfin."
+            echo "EOF"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Create or update GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag_name }}
+          name: Continuum ${{ steps.version.outputs.version }}
+          body: ${{ steps.release_body.outputs.body }}
+          files: ${{ steps.version.outputs.zip_path }}
+          overwrite_files: true
+          draft: false
+          prerelease: false
+
+      - name: Dispatch manifest update
+        env:
+          MANIFEST_REPO_TOKEN: ${{ secrets.MANIFEST_REPO_TOKEN }}
+          VERSION: ${{ steps.version.outputs.version }}
+          CHECKSUM: ${{ steps.checksum.outputs.checksum }}
+          TIMESTAMP: ${{ steps.version.outputs.timestamp }}
+          PLUGIN_GUID: ${{ steps.plugin_guid.outputs.plugin_guid }}
+          RELEASE_URL: ${{ steps.version.outputs.release_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${MANIFEST_REPO_TOKEN}" ]]; then
+            echo "MANIFEST_REPO_TOKEN is not configured." >&2
+            exit 1
+          fi
+
+          PAYLOAD="$(python3 - <<'PY'
+import json
+import os
+
+payload = {
+    "event_type": "update-plugin-release",
+    "client_payload": {
+        "pluginGuid": os.environ["PLUGIN_GUID"],
+        "pluginName": os.environ["PLUGIN_NAME"],
+        "description": os.environ["PLUGIN_DESCRIPTION"],
+        "overview": os.environ["PLUGIN_OVERVIEW"],
+        "owner": os.environ["OWNER_NAME"],
+        "category": os.environ["CATEGORY"],
+        "version": os.environ["VERSION"],
+        "targetAbi": os.environ["TARGET_ABI"],
+        "checksum": os.environ["CHECKSUM"],
+        "timestamp": os.environ["TIMESTAMP"],
+        "sourceUrl": os.environ["SOURCE_URL"],
+        "changelog": f"Release {os.environ['VERSION']}.",
+        "repositoryName": os.environ["MANIFEST_REPOSITORY_NAME"],
+        "repositoryUrl": os.environ["MANIFEST_REPOSITORY_URL"],
+        "url": os.environ["RELEASE_URL"],
+    },
+}
+
+print(json.dumps(payload))
+PY
+)"
+
+          curl -X POST \
+            -H "Authorization: Bearer ${MANIFEST_REPO_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${MANIFEST_REPO}/dispatches \
+            -d "${PAYLOAD}"
+
+      - name: Print summary
+        shell: bash
+        run: |
+          echo "Released ${PLUGIN_NAME} ${{ steps.version.outputs.version }}"
+          echo "ZIP: ${{ steps.version.outputs.zip_path }}"
+          echo "SHA256: ${{ steps.checksum.outputs.checksum }}"
+          echo "Manifest dispatch sent to ${MANIFEST_REPO}"
+          echo "Jellyfin repo URL: ${MANIFEST_REPOSITORY_URL}"
