@@ -45,7 +45,36 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
     public ContinuumRefreshResult? LastResult { get; private set; }
 
     /// <inheritdoc />
+    public async Task<IReadOnlyList<ContinuumAdminListSummary>> GetListSummariesAsync(CancellationToken cancellationToken)
+    {
+        IReadOnlyList<ContinuumListDefinition> lists = await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false);
+        ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
+
+        return lists
+            .OrderBy(list => list.Name, StringComparer.OrdinalIgnoreCase)
+            .Select(list => CreateListSummary(list, state))
+            .ToArray();
+    }
+
+    /// <inheritdoc />
     public async Task<ContinuumRefreshResult> RefreshAllAsync(
+        IProgress<double>? progress,
+        CancellationToken cancellationToken)
+    {
+        return await RefreshListsAsync(targetSlug: null, progress, cancellationToken).ConfigureAwait(false);
+    }
+
+    /// <inheritdoc />
+    public async Task<ContinuumRefreshResult> RefreshListAsync(
+        string slug,
+        IProgress<double>? progress,
+        CancellationToken cancellationToken)
+    {
+        return await RefreshListsAsync(slug, progress, cancellationToken).ConfigureAwait(false);
+    }
+
+    private async Task<ContinuumRefreshResult> RefreshListsAsync(
+        string? targetSlug,
         IProgress<double>? progress,
         CancellationToken cancellationToken)
     {
@@ -74,7 +103,14 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
 
         ContinuumListDefinition[] lists = (await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false))
             .Where(list => list.Enabled)
+            .Where(list => string.IsNullOrWhiteSpace(targetSlug)
+                || string.Equals(list.Slug, targetSlug, StringComparison.OrdinalIgnoreCase))
             .ToArray();
+
+        if (!string.IsNullOrWhiteSpace(targetSlug) && lists.Length == 0)
+        {
+            throw new KeyNotFoundException($"No enabled Continuum list with slug '{targetSlug}' was found.");
+        }
         User[] users = _userManager.Users.OfType<User>().ToArray();
         ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
         User[] enabledUsers = configuration.CreatePlaylistsForDisabledUsers
@@ -177,6 +213,35 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
             result.PlaylistsUpdated);
 
         return result;
+    }
+
+    private static ContinuumAdminListSummary CreateListSummary(ContinuumListDefinition list, ContinuumState state)
+    {
+        ContinuumAdminListSummary summary = new ContinuumAdminListSummary
+        {
+            Name = list.Name,
+            Slug = list.Slug,
+            Description = list.Description,
+            Enabled = list.Enabled,
+            ItemCount = list.Items.Count
+        };
+
+        if (!state.Lists.TryGetValue(list.Slug, out ContinuumListState? listState))
+        {
+            return summary;
+        }
+
+        summary.PlaylistCount = listState.Users.Count;
+        summary.LastRefreshUtc = listState.Users.Values
+            .Where(userState => userState.LastRefreshUtc.HasValue)
+            .Select(userState => userState.LastRefreshUtc)
+            .Max();
+        summary.LastPlaylistItemCount = listState.Users.Values
+            .Select(userState => userState.LastItemCount)
+            .DefaultIfEmpty(0)
+            .Max();
+
+        return summary;
     }
 
     private static ContinuumListState GetOrCreateListState(ContinuumState state, string slug)

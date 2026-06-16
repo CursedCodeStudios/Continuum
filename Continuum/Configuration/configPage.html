@@ -4,53 +4,489 @@
      data-require="emby-button,emby-checkbox,emby-input">
     <div data-role="content">
         <div class="content-primary">
-            <form id="ContinuumConfigForm">
-                <div class="verticalSection verticalSection-extrabottompadding">
-                    <h2>Continuum</h2>
-                    <p>Continuum builds rolling per-user playlists from the bundled community archive shipped with the plugin under <code>Playlist-Data/</code>.</p>
+            <div class="verticalSection verticalSection-extrabottompadding">
+                <h2>Continuum</h2>
+                <p>Continuum builds rolling per-user playlists from the bundled community archive shipped with the plugin under <code>Playlist-Data/</code>.</p>
 
-                    <label class="checkboxContainer">
-                        <input id="Enabled" name="Enabled" type="checkbox" is="emby-checkbox" />
-                        <span>Enable Continuum</span>
-                    </label>
-
-                    <div class="inputContainer">
-                        <input id="RefreshIntervalMinutes" name="RefreshIntervalMinutes" type="number" is="emby-input" min="5" step="1" />
-                        <label class="inputLabel inputLabelUnfocused" for="RefreshIntervalMinutes">Refresh interval (minutes)</label>
-                    </div>
-
-                    <div class="inputContainer">
-                        <input id="PlaylistSize" name="PlaylistSize" type="number" is="emby-input" min="1" max="150" step="1" />
-                        <label class="inputLabel inputLabelUnfocused" for="PlaylistSize">Playlist size</label>
-                    </div>
-
-                    <button is="emby-button" type="submit" class="raised button-submit block">
-                        <span>Save</span>
-                    </button>
+                <div class="sectionTabs">
+                    <button is="emby-button" type="button" class="sectionTab raised" data-tab="lists">Manage Lists</button>
+                    <button is="emby-button" type="button" class="sectionTab" data-tab="settings">Settings</button>
                 </div>
-            </form>
+
+                <div id="ContinuumListsTab" class="tabPanel">
+                    <div class="listActionRow">
+                        <button id="RefreshAllListsButton" is="emby-button" type="button" class="raised button-submit">
+                            <span>Refresh All Lists</span>
+                        </button>
+                        <button id="ReloadListsButton" is="emby-button" type="button">
+                            <span>Reload List Status</span>
+                        </button>
+                    </div>
+
+                    <div id="ContinuumStatusCard" class="statusCard hide"></div>
+
+                    <div id="ContinuumLastRefreshCard" class="infoCard hide">
+                        <div class="cardTitle">Last Refresh</div>
+                        <div id="ContinuumLastRefreshBody" class="mutedText"></div>
+                    </div>
+
+                    <div id="ContinuumListsSummary" class="infoCard mutedText">Loading lists...</div>
+                    <div id="ContinuumListsContainer" class="listGrid"></div>
+                </div>
+
+                <div id="ContinuumSettingsTab" class="tabPanel hide">
+                    <form id="ContinuumConfigForm">
+                        <label class="checkboxContainer">
+                            <input id="Enabled" name="Enabled" type="checkbox" is="emby-checkbox" />
+                            <span>Enable Continuum</span>
+                        </label>
+
+                        <div class="inputContainer">
+                            <input id="RefreshIntervalMinutes" name="RefreshIntervalMinutes" type="number" is="emby-input" min="5" step="1" />
+                            <label class="inputLabel inputLabelUnfocused" for="RefreshIntervalMinutes">Refresh interval (minutes)</label>
+                        </div>
+
+                        <div class="inputContainer">
+                            <input id="PlaylistSize" name="PlaylistSize" type="number" is="emby-input" min="1" max="150" step="1" />
+                            <label class="inputLabel inputLabelUnfocused" for="PlaylistSize">Playlist size</label>
+                        </div>
+
+                        <button is="emby-button" type="submit" class="raised button-submit block">
+                            <span>Save Settings</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+
+    <style>
+        #ContinuumConfigPage .sectionTabs {
+            display: flex;
+            gap: 0.75em;
+            margin: 1.5em 0 1em;
+            flex-wrap: wrap;
+        }
+
+        #ContinuumConfigPage .sectionTab {
+            min-width: 9rem;
+        }
+
+        #ContinuumConfigPage .sectionTab.tabActive {
+            background: var(--theme-accent, #00a4dc);
+            color: #fff;
+        }
+
+        #ContinuumConfigPage .tabPanel.hide,
+        #ContinuumConfigPage .hide {
+            display: none;
+        }
+
+        #ContinuumConfigPage .listActionRow {
+            display: flex;
+            gap: 0.75em;
+            flex-wrap: wrap;
+            margin-bottom: 1em;
+        }
+
+        #ContinuumConfigPage .statusCard,
+        #ContinuumConfigPage .infoCard,
+        #ContinuumConfigPage .listCard {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 0.5em;
+            padding: 1em;
+            margin-bottom: 1em;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        #ContinuumConfigPage .statusCard.isError {
+            border-color: rgba(255, 99, 71, 0.8);
+        }
+
+        #ContinuumConfigPage .statusCard.isSuccess {
+            border-color: rgba(72, 187, 120, 0.8);
+        }
+
+        #ContinuumConfigPage .cardTitle,
+        #ContinuumConfigPage .listCardTitle {
+            font-weight: 600;
+            margin-bottom: 0.4em;
+        }
+
+        #ContinuumConfigPage .mutedText,
+        #ContinuumConfigPage .listMeta,
+        #ContinuumConfigPage .listDescription {
+            color: var(--secondaryTextColor);
+        }
+
+        #ContinuumConfigPage .listGrid {
+            display: grid;
+            gap: 1em;
+        }
+
+        #ContinuumConfigPage .listCardHeader,
+        #ContinuumConfigPage .listCardFooter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        #ContinuumConfigPage .listDescription {
+            margin: 0.5em 0 0.75em;
+        }
+
+        #ContinuumConfigPage .listMeta {
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+
+        #ContinuumConfigPage .listBadge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 0.2em 0.7em;
+            font-size: 0.85em;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        #ContinuumConfigPage .listBadge.isDisabled {
+            opacity: 0.75;
+        }
+
+        @media (max-width: 700px) {
+            #ContinuumConfigPage .listActionRow,
+            #ContinuumConfigPage .listCardHeader,
+            #ContinuumConfigPage .listCardFooter {
+                align-items: stretch;
+            }
+
+            #ContinuumConfigPage .listActionRow button,
+            #ContinuumConfigPage .listCardFooter button {
+                width: 100%;
+            }
+        }
+    </style>
 
     <script type="text/javascript">
         (function () {
             const pluginId = "42475945-c55b-4ba9-bfd4-884d5cd8a829";
             const page = document.querySelector("#ContinuumConfigPage");
             const form = document.querySelector("#ContinuumConfigForm");
+            const tabs = Array.from(document.querySelectorAll(".sectionTab"));
+            const statusCard = document.querySelector("#ContinuumStatusCard");
+            const lastRefreshCard = document.querySelector("#ContinuumLastRefreshCard");
+            const lastRefreshBody = document.querySelector("#ContinuumLastRefreshBody");
+            const listsSummary = document.querySelector("#ContinuumListsSummary");
+            const listsContainer = document.querySelector("#ContinuumListsContainer");
+            const refreshAllButton = document.querySelector("#RefreshAllListsButton");
+            const reloadListsButton = document.querySelector("#ReloadListsButton");
+
+            function setActiveTab(tabName) {
+                tabs.forEach(function (button) {
+                    const isActive = button.dataset.tab === tabName;
+                    button.classList.toggle("tabActive", isActive);
+                });
+
+                document.querySelector("#ContinuumListsTab").classList.toggle("hide", tabName !== "lists");
+                document.querySelector("#ContinuumSettingsTab").classList.toggle("hide", tabName !== "settings");
+            }
+
+            function setBusy(isBusy) {
+                refreshAllButton.disabled = isBusy;
+                reloadListsButton.disabled = isBusy;
+                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
+                    button.disabled = isBusy || button.dataset.enabled !== "true";
+                });
+            }
+
+            function showStatus(message, tone) {
+                statusCard.textContent = message;
+                statusCard.classList.remove("hide", "isError", "isSuccess");
+
+                if (tone === "error") {
+                    statusCard.classList.add("isError");
+                } else if (tone === "success") {
+                    statusCard.classList.add("isSuccess");
+                }
+            }
+
+            function clearStatus() {
+                statusCard.classList.add("hide");
+                statusCard.classList.remove("isError", "isSuccess");
+                statusCard.textContent = "";
+            }
+
+            function formatDate(value) {
+                if (!value) {
+                    return "Never";
+                }
+
+                const date = new Date(value);
+                return date.toLocaleString();
+            }
+
+            function buildResultSummary(result) {
+                if (!result) {
+                    return "No refresh has run in this server session yet.";
+                }
+
+                const parts = [
+                    readValue(result, "listsProcessed", "ListsProcessed", 0) + " list(s)",
+                    readValue(result, "usersProcessed", "UsersProcessed", 0) + " user(s)",
+                    readValue(result, "playlistsCreated", "PlaylistsCreated", 0) + " created",
+                    readValue(result, "playlistsUpdated", "PlaylistsUpdated", 0) + " updated",
+                    readValue(result, "itemsResolved", "ItemsResolved", 0) + " resolved",
+                    readValue(result, "itemsMissing", "ItemsMissing", 0) + " missing",
+                    readValue(result, "itemsAmbiguous", "ItemsAmbiguous", 0) + " ambiguous"
+                ];
+
+                let text = "Completed " + formatDate(readValue(result, "completedAtUtc", "CompletedAtUtc", null)) + " • " + parts.join(" • ");
+
+                const warnings = readValue(result, "warnings", "Warnings", []);
+                if (warnings && warnings.length) {
+                    text += " • " + warnings.length + " warning(s)";
+                }
+
+                return text;
+            }
+
+            function renderLastResult(result) {
+                if (!result) {
+                    lastRefreshCard.classList.add("hide");
+                    lastRefreshBody.textContent = "";
+                    return;
+                }
+
+                lastRefreshBody.textContent = buildResultSummary(result);
+                lastRefreshCard.classList.remove("hide");
+            }
+
+            function renderLists(lists) {
+                listsContainer.innerHTML = "";
+
+                if (!lists || !lists.length) {
+                    listsSummary.textContent = "No Continuum lists were found in the bundled archive.";
+                    return;
+                }
+
+                const enabledCount = lists.filter(function (list) {
+                    return !!readValue(list, "enabled", "Enabled", false);
+                }).length;
+
+                listsSummary.textContent = lists.length + " list(s) loaded • " + enabledCount + " enabled";
+
+                lists.forEach(function (list) {
+                    const card = document.createElement("div");
+                    card.className = "listCard";
+
+                    const descriptionText = readValue(list, "description", "Description", "");
+                    const enabled = !!readValue(list, "enabled", "Enabled", false);
+                    const slug = readValue(list, "slug", "Slug", "");
+
+                    const description = descriptionText
+                        ? "<div class=\"listDescription\">" + escapeHtml(descriptionText) + "</div>"
+                        : "";
+
+                    const badgeClass = enabled ? "listBadge" : "listBadge isDisabled";
+                    const badgeText = enabled ? "Enabled" : "Disabled";
+
+                    card.innerHTML = [
+                        "<div class=\"listCardHeader\">",
+                        "  <div>",
+                        "    <div class=\"listCardTitle\">" + escapeHtml(readValue(list, "name", "Name", "")) + "</div>",
+                        "    <div class=\"" + badgeClass + "\">" + badgeText + "</div>",
+                        "  </div>",
+                        "</div>",
+                        description,
+                        "<div class=\"listMeta\">",
+                        "  <span>Slug: " + escapeHtml(slug) + "</span>",
+                        "  <span>Archive items: " + readValue(list, "itemCount", "ItemCount", 0) + "</span>",
+                        "  <span>Tracked playlists: " + readValue(list, "playlistCount", "PlaylistCount", 0) + "</span>",
+                        "  <span>Last playlist size: " + readValue(list, "lastPlaylistItemCount", "LastPlaylistItemCount", 0) + "</span>",
+                        "  <span>Last refresh: " + escapeHtml(formatDate(readValue(list, "lastRefreshUtc", "LastRefreshUtc", null))) + "</span>",
+                        "</div>",
+                        "<div class=\"listCardFooter\">",
+                        "  <div class=\"mutedText\">Manual refresh updates this list for all eligible users.</div>",
+                        "  <button is=\"emby-button\" type=\"button\" class=\"refreshListButton\" data-slug=\"" + escapeAttribute(slug) + "\" data-enabled=\"" + String(enabled) + "\"" + (enabled ? "" : " disabled") + ">",
+                        "    <span>Refresh This List</span>",
+                        "  </button>",
+                        "</div>"
+                    ].join("");
+
+                    listsContainer.appendChild(card);
+                });
+
+                bindListButtons();
+            }
+
+            function bindListButtons() {
+                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        const slug = button.dataset.slug;
+                        if (!slug) {
+                            return;
+                        }
+
+                        refreshSingleList(slug);
+                    });
+                });
+            }
+
+            function escapeHtml(value) {
+                return String(value)
+                    .replaceAll("&", "&amp;")
+                    .replaceAll("<", "&lt;")
+                    .replaceAll(">", "&gt;")
+                    .replaceAll("\"", "&quot;")
+                    .replaceAll("'", "&#39;");
+            }
+
+            function escapeAttribute(value) {
+                return escapeHtml(value);
+            }
+
+            function readValue(source, camelName, pascalName, fallback) {
+                if (!source) {
+                    return fallback;
+                }
+
+                if (source[camelName] !== undefined && source[camelName] !== null) {
+                    return source[camelName];
+                }
+
+                if (source[pascalName] !== undefined && source[pascalName] !== null) {
+                    return source[pascalName];
+                }
+
+                return fallback;
+            }
+
+            function adminFetch(path, options) {
+                const requestOptions = Object.assign({
+                    method: "GET",
+                    credentials: "same-origin",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                }, options || {});
+
+                requestOptions.headers = Object.assign({}, requestOptions.headers || {});
+
+                if (requestOptions.body) {
+                    requestOptions.headers["Content-Type"] = "application/json";
+                }
+
+                if (ApiClient.accessToken) {
+                    requestOptions.headers["X-Emby-Token"] = ApiClient.accessToken();
+                }
+
+                return fetch(ApiClient.getUrl(path), requestOptions).then(function (response) {
+                    if (!response.ok) {
+                        return response.text().then(function (text) {
+                            throw new Error(text || ("Request failed: " + response.status));
+                        });
+                    }
+
+                    return response.status === 204 ? null : response.json();
+                });
+            }
 
             function loadConfig() {
-                Dashboard.showLoadingMsg();
-
                 return ApiClient.getPluginConfiguration(pluginId).then(function (config) {
                     document.querySelector("#Enabled").checked = !!config.Enabled;
                     document.querySelector("#RefreshIntervalMinutes").value = config.RefreshIntervalMinutes ?? 60;
                     document.querySelector("#PlaylistSize").value = config.PlaylistSize ?? 100;
+                });
+            }
+
+            function loadLists() {
+                return adminFetch("Continuum/Admin/Lists").then(function (payload) {
+                    renderLists(readValue(payload, "lists", "Lists", []));
+                    renderLastResult(readValue(payload, "lastResult", "LastResult", null));
+                });
+            }
+
+            function refreshSingleList(slug) {
+                clearStatus();
+                setBusy(true);
+                Dashboard.showLoadingMsg();
+
+                adminFetch("Continuum/Admin/Lists/" + encodeURIComponent(slug) + "/Refresh", {
+                    method: "POST"
+                }).then(function (result) {
+                    showStatus("Refreshed " + slug + ". " + buildResultSummary(result), "success");
+                    renderLastResult(result);
+                    return loadLists();
+                }).catch(function (error) {
+                    showStatus("Failed to refresh " + slug + ". " + error.message, "error");
                 }).finally(function () {
+                    setBusy(false);
                     Dashboard.hideLoadingMsg();
                 });
             }
 
-            page.addEventListener("pageshow", loadConfig);
+            function refreshAllLists() {
+                clearStatus();
+                setBusy(true);
+                Dashboard.showLoadingMsg();
+
+                adminFetch("Continuum/Admin/RefreshAll", {
+                    method: "POST"
+                }).then(function (result) {
+                    showStatus("Refreshed all enabled lists. " + buildResultSummary(result), "success");
+                    renderLastResult(result);
+                    return loadLists();
+                }).catch(function (error) {
+                    showStatus("Failed to refresh Continuum lists. " + error.message, "error");
+                }).finally(function () {
+                    setBusy(false);
+                    Dashboard.hideLoadingMsg();
+                });
+            }
+
+            function loadPage() {
+                Dashboard.showLoadingMsg();
+                setBusy(true);
+
+                return Promise.all([
+                    loadConfig(),
+                    loadLists()
+                ]).catch(function (error) {
+                    showStatus("Failed to load Continuum admin data. " + error.message, "error");
+                }).finally(function () {
+                    setBusy(false);
+                    Dashboard.hideLoadingMsg();
+                });
+            }
+
+            tabs.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    setActiveTab(button.dataset.tab);
+                });
+            });
+
+            refreshAllButton.addEventListener("click", refreshAllLists);
+            reloadListsButton.addEventListener("click", function () {
+                clearStatus();
+                setBusy(true);
+                Dashboard.showLoadingMsg();
+
+                loadLists().catch(function (error) {
+                    showStatus("Failed to reload list status. " + error.message, "error");
+                }).finally(function () {
+                    setBusy(false);
+                    Dashboard.hideLoadingMsg();
+                });
+            });
+
+            page.addEventListener("pageshow", function () {
+                setActiveTab("lists");
+                loadPage();
+            });
 
             form.addEventListener("submit", function (event) {
                 event.preventDefault();
@@ -63,6 +499,7 @@
                     return ApiClient.updatePluginConfiguration(pluginId, config);
                 }).then(function (result) {
                     Dashboard.processPluginConfigurationUpdateResult(result);
+                    showStatus("Continuum settings saved.", "success");
                 }).finally(function () {
                     Dashboard.hideLoadingMsg();
                 });
