@@ -578,6 +578,556 @@
       "providers": {
         "tmdbMovieId": "283995"
       }
+    },
+
+    // I Am Groot - S01E01 - Groot's First Steps
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // I Am Groot - S01E02 - The Little Guy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // I Am Groot - S01E03 - Groot's Pursuit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // I Am Groot - S01E04 - Groot Takes a Bath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // I Am Groot - S01E05 - Magnum Opus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // I Am Groot - S02E01 - Are You My Groot?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // I Am Groot - S02E02 - Groot Noses Around
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // I Am Groot - S02E03 - Groot's Snow Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // I Am Groot - S02E04 - Groot's Sweet Treat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // I Am Groot - S02E05 - Groot and the Great Prophecy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393201"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Daredevil - S01E01 - Into the Ring
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Daredevil - S01E02 - Cut Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Daredevil - S01E03 - Rabbit in a Snowstorm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Daredevil - S01E04 - In the Blood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Daredevil - S01E05 - World on Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Daredevil - S01E06 - Condemned
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Daredevil - S01E07 - Stick
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Daredevil - S01E08 - Shadows in the Glass
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Daredevil - S01E09 - Speak of the Devil
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Daredevil - S01E10 - Nelson v. Murdock
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Daredevil - S01E11 - The Path of the Righteous
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Daredevil - S01E12 - The Ones We Leave Behind
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Daredevil - S01E13 - Daredevil
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E01 - Shadows
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E02 - Heavy Is the Head
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E03 - Making Friends and Influencing People
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E04 - Face My Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E05 - A Hen in the Wolf House
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E06 - A Fractured House
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E07 - The Writing on the Wall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E08 - The Things We Bury
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E09 - ...Ye Who Enter Here
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E10 - What They Become
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Jessica Jones - S01E01 - AKA Ladies' Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Jessica Jones - S01E02 - AKA Crush Syndrome
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Jessica Jones - S01E03 - AKA It's Called Whiskey
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Jessica Jones - S01E04 - AKA 99 Friends
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Jessica Jones - S01E05 - AKA The Sandwich Saved Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Jessica Jones - S01E06 - AKA You're a Winner!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Jessica Jones - S01E07 - AKA Top Shelf Perverts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Jessica Jones - S01E08 - AKA WWJD?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Jessica Jones - S01E09 - AKA Sin Bin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Jessica Jones - S01E10 - AKA 1,000 Cuts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Jessica Jones - S01E11 - AKA I've Got the Blues
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Jessica Jones - S01E12 - AKA Take a Bloody Number
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Jessica Jones - S01E13 - AKA Smile
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "284190"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E11 - Aftershocks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E12 - Who You Really Are
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E13 - One of Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E14 - Love in the Time of Hydra
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E15 - One Door Closes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E16 - Afterlife
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E17 - Melinda
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E18 - The Frenemy of My Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E19 - The Dirty Half Dozen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
     }
   ]
 }
