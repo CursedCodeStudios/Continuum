@@ -46,6 +46,176 @@
       "providers": {
         "tmdbMovieId": "1771"
       }
+    },
+
+    // Marvel One-Shot: Agent Carter
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "211387"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E01 - Now Is Not the End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "4879753"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E02 - Bridge and Tunnel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5052420"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E03 - Time and Tide
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5077915"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E04 - The Blitzkrieg Button
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5095779"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E05 - The Iron Ceiling
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5099279"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E06 - A Sin to Err
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5110245"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E07 - SNAFU
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5111100"
+      }
+    },
+
+    // Marvel's Agent Carter - S01E08 - Valediction
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5111101"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E01 - The Lady in the Lake
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5405463"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E02 - A View in the Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5406254"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E03 - Better Angels
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5438109"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E04 - Smoke and Mirrors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5481448"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E05 - The Atomic Job
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5490136"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E06 - Life of the Party
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5497689"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E07 - Monsters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5500095"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E08 - The Edge of Mystery
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5500097"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E09 - A Little Song and Dance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5500094"
+      }
+    },
+
+    // Marvel's Agent Carter - S02E10 - Hollywood Ending
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281485",
+        "tvdbEpisodeId": "5500096"
+      }
     }
   ]
 }
