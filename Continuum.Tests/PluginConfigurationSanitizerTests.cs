@@ -110,4 +110,49 @@ public class PluginConfigurationSanitizerTests
         Assert.DoesNotContain("   ", sanitized.EnabledLists.Keys);
         Assert.DoesNotContain(string.Empty, sanitized.EnabledLists.Keys);
     }
+
+    [Fact]
+    public void PersistedEnabledLists_PopulatesRuntimeEnabledLists()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            PersistedEnabledLists =
+            [
+                new ContinuumEnabledListSetting
+                {
+                    Slug = " chicago-universe ",
+                    Enabled = true
+                },
+                new ContinuumEnabledListSetting
+                {
+                    Slug = "star-wars",
+                    Enabled = false
+                }
+            ]
+        };
+
+        Assert.True(configuration.EnabledLists.TryGetValue("chicago-universe", out bool chicagoEnabled));
+        Assert.True(chicagoEnabled);
+        Assert.True(configuration.EnabledLists.TryGetValue("star-wars", out bool starWarsEnabled));
+        Assert.False(starWarsEnabled);
+    }
+
+    [Fact]
+    public void PersistedEnabledLists_ReflectsRuntimeEnabledLists()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            EnabledLists = new Dictionary<string, bool>
+            {
+                ["chicago-universe"] = true,
+                ["star-wars"] = false
+            }
+        };
+
+        List<ContinuumEnabledListSetting> persisted = configuration.PersistedEnabledLists;
+
+        Assert.Equal(2, persisted.Count);
+        Assert.Contains(persisted, setting => setting.Slug == "chicago-universe" && setting.Enabled);
+        Assert.Contains(persisted, setting => setting.Slug == "star-wars" && !setting.Enabled);
+    }
 }
