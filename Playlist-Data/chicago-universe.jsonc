@@ -6302,6 +6302,1416 @@
       },
       "seasonNumber": 11,
       "episodeNumber": 22
+    },
+
+    // Chicago Fire - S12E01 - Barely Gone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 1
+    },
+
+    // Chicago P.D. - S11E01 - Unpacking
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S12E02 - Call Me McHolland
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 2
+    },
+
+    // Chicago P.D. - S11E02 - Retread
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S09E01 - Row Row Row Your Boat on a Rocky Sea
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 1
+    },
+
+    // Chicago Med - S09E02 - This Town Ain't Big Enough for Both of Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 2
+    },
+
+    // Chicago Fire - S12E03 - Trapped
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 3
+    },
+
+    // Chicago Med - S09E03 - What Happens in the Dark Always Comes to Light
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S12E04 - The Little Things
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 4
+    },
+
+    // Chicago P.D. - S11E03 - Safe Harbor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 3
+    },
+
+    // Chicago P.D. - S11E04 - Escape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 4
+    },
+
+    // Chicago Med - S09E04 - These Are Not the Droids You Are Looking For
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S12E05 - On the Hook
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S09E05 - I Make a Promise, I Will Never Leave You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 5
+    },
+
+    // Chicago Fire - S12E06 - Port in the Storm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 6
+    },
+
+    // Chicago P.D. - S11E05 - Split Second
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 5
+    },
+
+    // Chicago Fire - S12E07 - Red Flag
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 7
+    },
+
+    // Chicago Med - S09E06 - I Told Myself That I Was Done with You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 6
+    },
+
+    // Chicago P.D. - S11E06 - Survival
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 6
+    },
+
+    // Chicago P.D. - S11E07 - The Living and the Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 7
+    },
+
+    // Chicago Fire - S12E08 - All the Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 8
+    },
+
+    // Chicago P.D. - S11E08 - On Paper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S09E07 - Step on a Crack and Break Your Mother's Back
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 7
+    },
+
+    // Chicago P.D. - S11E09 - Somos Uno
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S12E09 - Something About Her
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 9
+    },
+
+    // Chicago Med - S09E08 - A Penny for Your Thoughts, Dollar for Your Dreams
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S09E09 - Spin a Yarn, Get Stuck in Your Own String
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S12E10 - The Wrong Guy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 10
+    },
+
+    // Chicago P.D. - S11E10 - Buried Pieces
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S12E11 - Inside Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S09E10 - You Just Might Find You Get What You Need
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 10
+    },
+
+    // Chicago P.D. - S11E11 - The Water Line
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S09E11 - I Think There Is Something You're Not Telling Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 11
+    },
+
+    // Chicago Fire - S12E12 - Under Pressure
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 12
+    },
+
+    // Chicago Med - S09E12 - Get By with a Little Help from My Friends
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 12
+    },
+
+    // Chicago P.D. - S11E12 - Inventory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 12
+    },
+
+    // Chicago P.D. - S11E13 - More
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 13
+    },
+
+    // Chicago Fire - S12E13 - Never Say Goodbye
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S09E13 - I Think I Know You, But Do I Really?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S10E01 - Sink or Swim
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S13E01 - A Monster in the Field
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 1
+    },
+
+    // Chicago P.D. - S12E01 - Ten Ninety-Nine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 1
+    },
+
+    // Chicago P.D. - S12E02 - Blood Bleeds Blue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 2
+    },
+
+    // Chicago Fire - S13E02 - Ride the Blade
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S10E02 - Bite Your Tongue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S10E03 - Trust Fall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S13E03 - All Kinds of Crazy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 3
+    },
+
+    // Chicago P.D. - S12E03 - Off Switch
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 3
+    },
+
+    // Chicago Med - S10E04 - Blurred Lines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 4
+    },
+
+    // Chicago P.D. - S12E04 - The After
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S13E04 - Through the Skin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S13E05 - Down the Rabbit Hole
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 5
+    },
+
+    // Chicago P.D. - S12E05 - Water and Honey
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S10E05 - Bad Habits
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 5
+    },
+
+    // Chicago P.D. - S12E06 - Pawns
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S13E06 - Birds of Prey
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S13E07 - Untouchable
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 7
+    },
+
+    // Chicago P.D. - S12E07 - Contrition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 7
+    },
+
+    // Chicago P.D. - S12E08 - Penance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S10E06 - Forget Me Not
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S13E08 - Quicksand
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S13E09 - A Favor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S13E10 - Chaos Theory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 10
+    },
+
+    // Chicago Med - S10E07 - Family Matters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 7
+    },
+
+    // Chicago P.D. - S12E09 - Friends and Family
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 9
+    },
+
+    // Chicago Med - S10E08 - Love Will Tear Us Apart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S10E09 - No Love Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 9
+    },
+
+    // Chicago P.D. - S12E10 - Zoe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 10
+    },
+
+    // Chicago Med - S10E10 - Broken Hearts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S13E11 - In the Trenches
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S10E11 - In the Trenches
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 11
+    },
+
+    // Chicago P.D. - S12E11 - In the Trenches
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 11
+    },
+
+    // Chicago P.D. - S12E12 - The Good Shepherd
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S13E12 - Relief Cut
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S13E13 - Born of Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S10E12 - In the Wake
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 12
+    },
+
+    // Chicago Med - S10E13 - Take a Look in the Mirror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 13
+    },
+
+    // Chicago P.D. - S12E13 - Street Jesus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 13
+    },
+
+    // Chicago Fire - S13E14 - Bar Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 14
+    },
+
+    // Chicago P.D. - S12E14 - Marie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 14
+    },
+
+    // Chicago Med - S10E14 - Acid Test
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 14
+    },
+
+    // Chicago P.D. - S12E15 - Greater Good
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 15
+    },
+
+    // Chicago Med - S10E15 - Down in a Hole
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 15
+    },
+
+    // Chicago Med - S10E16 - Poster Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S13E15 - Too Close
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 15
+    },
+
+    // Chicago P.D. - S12E16 - Seen and Unseen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 16
+    },
+
+    // Chicago Med - S10E17 - The Book of Archer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 17
+    },
+
+    // Chicago Fire - S13E16 - In the Rubble
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S13E17 - A Beast Like This
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 17
+    },
+
+    // Chicago P.D. - S12E17 - Transference
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 17
+    },
+
+    // Chicago Med - S10E18 - Together One Last Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 18
+    },
+
+    // Chicago Fire - S13E18 - Post-Mortem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 18
+    },
+
+    // Chicago P.D. - S12E18 - Demons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 18
+    },
+
+    // Chicago Med - S10E19 - The Stories We Tell Ourselves
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 19
+    },
+
+    // Chicago Fire - S13E19 - Permanent Damage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 19
+    },
+
+    // Chicago P.D. - S12E19 - Name Image Likeness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 19
+    },
+
+    // Chicago Med - S10E20 - The Invisible Hand
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 20
+    },
+
+    // Chicago Fire - S13E20 - Cut Me Open
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 20
+    },
+
+    // Chicago P.D. - S12E20 - Black Ice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 20
+    },
+
+    // Chicago Med - S10E21 - Baby Mine...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 21
+    },
+
+    // Chicago Fire - S13E21 - The Bad Guy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 21
+    },
+
+    // Chicago P.D. - S12E21 - Open Casket
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 21
+    },
+
+    // Chicago Med - S10E22 - ...Don't You Cry
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 10,
+      "episodeNumber": 22
+    },
+
+    // Chicago Fire - S13E22 - It Had to End This Way
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 22
+    },
+
+    // Chicago P.D. - S12E22 - Vows
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 12,
+      "episodeNumber": 22
+    },
+
+    // Chicago Med - S11E01 - We All Fall Down
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S14E01 - Kicking Down Doors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 1
+    },
+
+    // Chicago P.D. - S13E01 - Consequences
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 1
+    },
+
+    // Chicago Med - S11E02 - A Game of Inches
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 2
+    },
+
+    // Chicago Fire - S14E02 - Primary Search
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 2
+    },
+
+    // Chicago P.D. - S13E02 - Open Wounds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S11E03 - Horseshoes and Hand Grenades
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S14E03 - All in the Blood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 3
+    },
+
+    // Chicago P.D. - S13E03 - Canaryville
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 3
+    },
+
+    // Chicago Med - S11E04 - Found Family
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S14E04 - Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 4
+    },
+
+    // Chicago P.D. - S13E04 - Root Cause
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 4
+    },
+
+    // Chicago Med - S11E05 - What's Hiding in the Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 5
+    },
+
+    // Chicago Fire - S14E05 - Ghosts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 5
+    },
+
+    // Chicago P.D. - S13E05 - Miami
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S11E06 - The Story of Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S14E06 - Broken Things
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 6
+    },
+
+    // Chicago P.D. - S13E06 - Send Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 6
+    },
+
+    // Chicago Med - S11E07 - Double Down
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 7
+    },
+
+    // Chicago Fire - S14E07 - Pierce the Vein
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 7
+    },
+
+    // Chicago P.D. - S13E07 - Impulse Control
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 7
+    },
+
+    // Chicago Med - S11E08 - Triple Threat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S14E08 - A Man Possessed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 8
+    },
+
+    // Chicago P.D. - S13E08 - Born Screaming
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S11E09 - Blindsided
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S14E09 - Crime of Passion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 9
+    },
+
+    // Chicago P.D. - S13E09 - Heroes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 9
+    },
+
+    // Chicago Med - S11E10 - Frost on Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S14E10 - Carry a Torch
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 10
+    },
+
+    // Chicago P.D. - S13E10 - Faith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 10
+    },
+
+    // Chicago Med - S11E11 - Our So-Called Lives
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 11
+    },
+
+    // Chicago Fire - S14E11 - Frostbite Blue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 11
+    },
+
+    // Chicago P.D. - S13E11 - On the Way
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S11E12 - Spill Your Guts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S14E12 - Coming in Hot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 12
+    },
+
+    // Chicago P.D. - S13E12 - Missing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 12
     }
   ]
 }
