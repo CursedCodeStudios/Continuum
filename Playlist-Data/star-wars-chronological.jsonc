@@ -2854,6 +2854,880 @@
       "providers": {
         "tmdbMovieId": "1892"
       }
+    },
+
+    // The Mandalorian - S01E01 - Chapter 1: The Mandalorian
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // The Mandalorian - S01E02 - Chapter 2: The Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // The Mandalorian - S01E03 - Chapter 3: The Sin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // The Mandalorian - S01E04 - Chapter 4: Sanctuary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // The Mandalorian - S01E05 - Chapter 5: The Gunslinger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // The Mandalorian - S01E06 - Chapter 6: The Prisoner
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // The Mandalorian - S01E07 - Chapter 7: The Reckoning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // The Mandalorian - S01E08 - Chapter 8: Redemption
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // The Mandalorian - S02E01 - Chapter 9: The Marshal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // The Mandalorian - S02E02 - Chapter 10: The Passenger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // The Mandalorian - S02E03 - Chapter 11: The Heiress
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // The Mandalorian - S02E04 - Chapter 12: The Siege
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // The Mandalorian - S02E05 - Chapter 13: The Jedi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // The Mandalorian - S02E06 - Chapter 14: The Tragedy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // The Mandalorian - S02E07 - Chapter 15: The Believer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // The Mandalorian - S02E08 - Chapter 16: The Rescue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // The Book of Boba Fett - S01E01 - Chapter 1: Stranger in a Strange Land
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // The Book of Boba Fett - S01E02 - Chapter 2: The Tribes of Tatooine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // The Book of Boba Fett - S01E03 - Chapter 3: The Streets of Mos Espa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // The Book of Boba Fett - S01E04 - Chapter 4: The Gathering Storm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // The Book of Boba Fett - S01E05 - Chapter 5: Return of the Mandalorian
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // The Book of Boba Fett - S01E06 - Chapter 6: From the Desert Comes a Stranger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // The Book of Boba Fett - S01E07 - Chapter 7: In the Name of Honor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393589"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // The Mandalorian - S03E01 - Chapter 17: The Apostate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // The Mandalorian - S03E02 - Chapter 18: The Mines of Mandalore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // The Mandalorian - S03E03 - Chapter 19: The Convert
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // The Mandalorian - S03E04 - Chapter 20: The Foundling
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // The Mandalorian - S03E05 - Chapter 21: The Pirate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // The Mandalorian - S03E06 - Chapter 22: Guns for Hire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // The Mandalorian - S03E07 - Chapter 23: The Spies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // The Mandalorian - S03E08 - Chapter 24: The Return
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: Skeleton Crew - S01E01 - This Could Be a Real Adventure
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: Skeleton Crew - S01E02 - Way, Way Out Past the Barrier
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: Skeleton Crew - S01E03 - Very Interesting, as an Astrogration Problem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: Skeleton Crew - S01E04 - Can't Say I Remember No At Attin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: Skeleton Crew - S01E05 - You Have a Lot to Learn About Pirates
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: Skeleton Crew - S01E06 - Zero Friends Again
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: Skeleton Crew - S01E07 - We're Gonna Be in So Much Trouble
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: Skeleton Crew - S01E08 - The Real Good Guys
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "420600"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Ahsoka - S01E01 - Part One: Master and Apprentice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Ahsoka - S01E02 - Part Two: Toil and Trouble
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Ahsoka - S01E03 - Part Three: Time to Fly
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Ahsoka - S01E04 - Part Four: Fallen Jedi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Ahsoka - S01E05 - Part Five: Shadow Warrior
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Ahsoka - S01E06 - Part Six: Far, Far Away
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Ahsoka - S01E07 - Part Seven: Dreams and Madness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Ahsoka - S01E08 - Part Eight: The Jedi, the Witch, and the Warlord
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393187"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Resistance - S01E01 - The Recruit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Resistance - S01E02 - The Triple Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Resistance - S01E03 - Fuel for the Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Resistance - S01E04 - The High Tower
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Resistance - S01E05 - The Children from Tehar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Resistance - S01E06 - Signal from Sector Six
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Resistance - S01E07 - Synara's Score
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Resistance - S01E08 - The Platform Classic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Resistance - S01E09 - Secrets and Holograms
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Resistance - S01E10 - Station Theta Black
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Resistance - S01E11 - Bibo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Resistance - S01E12 - Dangerous Business
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Resistance - S01E13 - The Doza Dilemma
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Resistance - S01E14 - The First Order Occupation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Wars Resistance - S01E15 - The New Trooper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Wars Resistance - S01E16 - The Core Problem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Wars Resistance - S01E17 - The Disappeared
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Wars Resistance - S01E18 - Descent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Star Wars Resistance - S01E19 - No Escape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Star Wars Resistance - S01E20 - No Escape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Star Wars Resistance - S02E01 - Into the Unknown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Resistance - S02E02 - A Quick Salvage Run
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Resistance - S02E03 - Live Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Resistance - S02E04 - Hunt on Celsor 3
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Resistance - S02E05 - The Engineer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Resistance - S02E06 - From Beneath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Resistance - S02E07 - The Relic Raiders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Resistance - S02E08 - Rendezvous Point
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Resistance - S02E09 - The Voxx Vortex 5000
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Resistance - S02E10 - Kaz's Curse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Resistance - S02E11 - Station to Station
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Resistance - S02E12 - The Missing Agent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Resistance - S02E13 - Breakout
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Resistance - S02E14 - The Mutiny
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Wars Resistance - S02E15 - The New World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Wars Resistance - S02E16 - No Place Safe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Wars Resistance - S02E17 - Rebuilding the Resistance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Wars Resistance - S02E18 - The Escape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "351575"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Wars: The Force Awakens
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "140607"
+      }
+    },
+
+    // Star Wars: The Last Jedi
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "181808"
+      }
+    },
+
+    // Star Wars: The Rise of Skywalker
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "181812"
+      }
     }
   ]
 }
