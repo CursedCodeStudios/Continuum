@@ -62,15 +62,9 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
 
             try
             {
-                using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, listUrl);
-                request.Headers.CacheControl = new CacheControlHeaderValue
-                {
-                    NoCache = true
-                };
-
-                using HttpResponseMessage response = await client.SendAsync(
-                    request,
-                    HttpCompletionOption.ResponseHeadersRead,
+                using HttpResponseMessage response = await SendArchiveRequestAsync(
+                    listUrl,
+                    client,
                     cancellationToken).ConfigureAwait(false);
 
                 if (!response.IsSuccessStatusCode)
@@ -205,15 +199,25 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
         HttpClient client,
         CancellationToken cancellationToken)
     {
-        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
+        Uri requestUri = CreateCacheBustedUri(url);
+        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, requestUri);
         request.Headers.CacheControl = new CacheControlHeaderValue
         {
-            NoCache = true
+            NoCache = true,
+            NoStore = true
         };
+        request.Headers.Pragma.ParseAdd("no-cache");
 
         return await client.SendAsync(
             request,
             HttpCompletionOption.ResponseHeadersRead,
             cancellationToken).ConfigureAwait(false);
+    }
+
+    private static Uri CreateCacheBustedUri(Uri url)
+    {
+        string separator = string.IsNullOrEmpty(url.Query) ? "?" : "&";
+        string cacheBust = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(System.Globalization.CultureInfo.InvariantCulture);
+        return new Uri($"{url}{separator}continuum_cache_bust={cacheBust}", UriKind.Absolute);
     }
 }

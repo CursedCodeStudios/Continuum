@@ -64,7 +64,9 @@ public class ContinuumListLoaderTests
         Uri manifestUrl = new Uri("https://example.invalid/playlist-manifest.json");
         HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
         {
-            Assert.Equal(manifestUrl, request.RequestUri);
+            Assert.NotNull(request.RequestUri);
+            Assert.StartsWith(manifestUrl.ToString(), request.RequestUri!.ToString(), StringComparison.Ordinal);
+            Assert.Contains("continuum_cache_bust=", request.RequestUri.ToString(), StringComparison.Ordinal);
             return new HttpResponseMessage(HttpStatusCode.OK)
             {
                 Content = new StringContent(
@@ -123,7 +125,9 @@ public class ContinuumListLoaderTests
         Uri listUrl = new Uri("https://example.invalid/sample.jsonc");
         HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
         {
-            Assert.Equal(listUrl, request.RequestUri);
+            Assert.NotNull(request.RequestUri);
+            Assert.StartsWith(listUrl.ToString(), request.RequestUri!.ToString(), StringComparison.Ordinal);
+            Assert.Contains("continuum_cache_bust=", request.RequestUri.ToString(), StringComparison.Ordinal);
             return new HttpResponseMessage(HttpStatusCode.OK)
             {
                 Content = new StringContent(
@@ -186,11 +190,15 @@ public class ContinuumListLoaderTests
         Uri validUrl = new Uri("https://example.invalid/valid.jsonc");
         HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
         {
-            if (request.RequestUri == missingUrl)
+            Assert.NotNull(request.RequestUri);
+            string requestPath = request.RequestUri!.AbsolutePath;
+
+            if (string.Equals(requestPath, missingUrl.AbsolutePath, StringComparison.Ordinal))
             {
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
             }
 
+            Assert.Equal(validUrl.AbsolutePath, requestPath);
             return new HttpResponseMessage(HttpStatusCode.OK)
             {
                 Content = new StringContent(
