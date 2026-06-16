@@ -26,7 +26,7 @@ Supported matching today:
 
 ## How It Works
 
-1. Continuum loads `*.json` files from the plugin data `lists/` folder.
+1. Continuum loads `*.json` files from the bundled community archive in `Playlist-Data/`.
 2. Each manual entry is resolved against existing Jellyfin library metadata.
 3. Resolved entries keep the original manual order.
 4. For every eligible Jellyfin user, Continuum filters out fully watched items.
@@ -64,10 +64,10 @@ Sanitization rules:
 
 ## Manual List Format
 
-Continuum v1 uses JSON only. Files live in the plugin data folder:
+Continuum v1 uses JSON only. Files live in this repository and ship with each plugin release:
 
 ```text
-{JellyfinPluginData}/lists/*.json
+Playlist-Data/*.json
 ```
 
 Example:
@@ -104,7 +104,9 @@ Example:
 }
 ```
 
-The repo also includes [`Continuum/sample-lists/chicago-universe.sample.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Continuum/sample-lists/chicago-universe.sample.json).
+The community archive currently includes [`Playlist-Data/chicago-universe.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.json).
+
+To contribute a community playlist archive entry, update or add a JSON file in `Playlist-Data/`, submit it through git, and ship it in the next plugin release.
 
 ## Build
 
@@ -176,13 +178,13 @@ https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manife
 2. Copy the contents of `Continuum/bin/<Configuration>/net9.0/` into your Jellyfin plugin folder, or package it according to your server setup.
 3. Restart Jellyfin.
 4. Open the Continuum plugin settings page in the admin dashboard.
-5. Create the plugin data `lists/` directory if it does not already exist.
-6. Add one or more manual JSON lists.
-7. Run the scheduled task `Refresh Continuum Playlists` or wait for the interval trigger.
+5. Verify the published plugin includes the `Playlist-Data/` directory from this repository.
+6. Run the scheduled task `Refresh Continuum Playlists` or wait for the interval trigger.
 
 ## Known Limitations
 
 - JSON only; YAML is not implemented yet.
+- The bundled playlist archive is read-only at runtime; local server overrides are not supported yet.
 - The admin controller endpoints are intentionally omitted in this starter because the current plugin package surface for controller registration should be verified against a live Jellyfin host.
 - Refresh interval changes are not dynamically pushed into Jellyfin's task scheduler; restarting Jellyfin or manually adjusting the task may be required.
 - The episode fallback matcher is intentionally conservative and skips ambiguous results.

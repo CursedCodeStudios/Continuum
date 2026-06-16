@@ -7,15 +7,20 @@ namespace Continuum.Services;
 /// </summary>
 internal static class ContinuumPaths
 {
+    public static string GetBundledListsDirectory()
+    {
+        return GetBundledListsDirectory(AppContext.BaseDirectory);
+    }
+
+    internal static string GetBundledListsDirectory(string baseDirectory)
+    {
+        return Path.Combine(baseDirectory, "Playlist-Data");
+    }
+
     public static string GetPluginDataDirectory(IApplicationPaths applicationPaths)
     {
         return Plugin.Instance?.DataFolderPath
             ?? Path.Combine(applicationPaths.ProgramDataPath, "plugins", "continuum");
-    }
-
-    public static string GetListsDirectory(IApplicationPaths applicationPaths)
-    {
-        return Path.Combine(GetPluginDataDirectory(applicationPaths), "lists");
     }
 
     public static string GetStateFilePath(IApplicationPaths applicationPaths)

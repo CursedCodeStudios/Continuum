@@ -22,4 +22,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Configuration/configPage.html" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\Playlist-Data\**\*.json">
+      <Link>Playlist-Data\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
 </Project>

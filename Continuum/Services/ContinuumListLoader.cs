@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 namespace Continuum.Services;
 
 /// <summary>
-/// Loads Continuum manual list files from the plugin data directory.
+/// Loads Continuum manual list files from the bundled community archive.
 /// </summary>
 public sealed class ContinuumListLoader : IContinuumListLoader
 {
@@ -34,13 +34,31 @@ public sealed class ContinuumListLoader : IContinuumListLoader
     /// <inheritdoc />
     public async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllAsync(CancellationToken cancellationToken)
     {
-        string listsDirectory = ContinuumPaths.GetListsDirectory(_applicationPaths);
-        Directory.CreateDirectory(listsDirectory);
+        string listsDirectory = ContinuumPaths.GetBundledListsDirectory();
+        return await LoadAllFromDirectoryAsync(listsDirectory, _logger, cancellationToken).ConfigureAwait(false);
+    }
+
+    internal static async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllFromDirectoryAsync(
+        string listsDirectory,
+        ILogger logger,
+        CancellationToken cancellationToken)
+    {
+        if (!Directory.Exists(listsDirectory))
+        {
+            logger.LogWarning("Continuum bundled playlist archive was not found at {Path}.", listsDirectory);
+            return [];
+        }
 
         string[] files = Directory
             .EnumerateFiles(listsDirectory, "*.json", SearchOption.TopDirectoryOnly)
             .OrderBy(path => path, StringComparer.OrdinalIgnoreCase)
             .ToArray();
+
+        if (files.Length == 0)
+        {
+            logger.LogWarning("Continuum bundled playlist archive at {Path} does not contain any JSON list files.", listsDirectory);
+            return [];
+        }
 
         List<ContinuumListDefinition> results = new List<ContinuumListDefinition>(files.Length);
 
@@ -55,7 +73,7 @@ public sealed class ContinuumListLoader : IContinuumListLoader
 
                 if (definition is null || string.IsNullOrWhiteSpace(definition.Name) || string.IsNullOrWhiteSpace(definition.Slug))
                 {
-                    _logger.LogWarning("Skipping invalid Continuum list file {Path}.", filePath);
+                    logger.LogWarning("Skipping invalid Continuum list file {Path}.", filePath);
                     continue;
                 }
 
@@ -68,15 +86,15 @@ public sealed class ContinuumListLoader : IContinuumListLoader
             }
             catch (JsonException ex)
             {
-                _logger.LogError(ex, "Failed to parse Continuum list file {Path}.", filePath);
+                logger.LogError(ex, "Failed to parse Continuum list file {Path}.", filePath);
             }
             catch (IOException ex)
             {
-                _logger.LogError(ex, "Failed to read Continuum list file {Path}.", filePath);
+                logger.LogError(ex, "Failed to read Continuum list file {Path}.", filePath);
             }
         }
 
-        _logger.LogInformation("Loaded {Count} Continuum list definition(s).", results.Count);
+        logger.LogInformation("Loaded {Count} Continuum list definition(s) from the bundled archive.", results.Count);
         return results;
     }
 

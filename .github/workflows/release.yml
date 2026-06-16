@@ -173,7 +173,7 @@ jobs:
         run: |
           set -euo pipefail
           {
-            echo "body<<'EOF'"
+            echo "body<<EOF"
             echo "## ${PLUGIN_NAME} ${{ steps.version.outputs.version }}"
             echo
             echo "Jellyfin plugin release."
