@@ -9,8 +9,9 @@ internal static class ContinuumArchiveCatalog
 
     private static readonly string[] ListFiles =
     [
-        "chicago-universe.json",
-        "star-wars-test.json"
+        "chicago-universe.jsonc",
+        "star-wars-test.jsonc",
+        "marvel-cinematic-universe.jsonc",
     ];
 
     public static IReadOnlyList<Uri> GetListUrls()

@@ -113,10 +113,10 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
             return null;
         }
 
-        definition.Items = definition.Items
-            .OrderBy(item => item.Order)
-            .ThenBy(item => item.Title, StringComparer.OrdinalIgnoreCase)
-            .ToList();
+        for (int index = 0; index < definition.Items.Count; index++)
+        {
+            definition.Items[index].Order = index + 1;
+        }
 
         return definition;
     }

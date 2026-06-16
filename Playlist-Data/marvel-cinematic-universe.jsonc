@@ -1,0 +1,51 @@
+{
+  "name": "Marvel Cinematic Universe",
+  "slug": "marvel-cinematic-universe",
+  "description": "Marvel Cinematic Universe",
+  "enabled": true,
+  "items": [
+    // Eyes of Wakanda - S01E01 - Into the Lion's Den
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "443358",
+        "tvdbEpisodeId": "10769204"
+      }
+    },
+
+    // Eyes of Wakanda - S01E02 - Legends and Lies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "443358",
+        "tvdbEpisodeId": "10769370"
+      }
+    },
+
+    // Eyes of Wakanda - S01E03 - Lost and Found
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "443358",
+        "tvdbEpisodeId": "10769372"
+      }
+    },
+
+    // Eyes of Wakanda - S01E04 - The Last Panther
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "443358",
+        "tvdbEpisodeId": "10769373"
+      }
+    },
+
+    // Captain America: The First Avenger
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1771"
+      }
+    }
+  ]
+}

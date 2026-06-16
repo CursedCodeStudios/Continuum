@@ -9,16 +9,17 @@ namespace Continuum.Tests;
 public class ContinuumListLoaderTests
 {
     [Fact]
-    public void DeserializeDefinition_ParsesJsonAndPreservesSortedOrder()
+    public void DeserializeDefinition_ParsesJsonAndUsesArrayOrder()
     {
         const string json = """
             {
+              // Array order is canonical.
               "name": "Sample",
               "slug": "sample",
               "enabled": true,
               "items": [
-                { "order": 10, "type": "movie", "title": "Later" },
-                { "order": 2, "type": "episode", "title": "Sooner" }
+                { "type": "movie", "title": "Later" },
+                { "type": "episode", "title": "Sooner" }
               ]
             }
             """;
@@ -28,8 +29,10 @@ public class ContinuumListLoaderTests
         Assert.NotNull(definition);
         Assert.Equal("Sample", definition!.Name);
         Assert.Equal("sample", definition.Slug);
-        Assert.Equal(2, definition.Items[0].Order);
-        Assert.Equal(10, definition.Items[1].Order);
+        Assert.Equal("Later", definition.Items[0].Title);
+        Assert.Equal("Sooner", definition.Items[1].Title);
+        Assert.Equal(1, definition.Items[0].Order);
+        Assert.Equal(2, definition.Items[1].Order);
     }
 
     [Fact]
@@ -43,7 +46,7 @@ public class ContinuumListLoaderTests
     [Fact]
     public async Task LoadAllFromUrlsAsync_ReadsRemoteArchiveFiles()
     {
-        Uri listUrl = new Uri("https://example.invalid/sample.json");
+        Uri listUrl = new Uri("https://example.invalid/sample.jsonc");
         HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
         {
             Assert.Equal(listUrl, request.RequestUri);
@@ -56,8 +59,8 @@ public class ContinuumListLoaderTests
                       "slug": "sample",
                       "enabled": true,
                       "items": [
-                        { "order": 2, "type": "movie", "title": "Second" },
-                        { "order": 1, "type": "movie", "title": "First" }
+                        { "type": "movie", "title": "Second" },
+                        { "type": "movie", "title": "First" }
                       ]
                     }
                     """)
@@ -72,15 +75,41 @@ public class ContinuumListLoaderTests
 
         Assert.Single(definitions);
         Assert.Equal("sample", definitions[0].Slug);
+        Assert.Equal("Second", definitions[0].Items[0].Title);
+        Assert.Equal("First", definitions[0].Items[1].Title);
         Assert.Equal(1, definitions[0].Items[0].Order);
         Assert.Equal(2, definitions[0].Items[1].Order);
     }
 
     [Fact]
+    public void DeserializeDefinition_IgnoresExplicitOrderValuesAndUsesArrayPosition()
+    {
+        const string json = """
+            {
+              "name": "Sample",
+              "slug": "sample",
+              "enabled": true,
+              "items": [
+                { "order": 99, "type": "movie", "title": "First In Array" },
+                { "order": 1, "type": "movie", "title": "Second In Array" }
+              ]
+            }
+            """;
+
+        ContinuumListDefinition? definition = ContinuumListLoader.DeserializeDefinition(json);
+
+        Assert.NotNull(definition);
+        Assert.Equal("First In Array", definition!.Items[0].Title);
+        Assert.Equal("Second In Array", definition.Items[1].Title);
+        Assert.Equal(1, definition.Items[0].Order);
+        Assert.Equal(2, definition.Items[1].Order);
+    }
+
+    [Fact]
     public async Task LoadAllFromUrlsAsync_SkipsFailedUrlsAndKeepsValidOnes()
     {
-        Uri missingUrl = new Uri("https://example.invalid/missing.json");
-        Uri validUrl = new Uri("https://example.invalid/valid.json");
+        Uri missingUrl = new Uri("https://example.invalid/missing.jsonc");
+        Uri validUrl = new Uri("https://example.invalid/valid.jsonc");
         HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
         {
             if (request.RequestUri == missingUrl)
@@ -97,7 +126,7 @@ public class ContinuumListLoaderTests
                       "slug": "valid",
                       "enabled": true,
                       "items": [
-                        { "order": 1, "type": "episode", "title": "Episode" }
+                        { "type": "episode", "title": "Episode" }
                       ]
                     }
                     """)

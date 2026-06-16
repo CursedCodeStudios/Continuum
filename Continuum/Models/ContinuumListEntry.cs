@@ -6,7 +6,7 @@ namespace Continuum.Models;
 public sealed class ContinuumListEntry
 {
     /// <summary>
-    /// Gets or sets the explicit order.
+    /// Gets or sets the normalized entry order derived from the item's position in the JSON array.
     /// </summary>
     public int Order { get; set; }
 

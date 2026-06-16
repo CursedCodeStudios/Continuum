@@ -26,7 +26,7 @@ Supported matching today:
 
 ## How It Works
 
-1. Continuum fetches live `*.json` files from hardcoded raw GitHub archive URLs that point at this repository's `Playlist-Data/` directory.
+1. Continuum fetches live `*.jsonc` files from hardcoded raw GitHub archive URLs that point at this repository's `Playlist-Data/` directory.
 2. Each manual entry is resolved against existing Jellyfin library metadata.
 3. Resolved entries keep the original manual order.
 4. For every eligible Jellyfin user, Continuum filters out fully watched items.
@@ -64,10 +64,10 @@ Sanitization rules:
 
 ## Manual List Format
 
-Continuum v1 uses JSON only. Files live in this repository under:
+Continuum v1 uses JSONC so list files can include comments. Files live in this repository under:
 
 ```text
-Playlist-Data/*.json
+Playlist-Data/*.jsonc
 ```
 
 Example:
@@ -80,7 +80,6 @@ Example:
   "enabled": true,
   "items": [
     {
-      "order": 1,
       "type": "episode",
       "title": "Chicago Fire S01E01",
       "providers": {
@@ -91,7 +90,6 @@ Example:
       "episodeNumber": 1
     },
     {
-      "order": 3,
       "type": "movie",
       "title": "Example Movie",
       "providers": {
@@ -104,9 +102,9 @@ Example:
 }
 ```
 
-At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, so edits merged to this repository can go live without publishing a new plugin build.
+At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, so edits merged to this repository can go live without publishing a new plugin build. Item order comes directly from array position, so you do not need to set an `order` property on each entry.
 
-The community archive currently includes [`Playlist-Data/chicago-universe.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.json) and [`Playlist-Data/star-wars-test.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.json).
+The community archive currently includes [`Playlist-Data/chicago-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.jsonc) and [`Playlist-Data/star-wars-test.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.jsonc).
 
 To contribute a community playlist archive entry, update or add a JSON file in `Playlist-Data/`, merge it to `main`, and Continuum will pick it up on the next refresh.
 
@@ -184,7 +182,7 @@ https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manife
 
 ## Known Limitations
 
-- JSON only; YAML is not implemented yet.
+- JSONC only; YAML is not implemented yet.
 - The live playlist archive depends on GitHub availability and successful outbound HTTP access from the Jellyfin server.
 - The admin controller endpoints are intentionally omitted in this starter because the current plugin package surface for controller registration should be verified against a live Jellyfin host.
 - Refresh interval changes are not dynamically pushed into Jellyfin's task scheduler; restarting Jellyfin or manually adjusting the task may be required.

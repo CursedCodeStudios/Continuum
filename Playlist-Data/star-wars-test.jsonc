@@ -5,7 +5,6 @@
   "enabled": true,
   "items": [
     {
-      "order": 1,
       "type": "episode",
       "providers": {
         "tvdbSeriesId": "361753",
@@ -13,7 +12,6 @@
       }
     },
     {
-      "order": 2,
       "type": "movie",
       "title": "Star Wars: The Rise of Skywalker",
       "providers": {
