@@ -562,6 +562,576 @@
       },
       "seasonNumber": 3,
       "episodeNumber": 13
+    },
+
+    // Doctor Who (2005) - S00E06 - Children in Need: Time Crash
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 6
+    },
+
+    // The Sarah Jane Adventures - S01E01 - Revenge of the Slitheen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // The Sarah Jane Adventures - S01E02 - Revenge of the Slitheen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // The Sarah Jane Adventures - S01E03 - Eye of the Gorgon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // The Sarah Jane Adventures - S01E04 - Eye of the Gorgon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // The Sarah Jane Adventures - S01E05 - Warriors of Kudlak
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S01E06 - Warriors of Kudlak
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // The Sarah Jane Adventures - S01E07 - Whatever Happened to Sarah Jane?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // The Sarah Jane Adventures - S01E08 - Whatever Happened to Sarah Jane?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // The Sarah Jane Adventures - S01E09 - The Lost Boy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // The Sarah Jane Adventures - S01E10 - The Lost Boy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S00E07 - Voyage of the Damned
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 7
+    },
+
+    // Torchwood - S02E01 - Kiss Kiss, Bang Bang
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Torchwood - S02E02 - Sleeper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Torchwood - S02E03 - To the Last Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Torchwood - S02E04 - Meat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Torchwood - S02E05 - Adam
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Torchwood - S02E06 - Reset
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Torchwood - S02E07 - Dead Man Walking
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Torchwood - S02E08 - A Day in the Death
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Torchwood - S02E09 - Something Borrowed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Torchwood - S02E10 - From Out of the Rain
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Torchwood - S02E11 - Adrift
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Torchwood - S02E12 - Fragments
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Torchwood - S02E13 - Exit Wounds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Doctor Who (2005) - S04E01 - Partners in Crime
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S04E02 - The Fires of Pompeii
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S04E03 - Planet of the Ood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S04E04 - The Sontaran Stratagem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S04E05 - The Poison Sky
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S04E06 - The Doctor's Daughter
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S04E07 - The Unicorn and the Wasp
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S04E08 - Silence in the Library
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S04E09 - Forest of the Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S04E10 - Midnight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S04E11 - Turn Left
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S04E12 - The Stolen Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S04E13 - Journey's End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // The Sarah Jane Adventures - S02E01 - The Last Sontaran
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // The Sarah Jane Adventures - S02E02 - The Last Sontaran
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // The Sarah Jane Adventures - S02E03 - The Day of the Clown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // The Sarah Jane Adventures - S02E04 - The Day of the Clown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // The Sarah Jane Adventures - S02E05 - Secrets of the Stars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S02E06 - Secrets of the Stars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // The Sarah Jane Adventures - S02E07 - Mark of the Berserker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // The Sarah Jane Adventures - S02E08 - Mark of the Berserker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // The Sarah Jane Adventures - S02E09 - The Temptation of Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // The Sarah Jane Adventures - S02E10 - The Temptation of Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // The Sarah Jane Adventures - S02E11 - The Enemy of the Bane
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // The Sarah Jane Adventures - S02E12 - The Enemy of the Bane
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E09 - The Next Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S00E13 - Planet of the Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 13
+    },
+
+    // Torchwood - S03E01 - Day One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Torchwood - S03E02 - Day Two
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Torchwood - S03E03 - Day Three
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Torchwood - S03E04 - Day Four
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Torchwood - S03E05 - Day Five
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
     }
   ]
 }
