@@ -99,9 +99,9 @@ def main() -> int:
     version = require_value("version", args.version)
     target_abi = require_value("target-abi", args.target_abi)
     checksum = require_value("checksum", args.checksum)
-    source_url = require_value("source-url", args.source_url)
+    project_url = require_value("source-url", args.source_url)
     repository_url = require_value("repository-url", args.repository_url)
-    download_url = require_value("url", args.url)
+    package_url = require_value("url", args.url)
 
     description = normalize_optional(args.description) or ""
     overview = normalize_optional(args.overview) or description
@@ -149,12 +149,12 @@ def main() -> int:
             "version": version,
             "changelog": changelog,
             "targetAbi": target_abi,
-            "sourceUrl": source_url,
+            "sourceUrl": package_url,
             "checksum": checksum,
             "timestamp": timestamp,
             "repositoryName": repository_name,
             "repositoryUrl": repository_url,
-            "url": download_url,
+            "url": project_url,
         }
     )
     filtered_versions.sort(key=lambda item: parse_version_key(str(item["version"])), reverse=True)
