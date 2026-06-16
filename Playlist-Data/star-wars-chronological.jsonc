@@ -1246,6 +1246,264 @@
       },
       "seasonNumber": 5,
       "episodeNumber": 20
+    },
+
+    // Star Wars: The Clone Wars - S06E01 - The Unknown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Clone Wars - S06E02 - Conspiracy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Clone Wars - S06E03 - Fugitive
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Clone Wars - S06E04 - Orders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Clone Wars - S06E05 - An Old Friend
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Clone Wars - S06E06 - The Rise of Clovis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Clone Wars - S06E07 - Crisis at the Heart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Clone Wars - S06E08 - The Disappeared
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Clone Wars - S06E09 - The Disappeared
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Clone Wars - S06E10 - The Lost One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Clone Wars - S06E11 - Voices
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Clone Wars - S06E12 - Destiny
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Clone Wars - S06E13 - Sacrifice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Clone Wars - S07E05 - Gone With a Trace
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Clone Wars - S07E06 - Deal No Deal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Clone Wars - S07E07 - Dangerous Debt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Clone Wars - S07E08 - Together Again
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Clone Wars - S07E01 - The Bad Batch
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Clone Wars - S07E02 - A Distant Echo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Clone Wars - S07E03 - On the Wings of Keeradaks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Clone Wars - S07E04 - Unfinished Business
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Clone Wars - S07E09 - Old Friends Not Forgotten
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: Episode III - Revenge of the Sith
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1895"
+      }
+    },
+
+    // Star Wars: The Clone Wars - S07E10 - The Phantom Apprentice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Clone Wars - S07E11 - Shattered
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Clone Wars - S07E12 - Victory and Death
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 12
     }
   ]
 }
