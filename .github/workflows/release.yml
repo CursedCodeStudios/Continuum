@@ -232,29 +232,10 @@ jobs:
           MANIFEST_SHA=""
 
           if [[ "${STATUS_CODE}" == "200" ]]; then
-            export RESPONSE_PATH MANIFEST_PATH SHA_PATH
-            python3 - <<'PY'
-            import base64
-            import json
-            import os
-            from pathlib import Path
-
-            response_path = Path(os.environ["RESPONSE_PATH"])
-            manifest_path = Path(os.environ["MANIFEST_PATH"])
-            sha_path = Path(os.environ["SHA_PATH"])
-            payload = json.loads(response_path.read_text(encoding="utf-8"))
-
-            encoded_content = str(payload.get("content", "")).replace("\n", "")
-            if encoded_content:
-                manifest_path.write_text(
-                    base64.b64decode(encoded_content).decode("utf-8"),
-                    encoding="utf-8",
-                )
-            else:
-                manifest_path.write_text("[]\n", encoding="utf-8")
-
-            sha_path.write_text(str(payload.get("sha", "")), encoding="utf-8")
-            PY
+            python3 scripts/github_manifest_api.py extract-contents \
+              --response-path "${RESPONSE_PATH}" \
+              --manifest-path "${MANIFEST_PATH}" \
+              --sha-path "${SHA_PATH}"
           elif [[ "${STATUS_CODE}" == "404" ]]; then
             echo "[]" > "${MANIFEST_PATH}"
           else
@@ -285,35 +266,20 @@ jobs:
             --repository-url "${MANIFEST_REPOSITORY_URL}" \
             --url "${RELEASE_URL}"
 
-          export MANIFEST_PATH PLUGIN_NAME VERSION MANIFEST_BRANCH MANIFEST_SHA
-          PUT_PAYLOAD="$(python3 - <<'PY'
-          import base64
-          import json
-          import os
-          from pathlib import Path
-
-          manifest_path = Path(os.environ["MANIFEST_PATH"])
-          content = base64.b64encode(manifest_path.read_bytes()).decode("ascii")
-
-          payload = {
-              "message": f"Update {os.environ['PLUGIN_NAME']} {os.environ['VERSION']}",
-              "content": content,
-              "branch": os.environ["MANIFEST_BRANCH"],
-          }
-
-          manifest_sha = os.environ.get("MANIFEST_SHA", "").strip()
-          if manifest_sha:
-              payload["sha"] = manifest_sha
-
-          print(json.dumps(payload))
-          PY
-          )"
+          PUT_PAYLOAD_PATH="artifacts/manifest/put-payload.json"
+          python3 scripts/github_manifest_api.py write-put-payload \
+            --manifest-path "${MANIFEST_PATH}" \
+            --output-path "${PUT_PAYLOAD_PATH}" \
+            --plugin-name "${PLUGIN_NAME}" \
+            --version "${VERSION}" \
+            --branch "${MANIFEST_BRANCH}" \
+            --sha "${MANIFEST_SHA}"
 
           curl --fail-with-body -sS -X PUT \
             -H "Authorization: Bearer ${MANIFEST_REPO_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/${MANIFEST_REPO}/contents/manifest.json \
-            -d "${PUT_PAYLOAD}"
+            --data-binary "@${PUT_PAYLOAD_PATH}"
 
       - name: Print summary
         shell: bash
