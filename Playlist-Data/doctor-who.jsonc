@@ -1532,6 +1532,606 @@
       },
       "seasonNumber": 4,
       "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E34 - A Christmas Carol
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 34
+    },
+
+    // Doctor Who (2005) - S06E01 - The Impossible Astronaut
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S06E02 - Day of the Moon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S06E03 - The Curse of the Black Spot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S06E04 - The Doctor's Wife
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S06E05 - The Rebel Flesh
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S06E06 - The Almost People
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S06E07 - A Good Man Goes to War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Torchwood - S04E01 - The New World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Torchwood - S04E02 - Rendition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Torchwood - S04E03 - Dead of Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Torchwood - S04E04 - Escape to L.A.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Torchwood - S04E05 - The Categories of Life
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Torchwood - S04E06 - The Middle Men
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Torchwood - S04E07 - Immortal Sins
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Torchwood - S04E08 - End of the Road
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Torchwood - S04E09 - The Gathering
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Torchwood - S04E10 - The Blood Line
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79510"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S06E08 - Let's Kill Hitler
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S06E09 - Night Terrors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S06E10 - The Girl Who Waited
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S06E11 - The God Complex
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S06E12 - Closing Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S06E13 - The Wedding of River Song
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 13
+    },
+
+    // The Sarah Jane Adventures - S05E01 - Sky
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 1
+    },
+
+    // The Sarah Jane Adventures - S05E02 - Sky
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 2
+    },
+
+    // The Sarah Jane Adventures - S05E03 - The Curse of Clyde Langer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 3
+    },
+
+    // The Sarah Jane Adventures - S05E04 - The Curse of Clyde Langer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 4
+    },
+
+    // The Sarah Jane Adventures - S05E05 - The Man Who Never Was
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S05E06 - The Man Who Never Was
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S00E47 - The Doctor, the Widow and the Wardrobe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 47
+    },
+
+    // Doctor Who (2005) - S07E01 - Asylum of the Daleks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S07E02 - Dinosaurs on a Spaceship
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S07E03 - A Town Called Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S07E04 - The Power of Three
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S07E05 - The Angels Take Manhattan
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S00E66 - The Snowmen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 66
+    },
+
+    // Doctor Who (2005) - S07E06 - The Bells of Saint John
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S07E07 - The Rings of Akhaten
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S07E08 - Cold War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S07E09 - Hide
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S07E10 - Journey to the Centre of the TARDIS
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S07E11 - The Crimson Horror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S07E12 - Nightmare in Silver
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S07E13 - The Name of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 13
+    },
+
+    // Doctor Who (2005) - S00E82 - The Night of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 82
+    },
+
+    // Doctor Who (2005) - S00E83 - The Day of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 83
+    },
+
+    // Doctor Who (2005) - S00E84 - The Time of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 84
+    },
+
+    // Doctor Who (2005) - S08E01 - Deep Breath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S08E02 - Into the Dalek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S08E03 - Robot of Sherwood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S08E04 - Listen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S08E05 - Time Heist
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S08E06 - The Caretaker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S08E07 - Kill the Moon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S08E08 - Mummy on the Orient Express
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S08E09 - Flatline
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S08E10 - In the Forest of the Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S08E11 - Dark Water
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S08E12 - Death in Heaven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 12
     }
   ]
 }
