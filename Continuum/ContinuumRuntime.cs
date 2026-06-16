@@ -12,7 +12,30 @@ namespace Continuum;
 public static class ContinuumRuntime
 {
     private static readonly object Sync = new();
+    private static IContinuumItemResolver? _itemResolver;
     private static IContinuumRefreshService? _refreshService;
+
+    /// <summary>
+    /// Gets the shared item resolver instance.
+    /// </summary>
+    public static IContinuumItemResolver GetItemResolver(
+        ILibraryManager libraryManager,
+        ILoggerFactory loggerFactory)
+    {
+        lock (Sync)
+        {
+            if (_itemResolver is not null)
+            {
+                return _itemResolver;
+            }
+
+            _itemResolver = new ContinuumItemResolver(
+                libraryManager,
+                loggerFactory.CreateLogger<ContinuumItemResolver>());
+
+            return _itemResolver;
+        }
+    }
 
     /// <summary>
     /// Gets the shared refresh service instance.
@@ -32,12 +55,10 @@ public static class ContinuumRuntime
                 return _refreshService;
             }
 
+            IContinuumItemResolver itemResolver = GetItemResolver(libraryManager, loggerFactory);
             IContinuumListLoader listLoader = new ContinuumListLoader(
                 applicationPaths,
                 loggerFactory.CreateLogger<ContinuumListLoader>());
-            IContinuumItemResolver itemResolver = new ContinuumItemResolver(
-                libraryManager,
-                loggerFactory.CreateLogger<ContinuumItemResolver>());
             IUserWatchStateFilter watchStateFilter = new UserWatchStateFilter(
                 userDataManager,
                 loggerFactory.CreateLogger<UserWatchStateFilter>());

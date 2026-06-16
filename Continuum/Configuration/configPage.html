@@ -18,13 +18,81 @@
                         <button id="RefreshAllListsButton" is="emby-button" type="button" class="raised button-submit">
                             <span>Refresh All Lists</span>
                         </button>
-                        <button id="ReloadDashboardButton" is="emby-button" type="button">
+                        <button id="ToggleResolverTestButton" is="emby-button" type="button" class="continuumSecondaryButton">
+                            <span>Resolver Test</span>
+                        </button>
+                        <button id="ReloadDashboardButton" is="emby-button" type="button" class="continuumSecondaryButton">
                             <span>Reload Status</span>
                         </button>
                     </div>
                 </div>
 
                 <div id="ContinuumAlertCard" class="continuumCard continuumAlert hide"></div>
+
+                <div id="ContinuumResolverDrawer" class="continuumCard continuumResolverDrawer hide">
+                    <div class="continuumSectionTitleRow">
+                        <div>
+                            <div class="continuumSectionTitle">Resolver Test</div>
+                            <div class="continuumMuted">Test TV episode ids, season numbers, and episode numbers against the current Jellyfin library without changing any playlists.</div>
+                        </div>
+                    </div>
+
+                    <form id="ContinuumResolverTestForm">
+                        <div class="continuumInputGrid">
+                            <div class="inputContainer">
+                                <input id="ResolverJellyfinItemId" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverJellyfinItemId">Jellyfin item id (optional)</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverTvdbSeriesId" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverTvdbSeriesId">TVDb series id</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverTvdbEpisodeId" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverTvdbEpisodeId">TVDb episode id</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverTmdbSeriesId" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverTmdbSeriesId">TMDb series id</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverTmdbEpisodeId" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverTmdbEpisodeId">TMDb episode id</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverTitle" type="text" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverTitle">Episode title</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverSeasonNumber" type="number" min="1" step="1" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverSeasonNumber">Season number</label>
+                            </div>
+
+                            <div class="inputContainer">
+                                <input id="ResolverEpisodeNumber" type="number" min="1" step="1" is="emby-input" />
+                                <label class="inputLabel inputLabelUnfocused" for="ResolverEpisodeNumber">Episode number</label>
+                            </div>
+                        </div>
+
+                        <div class="continuumResolverActions">
+                            <button id="RunResolverTestButton" is="emby-button" type="submit" class="raised button-submit">
+                                <span>Run Resolver Test</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="ContinuumResolverResults" class="hide">
+                        <div id="ContinuumResolverStatusBanner" class="continuumStatusBanner hide"></div>
+                        <div id="ContinuumResolverMatchedCard" class="continuumTraceStep hide"></div>
+                        <div id="ContinuumResolverTraceContainer" class="continuumTraceList"></div>
+                    </div>
+                </div>
 
                 <div id="ContinuumActivityCard" class="continuumCard hide">
                     <div class="continuumSectionTitleRow">
@@ -114,6 +182,25 @@
             flex-wrap: wrap;
         }
 
+        #ContinuumConfigPage .continuumSecondaryButton {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        #ContinuumConfigPage .continuumSecondaryButton:hover,
+        #ContinuumConfigPage .continuumSecondaryButton:focus {
+            background: rgba(255, 255, 255, 0.16);
+            color: #fff;
+        }
+
+        #ContinuumConfigPage .continuumSecondaryButton[disabled] {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.72);
+            opacity: 1;
+        }
+
         #ContinuumConfigPage .continuumLead,
         #ContinuumConfigPage .continuumMuted {
             color: var(--secondaryTextColor);
@@ -180,6 +267,18 @@
             margin-top: 1rem;
         }
 
+        #ContinuumConfigPage .continuumInputGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            gap: 0.9rem;
+        }
+
+        #ContinuumConfigPage .continuumResolverActions {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 0.5rem;
+        }
+
         #ContinuumConfigPage .continuumListRow {
             border: 1px solid rgba(255, 255, 255, 0.09);
             border-radius: 0.75rem;
@@ -241,6 +340,68 @@
             transition: width 180ms ease;
         }
 
+        #ContinuumConfigPage .continuumStatusBanner,
+        #ContinuumConfigPage .continuumTraceStep {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.75rem;
+            padding: 0.9rem 1rem;
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        #ContinuumConfigPage .continuumStatusBanner {
+            margin-top: 1rem;
+        }
+
+        #ContinuumConfigPage .continuumStatusBanner.isResolved {
+            border-color: rgba(72, 187, 120, 0.75);
+        }
+
+        #ContinuumConfigPage .continuumStatusBanner.isMissing {
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        #ContinuumConfigPage .continuumStatusBanner.isAmbiguous,
+        #ContinuumConfigPage .continuumStatusBanner.isError {
+            border-color: rgba(255, 99, 71, 0.75);
+        }
+
+        #ContinuumConfigPage .continuumTraceList {
+            display: grid;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        #ContinuumConfigPage .continuumTraceHeader,
+        #ContinuumConfigPage .continuumCandidateHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        #ContinuumConfigPage .continuumTraceTitle,
+        #ContinuumConfigPage .continuumCandidateTitle {
+            font-weight: 600;
+        }
+
+        #ContinuumConfigPage .continuumTraceMeta,
+        #ContinuumConfigPage .continuumCandidateMeta {
+            color: var(--secondaryTextColor);
+            margin-top: 0.45rem;
+        }
+
+        #ContinuumConfigPage .continuumCandidateList {
+            display: grid;
+            gap: 0.6rem;
+            margin-top: 0.75rem;
+        }
+
+        #ContinuumConfigPage .continuumCandidateCard {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 0.75rem;
+        }
+
         #ContinuumConfigPage .continuumSettingsIntro {
             margin-bottom: 1rem;
         }
@@ -280,15 +441,24 @@
             const listsSummary = document.querySelector("#ContinuumListsSummary");
             const listsContainer = document.querySelector("#ContinuumListsContainer");
             const refreshAllButton = document.querySelector("#RefreshAllListsButton");
+            const toggleResolverTestButton = document.querySelector("#ToggleResolverTestButton");
             const reloadDashboardButton = document.querySelector("#ReloadDashboardButton");
             const saveSettingsButton = document.querySelector("#SaveSettingsButton");
+            const resolverDrawer = document.querySelector("#ContinuumResolverDrawer");
+            const resolverForm = document.querySelector("#ContinuumResolverTestForm");
+            const runResolverTestButton = document.querySelector("#RunResolverTestButton");
+            const resolverResults = document.querySelector("#ContinuumResolverResults");
+            const resolverStatusBanner = document.querySelector("#ContinuumResolverStatusBanner");
+            const resolverMatchedCard = document.querySelector("#ContinuumResolverMatchedCard");
+            const resolverTraceContainer = document.querySelector("#ContinuumResolverTraceContainer");
             const state = {
                 actionInFlight: false,
                 configLoaded: false,
                 dashboardLoaded: false,
                 operationStatus: null,
                 pollHandle: 0,
-                pollInFlight: false
+                pollInFlight: false,
+                resolverDrawerOpen: false
             };
 
             function readValue(source, camelName, pascalName, fallback) {
@@ -365,6 +535,12 @@
                 alertCard.textContent = "";
             }
 
+            function setResolverDrawerOpen(isOpen) {
+                state.resolverDrawerOpen = isOpen;
+                resolverDrawer.classList.toggle("hide", !isOpen);
+                toggleResolverTestButton.innerHTML = "<span>" + (isOpen ? "Hide Resolver Test" : "Resolver Test") + "</span>";
+            }
+
             function setRefreshButtonsState() {
                 const isBusy = state.actionInFlight || isRunningStatus(state.operationStatus);
 
@@ -374,6 +550,147 @@
                 Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
                     const enabled = button.dataset.enabled === "true";
                     button.disabled = isBusy || !enabled;
+                });
+            }
+
+            function readTrimmedValue(selector) {
+                const element = document.querySelector(selector);
+                return element && element.value ? element.value.trim() : "";
+            }
+
+            function readOptionalPositiveInteger(selector, label) {
+                const raw = readTrimmedValue(selector);
+                if (!raw) {
+                    return null;
+                }
+
+                const parsed = parseInt(raw, 10);
+                if (!Number.isFinite(parsed) || parsed < 1) {
+                    throw new Error(label + " must be a positive integer.");
+                }
+
+                return parsed;
+            }
+
+            function isValidGuid(value) {
+                return /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/.test(value);
+            }
+
+            function buildResolverTestRequest() {
+                const jellyfinItemId = readTrimmedValue("#ResolverJellyfinItemId");
+                const tvdbSeriesId = readTrimmedValue("#ResolverTvdbSeriesId");
+                const tvdbEpisodeId = readTrimmedValue("#ResolverTvdbEpisodeId");
+                const tmdbSeriesId = readTrimmedValue("#ResolverTmdbSeriesId");
+                const tmdbEpisodeId = readTrimmedValue("#ResolverTmdbEpisodeId");
+                const title = readTrimmedValue("#ResolverTitle");
+                const seasonNumber = readOptionalPositiveInteger("#ResolverSeasonNumber", "Season number");
+                const episodeNumber = readOptionalPositiveInteger("#ResolverEpisodeNumber", "Episode number");
+
+                if (jellyfinItemId && !isValidGuid(jellyfinItemId)) {
+                    throw new Error("Jellyfin item id must be a valid GUID when provided.");
+                }
+
+                if (!jellyfinItemId && !tvdbSeriesId && !tvdbEpisodeId && !tmdbSeriesId && !tmdbEpisodeId && !title) {
+                    throw new Error("Provide at least one resolver hint such as a Jellyfin id, TVDb/TMDb id, or title.");
+                }
+
+                return {
+                    jellyfinItemId: jellyfinItemId || null,
+                    tvdbSeriesId: tvdbSeriesId || null,
+                    tvdbEpisodeId: tvdbEpisodeId || null,
+                    tmdbSeriesId: tmdbSeriesId || null,
+                    tmdbEpisodeId: tmdbEpisodeId || null,
+                    title: title || null,
+                    seasonNumber: seasonNumber,
+                    episodeNumber: episodeNumber
+                };
+            }
+
+            function clearResolverResults() {
+                resolverResults.classList.add("hide");
+                resolverStatusBanner.className = "continuumStatusBanner hide";
+                resolverStatusBanner.textContent = "";
+                resolverMatchedCard.classList.add("hide");
+                resolverMatchedCard.innerHTML = "";
+                resolverTraceContainer.innerHTML = "";
+            }
+
+            function buildResolverItemSummary(item) {
+                return [
+                    "<div class=\"continuumCandidateMeta\">",
+                    escapeHtml(readValue(item, "seriesTitle", "SeriesTitle", "Unknown series")),
+                    " • S",
+                    escapeHtml(String(readValue(item, "seasonNumber", "SeasonNumber", "?"))),
+                    "E",
+                    escapeHtml(String(readValue(item, "episodeNumber", "EpisodeNumber", "?"))),
+                    " • ",
+                    escapeHtml(readValue(item, "episodeTitle", "EpisodeTitle", "Unknown episode")),
+                    readValue(item, "productionYear", "ProductionYear", null) ? " • " + escapeHtml(String(readValue(item, "productionYear", "ProductionYear", ""))) : "",
+                    " • ",
+                    escapeHtml(readValue(item, "jellyfinItemId", "JellyfinItemId", "")),
+                    "</div>"
+                ].join("");
+            }
+
+            function renderResolverTestResult(payload) {
+                const outcome = readValue(payload, "outcome", "Outcome", "missing");
+                const finalStrategy = readValue(payload, "finalStrategy", "FinalStrategy", "");
+                const message = readValue(payload, "message", "Message", "No result returned.");
+                const matchedItem = readValue(payload, "matchedItem", "MatchedItem", null);
+                const trace = readValue(payload, "trace", "Trace", []);
+
+                resolverResults.classList.remove("hide");
+                resolverStatusBanner.className = "continuumStatusBanner";
+                resolverStatusBanner.classList.add(
+                    outcome === "resolved"
+                        ? "isResolved"
+                        : (outcome === "ambiguous" ? "isAmbiguous" : "isMissing"));
+                resolverStatusBanner.textContent = finalStrategy
+                    ? message + " Final strategy: " + finalStrategy + "."
+                    : message;
+
+                if (matchedItem) {
+                    resolverMatchedCard.classList.remove("hide");
+                    resolverMatchedCard.innerHTML = [
+                        "<div class=\"continuumCandidateHeader\">",
+                        "  <div class=\"continuumCandidateTitle\">Matched Library Item</div>",
+                        "  <div class=\"continuumPill isCompleted\">Resolved</div>",
+                        "</div>",
+                        buildResolverItemSummary(matchedItem)
+                    ].join("");
+                } else {
+                    resolverMatchedCard.classList.add("hide");
+                    resolverMatchedCard.innerHTML = "";
+                }
+
+                resolverTraceContainer.innerHTML = "";
+
+                trace.forEach(function (step) {
+                    const card = document.createElement("div");
+                    const status = readValue(step, "status", "Status", "unknown");
+                    const candidates = readValue(step, "candidates", "Candidates", []);
+                    card.className = "continuumTraceStep";
+                    card.innerHTML = [
+                        "<div class=\"continuumTraceHeader\">",
+                        "  <div class=\"continuumTraceTitle\">" + escapeHtml(readValue(step, "displayName", "DisplayName", "")) + "</div>",
+                        "  <div class=\"continuumPill\">" + escapeHtml(status) + "</div>",
+                        "</div>",
+                        "<div class=\"continuumTraceMeta\">" + escapeHtml(readValue(step, "message", "Message", "")) + "</div>",
+                        candidates.length ? [
+                            "<div class=\"continuumCandidateList\">",
+                            candidates.map(function (candidate) {
+                                return [
+                                    "<div class=\"continuumCandidateCard\">",
+                                    "  <div class=\"continuumCandidateTitle\">" + escapeHtml(readValue(candidate, "episodeTitle", "EpisodeTitle", "Candidate")) + "</div>",
+                                    buildResolverItemSummary(candidate),
+                                    "</div>"
+                                ].join("");
+                            }).join(""),
+                            "</div>"
+                        ].join("") : ""
+                    ].join("");
+
+                    resolverTraceContainer.appendChild(card);
                 });
             }
 
@@ -727,6 +1044,43 @@
                 }).finally(function () {
                     Dashboard.hideLoadingMsg();
                 });
+            });
+
+            toggleResolverTestButton.addEventListener("click", function () {
+                setResolverDrawerOpen(!state.resolverDrawerOpen);
+            });
+
+            resolverForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                try {
+                    const request = buildResolverTestRequest();
+                    runResolverTestButton.disabled = true;
+                    clearResolverResults();
+
+                    adminFetch("Continuum/Admin/ResolverTest/Episode", {
+                        method: "POST",
+                        body: JSON.stringify(request)
+                    }).then(function (payload) {
+                        setResolverDrawerOpen(true);
+                        renderResolverTestResult(payload);
+                    }).catch(function (error) {
+                        setResolverDrawerOpen(true);
+                        resolverResults.classList.remove("hide");
+                        resolverStatusBanner.className = "continuumStatusBanner isError";
+                        resolverStatusBanner.textContent = error.message;
+                    }).finally(function () {
+                        runResolverTestButton.disabled = false;
+                    });
+                } catch (error) {
+                    setResolverDrawerOpen(true);
+                    resolverResults.classList.remove("hide");
+                    resolverStatusBanner.className = "continuumStatusBanner isError";
+                    resolverStatusBanner.textContent = error instanceof Error ? error.message : String(error);
+                    resolverMatchedCard.classList.add("hide");
+                    resolverMatchedCard.innerHTML = "";
+                    resolverTraceContainer.innerHTML = "";
+                }
             });
 
             form.addEventListener("submit", function (event) {

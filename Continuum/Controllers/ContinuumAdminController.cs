@@ -24,6 +24,9 @@ public sealed class ContinuumAdminController(
     ILoggerFactory loggerFactory,
     ILogger<ContinuumAdminController> logger) : ControllerBase
 {
+    private readonly IContinuumItemResolver _itemResolver = ContinuumRuntime.GetItemResolver(
+        libraryManager,
+        loggerFactory);
     private readonly IContinuumRefreshService _refreshService = ContinuumRuntime.GetRefreshService(
         applicationPaths,
         libraryManager,
@@ -48,6 +51,31 @@ public sealed class ContinuumAdminController(
             OperationStatus = _refreshService.CurrentOperationStatus,
             LastResult = _refreshService.LastResult
         });
+    }
+
+    /// <summary>
+    /// Tests TV episode resolver inputs against the current library.
+    /// </summary>
+    [HttpPost("ResolverTest/Episode")]
+    public async Task<ActionResult<ContinuumEpisodeResolverTestResponse>> ResolveEpisodeTest(
+        [FromBody] ContinuumEpisodeResolverTestRequest request,
+        CancellationToken cancellationToken)
+    {
+        string? validationError = ContinuumEpisodeResolverTestRequestValidator.Validate(request);
+        if (!string.IsNullOrWhiteSpace(validationError))
+        {
+            return BadRequest(new ProblemDetails
+            {
+                Title = "Invalid resolver test request",
+                Detail = validationError
+            });
+        }
+
+        ContinuumEpisodeResolverTestResponse response = await _itemResolver
+            .ResolveEpisodeTestAsync(request, cancellationToken)
+            .ConfigureAwait(false);
+
+        return Ok(response);
     }
 
     /// <summary>

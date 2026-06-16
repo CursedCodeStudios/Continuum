@@ -13,4 +13,11 @@ public interface IContinuumItemResolver
     Task<IReadOnlyList<ResolvedContinuumEntry>> ResolveAsync(
         ContinuumListDefinition list,
         CancellationToken cancellationToken);
+
+    /// <summary>
+    /// Runs a one-off admin diagnostic for TV episode resolution.
+    /// </summary>
+    Task<ContinuumEpisodeResolverTestResponse> ResolveEpisodeTestAsync(
+        ContinuumEpisodeResolverTestRequest request,
+        CancellationToken cancellationToken);
 }

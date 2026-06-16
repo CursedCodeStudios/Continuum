@@ -22,22 +22,48 @@ public sealed class ContinuumItemResolver(ILibraryManager libraryManager, ILogge
         BaseItem[] allItems = libraryManager.RootFolder.RecursiveChildren.OfType<BaseItem>().ToArray();
         Movie[] movies = allItems.OfType<Movie>().ToArray();
         Episode[] episodes = allItems.OfType<Episode>().ToArray();
+        ContinuumEpisodeResolverCandidate[] episodeCandidates = episodes.Select(CreateEpisodeCandidate).ToArray();
 
         ResolvedContinuumEntry[] resolved = list.Items
             .OrderBy(item => item.Order)
-            .Select(item => ResolveEntry(list, item, movies, episodes))
+            .Select(item => ResolveEntry(list, item, movies, episodeCandidates))
             .ToArray();
 
         return Task.FromResult<IReadOnlyList<ResolvedContinuumEntry>>(resolved);
+    }
+
+    /// <inheritdoc />
+    public Task<ContinuumEpisodeResolverTestResponse> ResolveEpisodeTestAsync(
+        ContinuumEpisodeResolverTestRequest request,
+        CancellationToken cancellationToken)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+
+        Episode[] episodes = libraryManager.RootFolder.RecursiveChildren.OfType<Episode>().ToArray();
+        ContinuumEpisodeResolverCandidate[] episodeCandidates = episodes.Select(CreateEpisodeCandidate).ToArray();
+        ContinuumListDefinition list = new()
+        {
+            Name = "Resolver Test",
+            Slug = "resolver-test"
+        };
+        ContinuumListEntry entry = CreateEntryFromRequest(request);
+
+        ContinuumEpisodeResolverDiagnosticResult diagnostic = ContinuumEpisodeResolverDiagnostics.Resolve(
+            list,
+            entry,
+            LookupExactEpisodeCandidate,
+            episodeCandidates);
+
+        return Task.FromResult(diagnostic.Response);
     }
 
     private ResolvedContinuumEntry ResolveEntry(
         ContinuumListDefinition list,
         ContinuumListEntry entry,
         IReadOnlyList<Movie> movies,
-        IReadOnlyList<Episode> episodes)
+        IReadOnlyList<ContinuumEpisodeResolverCandidate> episodes)
     {
-        if (entry.JellyfinItemId is Guid exactId)
+        if (entry.Type != ContinuumListEntryType.Episode && entry.JellyfinItemId is Guid exactId)
         {
             BaseItem? exactItem = libraryManager.GetItemById(exactId);
             if (exactItem is not null && IsCompatibleType(entry.Type, exactItem))
@@ -97,56 +123,27 @@ public sealed class ContinuumItemResolver(ILibraryManager libraryManager, ILogge
     private ResolvedContinuumEntry ResolveEpisode(
         ContinuumListDefinition list,
         ContinuumListEntry entry,
-        IReadOnlyList<Episode> episodes)
+        IReadOnlyList<ContinuumEpisodeResolverCandidate> episodes)
     {
-        BaseItem[] candidates = FilterByProviderId(episodes, "Tvdb", entry.Providers.TvdbEpisodeId);
-        if (TryResolveSingle(list, entry, candidates, "TVDb episode id", out ResolvedContinuumEntry resolved))
+        ContinuumEpisodeResolverDiagnosticResult diagnostic = ContinuumEpisodeResolverDiagnostics.Resolve(
+            list,
+            entry,
+            LookupExactEpisodeCandidate,
+            episodes);
+        LogEpisodeDiagnostic(list, entry, diagnostic.Response);
+
+        if (string.Equals(diagnostic.Response.Outcome, "resolved", StringComparison.OrdinalIgnoreCase)
+            && diagnostic.ResolvedCandidate?.Item is not null)
         {
-            return resolved;
+            return Resolved(list, entry, diagnostic.ResolvedCandidate.Item, diagnostic.Response.Message);
         }
 
-        candidates = FilterByProviderId(episodes, "Tmdb", entry.Providers.TmdbEpisodeId);
-        if (TryResolveSingle(list, entry, candidates, "TMDb episode id", out resolved))
+        if (string.Equals(diagnostic.Response.Outcome, "ambiguous", StringComparison.OrdinalIgnoreCase))
         {
-            return resolved;
+            return Ambiguous(list, entry, diagnostic.Response.Message);
         }
 
-        candidates = episodes
-            .Where(episode => EpisodeMatchesSeriesProvider(episode, "Tvdb", entry.Providers.TvdbSeriesId))
-            .Where(episode => EpisodeMatchesNumbers(episode, entry))
-            .Cast<BaseItem>()
-            .ToArray();
-        if (TryResolveSingle(list, entry, candidates, "TVDb series id + season/episode", out resolved))
-        {
-            return resolved;
-        }
-
-        candidates = episodes
-            .Where(episode => EpisodeMatchesSeriesProvider(episode, "Tmdb", entry.Providers.TmdbSeriesId))
-            .Where(episode => EpisodeMatchesNumbers(episode, entry))
-            .Cast<BaseItem>()
-            .ToArray();
-        if (TryResolveSingle(list, entry, candidates, "TMDb series id + season/episode", out resolved))
-        {
-            return resolved;
-        }
-
-        if (!string.IsNullOrWhiteSpace(entry.Title))
-        {
-            candidates = episodes
-                .Where(episode => string.Equals(episode.Name, entry.Title, StringComparison.OrdinalIgnoreCase))
-                .Where(episode => !entry.SeasonNumber.HasValue || episode.ParentIndexNumber == entry.SeasonNumber)
-                .Where(episode => !entry.EpisodeNumber.HasValue || episode.IndexNumber == entry.EpisodeNumber)
-                .Cast<BaseItem>()
-                .ToArray();
-
-            if (TryResolveSingle(list, entry, candidates, "episode title fallback", out resolved))
-            {
-                return resolved;
-            }
-        }
-
-        return Missing(list, entry, "Episode was not found in the library.");
+        return Missing(list, entry, diagnostic.Response.Message);
     }
 
     private static bool IsCompatibleType(ContinuumListEntryType type, BaseItem? item)
@@ -209,6 +206,104 @@ public sealed class ContinuumItemResolver(ILibraryManager libraryManager, ILogge
         }
 
         return false;
+    }
+
+    private static ContinuumListEntry CreateEntryFromRequest(ContinuumEpisodeResolverTestRequest request)
+    {
+        return new ContinuumListEntry
+        {
+            Order = 1,
+            Type = ContinuumListEntryType.Episode,
+            Title = request.Title,
+            SeasonNumber = request.SeasonNumber,
+            EpisodeNumber = request.EpisodeNumber,
+            JellyfinItemId = request.JellyfinItemId,
+            Providers = new ContinuumProviderIds
+            {
+                TvdbSeriesId = request.TvdbSeriesId,
+                TvdbEpisodeId = request.TvdbEpisodeId,
+                TmdbSeriesId = request.TmdbSeriesId,
+                TmdbEpisodeId = request.TmdbEpisodeId
+            }
+        };
+    }
+
+    private ContinuumEpisodeResolverExactLookupResult LookupExactEpisodeCandidate(Guid exactId)
+    {
+        BaseItem? exactItem = libraryManager.GetItemById(exactId);
+        if (exactItem is Episode episode)
+        {
+            return new ContinuumEpisodeResolverExactLookupResult
+            {
+                Candidate = CreateEpisodeCandidate(episode)
+            };
+        }
+
+        return new ContinuumEpisodeResolverExactLookupResult
+        {
+            IsIncompatibleType = exactItem is not null
+        };
+    }
+
+    private void LogEpisodeDiagnostic(
+        ContinuumListDefinition list,
+        ContinuumListEntry entry,
+        ContinuumEpisodeResolverTestResponse response)
+    {
+        foreach (ContinuumEpisodeResolverTraceStep step in response.Trace)
+        {
+            if (string.Equals(step.StrategyKey, "exact-jellyfin-id", StringComparison.OrdinalIgnoreCase)
+                && string.Equals(step.Status, "no-match", StringComparison.OrdinalIgnoreCase)
+                && entry.JellyfinItemId.HasValue)
+            {
+                logger.LogWarning(
+                    "Continuum entry {ListSlug}/{Order} referenced Jellyfin item id {ItemId}, but the item was missing or incompatible.",
+                    list.Slug,
+                    entry.Order,
+                    entry.JellyfinItemId.Value);
+            }
+
+            if (string.Equals(step.Status, "ambiguous", StringComparison.OrdinalIgnoreCase))
+            {
+                logger.LogWarning(
+                    "Continuum entry {ListSlug}/{Order} was ambiguous when matching by {Strategy}.",
+                    list.Slug,
+                    entry.Order,
+                    step.DisplayName);
+            }
+        }
+    }
+
+    private static ContinuumEpisodeResolverCandidate CreateEpisodeCandidate(Episode episode)
+    {
+        return new ContinuumEpisodeResolverCandidate
+        {
+            Item = episode,
+            JellyfinItemId = episode.Id,
+            EpisodeTitle = episode.Name,
+            SeriesTitle = episode.Series?.Name,
+            SeasonNumber = episode.ParentIndexNumber,
+            EpisodeNumber = episode.IndexNumber,
+            ProductionYear = episode.ProductionYear,
+            EpisodeProviderIds = ToProviderLookup(episode),
+            SeriesProviderIds = ToProviderLookup(episode.Series)
+        };
+    }
+
+    private static IReadOnlyDictionary<string, string> ToProviderLookup(BaseItem? item)
+    {
+        if (item?.ProviderIds is null)
+        {
+            return new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        }
+
+        Dictionary<string, string> lookup = new(StringComparer.OrdinalIgnoreCase);
+        foreach (KeyValuePair<string, string> pair in item.ProviderIds)
+        {
+            lookup[pair.Key] = pair.Value;
+        }
+
+        return lookup;
     }
 
     private bool TryResolveSingle(
