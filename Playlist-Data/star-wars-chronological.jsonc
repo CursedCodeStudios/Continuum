@@ -142,6 +142,50 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 6
+    },
+
+    // Star Wars: Episode I - The Phantom Menace
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1893"
+      }
+    },
+
+    // Star Wars: Episode II - Attack of the Clones
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1894"
+      }
+    },
+
+    // Star Wars: The Clone Wars - S02E16 - Cat and Mouse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Clone Wars - S01E16 - The Hidden Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Clone Wars
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "12180"
+      }
     }
   ]
 }
