@@ -7712,6 +7712,126 @@
       },
       "seasonNumber": 13,
       "episodeNumber": 12
+    },
+
+    // Chicago Fire - S14E13 - Reckoning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S11E13 - Reckoning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 13
+    },
+
+    // Chicago P.D. - S13E13 - Reckoning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S11E14 - Twist & Shout
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 14
+    },
+
+    // Chicago Fire - S14E14 - Hit and Run
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 14
+    },
+
+    // Chicago P.D. - S13E14 - Meant to Be
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 14
+    },
+
+    // Chicago Med - S11E15 - The Cost of Living
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 15
+    },
+
+    // Chicago Fire - S14E15 - Do Not Resuscitate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 15
+    },
+
+    // Chicago P.D. - S13E15 - Live or Die by Your CI
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 15
+    },
+
+    // Chicago Med - S11E16 - The Book of Charles
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 11,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S14E16 - Firehouse 66
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 14,
+      "episodeNumber": 16
+    },
+
+    // Chicago P.D. - S13E16 - Restored
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 13,
+      "episodeNumber": 16
     }
   ]
 }
