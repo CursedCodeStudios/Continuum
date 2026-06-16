@@ -4,34 +4,244 @@
   "description": "Manual chronological watch order for the Chicago franchise.",
   "enabled": true,
   "items": [
+    // Chicago Fire - S01E01 - Pilot
     {
       "type": "episode",
-      "title": "Chicago Fire S01E01",
       "providers": {
-        "tvdbSeriesId": "258541",
-        "tmdbSeriesId": "44006"
+        "tvdbSeriesId": "258541"
       },
       "seasonNumber": 1,
       "episodeNumber": 1
     },
+
+    // Chicago Fire - S01E02 - Mon Amour
     {
       "type": "episode",
-      "title": "Chicago P.D. S01E01",
       "providers": {
-        "tvdbSeriesId": "269641",
-        "tmdbSeriesId": "58841"
+        "tvdbSeriesId": "258541"
       },
       "seasonNumber": 1,
-      "episodeNumber": 1
+      "episodeNumber": 2
     },
+
+    // Chicago Fire - S01E03 - Professional Courtesy
     {
-      "type": "movie",
-      "title": "Example Movie",
+      "type": "episode",
       "providers": {
-        "tmdbMovieId": "123456",
-        "imdbId": "tt1234567"
+        "tvdbSeriesId": "258541"
       },
-      "year": 2020
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S01E04 - One Minute
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S01E05 - Hanging On
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Chicago Fire - S01E06 - Rear View Mirror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S01E07 - Two Families
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Chicago Fire - S01E08 - Leaving the Station
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S01E09 - It Ain’t Easy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S01E10 - Merry Christmas, Etc.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S01E11 - God Has Spoken
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Chicago Fire - S01E12 - Under the Knife
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S01E13 - Warm and Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Chicago Fire - S01E14 - A Little Taste
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Chicago Fire - S01E15 - Nazdarovya!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Chicago Fire - S01E16 - Viral
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S01E17 - Better to Lie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Chicago Fire - S01E18 - Fireworks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Chicago Fire - S01E19 - A Coffin That Small
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Chicago Fire - S01E20 - Ambition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Chicago Fire - S01E21 - Retaliation Hit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 21
+    },
+
+    // Chicago Fire - S01E22 - Leaders Lead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Chicago Fire - S01E23 - Let Her Go
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 23
+    },
+
+    // Chicago Fire - S01E24 - A Hell of a Ride
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 24
     }
   ]
 }
