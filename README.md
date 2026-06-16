@@ -135,14 +135,14 @@ The token must be able to call `repository_dispatch` on:
 ### Create a release
 
 ```bash
-git tag v0.1.3.3
-git push origin v0.1.3.3
+git tag v0.1.3.4
+git push origin v0.1.3.4
 ```
 
 The release workflow will:
 
 1. build the plugin;
-2. create `Continuum_0.1.3.3.zip`;
+2. create `Continuum_0.1.3.4.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;
