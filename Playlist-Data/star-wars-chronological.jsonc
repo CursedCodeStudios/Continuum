@@ -1892,6 +1892,696 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 6
+    },
+
+    // Star Wars Rebels - S01E01 - Droids in Distress
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Rebels - S01E02 - Fighter Flight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Rebels - S01E03 - Rise of the Old Masters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Rebels - S01E04 - Breaking Ranks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Rebels - S01E05 - Out of Darkness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Rebels - S01E06 - Empire Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Rebels - S01E07 - Gathering Forces
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Rebels - S01E08 - Path of the Jedi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Rebels - S01E09 - Idiot's Array
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Rebels - S01E10 - Vision of Hope
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Rebels - S01E11 - Call to Action
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Rebels - S01E12 - Rebel Resolve
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Rebels - S01E13 - Fire Across the Galaxy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Rebels - S02E01 - The Lost Commanders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Rebels - S02E02 - Relics of the Old Republic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Rebels - S02E03 - Always Two There Are
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Rebels - S02E04 - Brothers of the Broken Horn
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Rebels - S02E05 - Wings of the Master
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Rebels - S02E06 - Blood Sisters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Rebels - S02E07 - Stealth Strike
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Rebels - S02E08 - The Future of the Force
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Rebels - S02E09 - Legacy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Rebels - S02E10 - A Princess on Lothal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Rebels - S02E11 - The Protector of Concord Dawn
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Rebels - S02E12 - Legends of the Lasat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Rebels - S02E13 - The Call
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Rebels - S02E14 - Homecoming
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Wars Rebels - S02E15 - The Honorable Ones
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Wars Rebels - S02E16 - Shroud of Darkness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Wars Rebels - S02E17 - The Forgotten Droid
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Wars Rebels - S02E18 - The Mystery of Chopper Base
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Wars Rebels - S02E19 - Twilight of the Apprentice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Wars Rebels - S03E01 - Steps Into Shadow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Rebels - S03E02 - The Holocrons of Fate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Rebels - S03E03 - The Antilles Extraction
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Rebels - S03E04 - Hera's Heroes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Rebels - S03E05 - The Last Battle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Rebels - S03E06 - Imperial Supercommandos
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Rebels - S03E07 - Iron Squadron
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Rebels - S03E08 - The Wynkahthu Job
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Rebels - S03E09 - An Inside Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Rebels - S03E10 - Visions and Voices
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Rebels - S03E11 - Ghosts of Geonosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Rebels - S03E12 - Ghosts of Geonosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Rebels - S03E13 - Warhead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Rebels - S03E14 - Trials of the Darksaber
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Wars Rebels - S03E15 - Legacy of Mandalore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Wars Rebels - S03E16 - Through Imperial Eyes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Wars Rebels - S03E17 - Secret Cargo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Wars Rebels - S03E18 - Double Agent Droid
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Wars Rebels - S03E19 - Twin Suns
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Wars Rebels - S03E20 - Zero Hour
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Wars Rebels - S03E21 - Zero Hour
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Wars Rebels - S04E01 - Heroes of Mandalore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Wars Rebels - S04E02 - Heroes of Mandalore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Wars Rebels - S04E03 - In the Name of the Rebellion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Wars Rebels - S04E04 - In the Name of the Rebellion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Wars Rebels - S04E05 - The Occupation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Wars Rebels - S04E06 - Flight of the Defender
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Wars Rebels - S04E07 - Kindred
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Wars Rebels - S04E08 - Crawler Commandeers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Wars Rebels - S04E09 - Rebel Assault
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Wars Rebels - S04E10 - Jedi Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Wars Rebels - S04E11 - DUME
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Star Wars Rebels - S04E12 - Wolves and a Door
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Star Wars Rebels - S04E13 - A World Between Worlds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // Star Wars Rebels - S04E14 - A Fool's Hope
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 14
+    },
+
+    // Star Wars Rebels - S04E15 - Family Reunion - and Farewell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 15
+    },
+
+    // Star Wars Rebels - S04E16 - Family Reunion - and Farewell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "283468"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 16
     }
   ]
 }
