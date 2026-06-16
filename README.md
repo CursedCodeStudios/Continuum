@@ -128,7 +128,7 @@ This repo requires:
 
 The token must be able to call `repository_dispatch` on:
 
-`mrfrydae/jellyfin-plugin-repo`
+`CursedCodeStudios/Jellyfin-Plugins`
 
 ### Create a release
 
@@ -143,7 +143,7 @@ The release workflow will:
 2. create `Jellyfin.Plugin.Continuum_0.1.0.0.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
-5. trigger `mrfrydae/jellyfin-plugin-repo`;
+5. trigger `CursedCodeStudios/Jellyfin-Plugins`;
 6. update the Jellyfin plugin manifest through that repo’s workflow.
 
 ### Jellyfin repository URL
@@ -151,7 +151,7 @@ The release workflow will:
 Add this to Jellyfin:
 
 ```text
-https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
+https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manifest.json
 ```
 
 In Jellyfin:
@@ -161,13 +161,13 @@ In Jellyfin:
 Name:
 
 ```text
-mrfrydae Jellyfin Plugin Repository
+CursedCodeStudios Jellyfin Plugins
 ```
 
 URL:
 
 ```text
-https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
+https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manifest.json
 ```
 
 ## Manual Install

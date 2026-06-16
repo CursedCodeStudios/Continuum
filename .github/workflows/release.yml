@@ -16,14 +16,14 @@ permissions:
 
 env:
   PLUGIN_NAME: Continuum
-  PLUGIN_ID: Jellyfin.Plugin.Continuum
+  PLUGIN_ID: Continuum
   PROJECT_PATH: Continuum/Continuum.csproj
   TARGET_ABI: 10.11.0.0
-  MANIFEST_REPO: mrfrydae/jellyfin-plugin-repo
-  MANIFEST_REPOSITORY_NAME: mrfrydae Jellyfin Plugin Repository
-  MANIFEST_REPOSITORY_URL: https://raw.githubusercontent.com/mrfrydae/jellyfin-plugin-repo/main/manifest.json
-  SOURCE_URL: https://github.com/mrfrydae/Jellyfin.Plugin.Continuum
-  OWNER_NAME: mrfrydae
+  MANIFEST_REPO: CursedCodeStudios/Jellyfin-Plugins
+  MANIFEST_REPOSITORY_NAME: CursedCodeStudios Jellyfin Plugins
+  MANIFEST_REPOSITORY_URL: https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manifest.json
+  SOURCE_URL: https://github.com/CursedCodeStudios/Continuum
+  OWNER_NAME: CursedCodeStudios
   CATEGORY: General
   PLUGIN_DESCRIPTION: Creates rolling per-user playlists from manually ordered movie and episode lists.
   PLUGIN_OVERVIEW: Continuum turns manually maintained chronological or canonical watch orders into per-user rolling Jellyfin playlists.
