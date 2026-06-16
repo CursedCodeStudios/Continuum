@@ -1128,6 +1128,304 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 19
+    },
+
+    // Avengers: Age of Ultron
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "99861"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E20 - Scars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E21 - S.O.S.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S02E22 - S.O.S.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 22
+    },
+
+    // Marvel's Daredevil - S02E01 - Bang
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Daredevil - S02E02 - Dogs to a Gunfight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Daredevil - S02E03 - New York's Finest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Daredevil - S02E04 - Penny and Dime
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Luke Cage - S01E01 - Moment of Truth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Luke Cage - S01E02 - Code of the Streets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Luke Cage - S01E03 - Who's Gonna Take the Weight?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Luke Cage - S01E04 - Step in the Arena
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Daredevil - S02E05 - Kinbaku
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Daredevil - S02E06 - Regrets Only
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Daredevil - S02E07 - Semper Fidelis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Daredevil - S02E08 - Guilty as Sin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Daredevil - S02E09 - Seven Minutes in Heaven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Daredevil - S02E10 - The Man in the Box
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Daredevil - S02E11 - .380
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Luke Cage - S01E05 - Just to Get a Rep
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Luke Cage - S01E06 - Suckas Need Bodyguards
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Luke Cage - S01E07 - Manifest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Luke Cage - S01E08 - Blowin' Up the Spot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Daredevil - S02E12 - The Dark at the End of the Tunnel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Daredevil - S02E13 - A Cold Day in Hell's Kitchen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "281662"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Luke Cage - S01E09 - DWYCK
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Luke Cage - S01E10 - Take It Personal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Luke Cage - S01E11 - Now You're Mine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Luke Cage - S01E12 - Soliloquy of Chaos
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Luke Cage - S01E13 - You Know My Steez
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "304219"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
     }
   ]
 }
