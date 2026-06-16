@@ -1,5 +1,4 @@
 using MediaBrowser.Common.Configuration;
-
 namespace Continuum.Services;
 
 /// <summary>
@@ -9,6 +8,12 @@ internal static class ContinuumPaths
 {
     public static string GetBundledListsDirectory()
     {
+        string? pluginAssemblyDirectory = Path.GetDirectoryName(typeof(Plugin).Assembly.Location);
+        if (!string.IsNullOrWhiteSpace(pluginAssemblyDirectory))
+        {
+            return GetBundledListsDirectory(pluginAssemblyDirectory);
+        }
+
         return GetBundledListsDirectory(AppContext.BaseDirectory);
     }
 

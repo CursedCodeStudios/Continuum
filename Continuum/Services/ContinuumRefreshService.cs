@@ -112,7 +112,7 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
         {
             ContinuumListDefinition[] loadedLists = (await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false)).ToArray();
             ContinuumListDefinition[] lists = ContinuumRefreshSelection.GetTargetLists(loadedLists, targetSlug);
-            User[] users = _userManager.Users.OfType<User>().ToArray();
+            User[] users = ReflectionHelpers.GetUsers(_userManager);
             ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
             User[] enabledUsers = configuration.CreatePlaylistsForDisabledUsers
                 ? users
