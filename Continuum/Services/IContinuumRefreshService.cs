@@ -13,6 +13,11 @@ public interface IContinuumRefreshService
     ContinuumRefreshResult? LastResult { get; }
 
     /// <summary>
+    /// Gets the current refresh operation status.
+    /// </summary>
+    ContinuumRefreshOperationStatus CurrentOperationStatus { get; }
+
+    /// <summary>
     /// Gets list summaries for the admin dashboard.
     /// </summary>
     Task<IReadOnlyList<ContinuumAdminListSummary>> GetListSummariesAsync(CancellationToken cancellationToken);

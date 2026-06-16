@@ -5,36 +5,67 @@
     <div data-role="content">
         <div class="content-primary">
             <div class="verticalSection verticalSection-extrabottompadding">
-                <h2>Continuum</h2>
-                <p>Continuum builds rolling per-user playlists from the bundled community archive shipped with the plugin under <code>Playlist-Data/</code>.</p>
+                <div class="continuumHero">
+                    <div>
+                        <h2>Continuum</h2>
+                        <p class="continuumLead">
+                            Continuum turns the bundled community archive in <code>Playlist-Data/</code> into rolling per-user Jellyfin playlists.
+                            This admin page is shared between the plugin dashboard and the Plugins sidebar entry.
+                        </p>
+                    </div>
 
-                <div class="sectionTabs">
-                    <button is="emby-button" type="button" class="sectionTab raised" data-tab="lists">Manage Lists</button>
-                    <button is="emby-button" type="button" class="sectionTab" data-tab="settings">Settings</button>
-                </div>
-
-                <div id="ContinuumListsTab" class="tabPanel">
-                    <div class="listActionRow">
+                    <div class="continuumHeroActions">
                         <button id="RefreshAllListsButton" is="emby-button" type="button" class="raised button-submit">
                             <span>Refresh All Lists</span>
                         </button>
-                        <button id="ReloadListsButton" is="emby-button" type="button">
-                            <span>Reload List Status</span>
+                        <button id="ReloadDashboardButton" is="emby-button" type="button">
+                            <span>Reload Status</span>
                         </button>
                     </div>
-
-                    <div id="ContinuumStatusCard" class="statusCard hide"></div>
-
-                    <div id="ContinuumLastRefreshCard" class="infoCard hide">
-                        <div class="cardTitle">Last Refresh</div>
-                        <div id="ContinuumLastRefreshBody" class="mutedText"></div>
-                    </div>
-
-                    <div id="ContinuumListsSummary" class="infoCard mutedText">Loading lists...</div>
-                    <div id="ContinuumListsContainer" class="listGrid"></div>
                 </div>
 
-                <div id="ContinuumSettingsTab" class="tabPanel hide">
+                <div id="ContinuumAlertCard" class="continuumCard continuumAlert hide"></div>
+
+                <div id="ContinuumActivityCard" class="continuumCard hide">
+                    <div class="continuumSectionTitleRow">
+                        <div class="continuumSectionTitle">Current Activity</div>
+                        <div id="ContinuumActivityState" class="continuumPill"></div>
+                    </div>
+                    <div id="ContinuumActivityText" class="continuumMuted"></div>
+                    <div id="ContinuumOverallProgress" class="continuumProgressBlock hide">
+                        <div class="continuumProgressMeta">
+                            <span id="ContinuumOverallProgressLabel">Progress</span>
+                            <span id="ContinuumOverallProgressValue">0%</span>
+                        </div>
+                        <div class="continuumProgressBar">
+                            <div id="ContinuumOverallProgressFill" class="continuumProgressFill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ContinuumLastRefreshCard" class="continuumCard hide">
+                    <div class="continuumSectionTitle">Last Refresh</div>
+                    <div id="ContinuumLastRefreshText" class="continuumMuted"></div>
+                </div>
+
+                <div class="continuumCard">
+                    <div class="continuumSectionTitleRow">
+                        <div>
+                            <div class="continuumSectionTitle">Bundled Lists</div>
+                            <div class="continuumMuted">These lists ship from this repository and are read-only on the server.</div>
+                        </div>
+                        <div id="ContinuumListsSummary" class="continuumMuted">Loading lists...</div>
+                    </div>
+
+                    <div id="ContinuumListsContainer" class="continuumListStack"></div>
+                </div>
+
+                <div class="continuumCard">
+                    <div class="continuumSectionTitle">Settings</div>
+                    <div class="continuumMuted continuumSettingsIntro">
+                        These settings apply to every bundled Continuum list on this server.
+                    </div>
+
                     <form id="ContinuumConfigForm">
                         <label class="checkboxContainer">
                             <input id="Enabled" name="Enabled" type="checkbox" is="emby-checkbox" />
@@ -51,7 +82,7 @@
                             <label class="inputLabel inputLabelUnfocused" for="PlaylistSize">Playlist size</label>
                         </div>
 
-                        <button is="emby-button" type="submit" class="raised button-submit block">
+                        <button id="SaveSettingsButton" is="emby-button" type="submit" class="raised button-submit block">
                             <span>Save Settings</span>
                         </button>
                     </form>
@@ -61,111 +92,171 @@
     </div>
 
     <style>
-        #ContinuumConfigPage .sectionTabs {
+        #ContinuumConfigPage .continuumHero,
+        #ContinuumConfigPage .continuumSectionTitleRow,
+        #ContinuumConfigPage .continuumListHeader,
+        #ContinuumConfigPage .continuumListFooter,
+        #ContinuumConfigPage .continuumProgressMeta {
             display: flex;
-            gap: 0.75em;
-            margin: 1.5em 0 1em;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
             flex-wrap: wrap;
         }
 
-        #ContinuumConfigPage .sectionTab {
-            min-width: 9rem;
+        #ContinuumConfigPage .continuumHero {
+            margin-bottom: 1rem;
         }
 
-        #ContinuumConfigPage .sectionTab.tabActive {
-            background: var(--theme-accent, #00a4dc);
-            color: #fff;
+        #ContinuumConfigPage .continuumHeroActions {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
         }
 
-        #ContinuumConfigPage .tabPanel.hide,
+        #ContinuumConfigPage .continuumLead,
+        #ContinuumConfigPage .continuumMuted {
+            color: var(--secondaryTextColor);
+        }
+
+        #ContinuumConfigPage .continuumCard {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #ContinuumConfigPage .continuumAlert {
+            border-color: rgba(0, 164, 220, 0.45);
+        }
+
+        #ContinuumConfigPage .continuumAlert.isError,
+        #ContinuumConfigPage .continuumActivityCardError {
+            border-color: rgba(255, 99, 71, 0.75);
+        }
+
+        #ContinuumConfigPage .continuumAlert.isSuccess {
+            border-color: rgba(72, 187, 120, 0.75);
+        }
+
+        #ContinuumConfigPage .continuumSectionTitle {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        #ContinuumConfigPage .continuumPill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            padding: 0.2rem 0.7rem;
+            font-size: 0.85rem;
+        }
+
+        #ContinuumConfigPage .continuumPill.isActive {
+            border-color: rgba(0, 164, 220, 0.65);
+            color: var(--theme-accent, #00a4dc);
+        }
+
+        #ContinuumConfigPage .continuumPill.isDisabled {
+            opacity: 0.72;
+        }
+
+        #ContinuumConfigPage .continuumPill.isFailed {
+            border-color: rgba(255, 99, 71, 0.75);
+            color: tomato;
+        }
+
+        #ContinuumConfigPage .continuumPill.isCompleted {
+            border-color: rgba(72, 187, 120, 0.75);
+            color: #5fd18a;
+        }
+
+        #ContinuumConfigPage .continuumListStack {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        #ContinuumConfigPage .continuumListRow {
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        #ContinuumConfigPage .continuumListRow.isDisabled {
+            opacity: 0.84;
+        }
+
+        #ContinuumConfigPage .continuumListName {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        #ContinuumConfigPage .continuumListNameRow {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+        }
+
+        #ContinuumConfigPage .continuumListDescription {
+            margin-top: 0.5rem;
+            color: var(--secondaryTextColor);
+        }
+
+        #ContinuumConfigPage .continuumMetaGrid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            margin-top: 0.85rem;
+            color: var(--secondaryTextColor);
+            font-size: 0.95rem;
+        }
+
+        #ContinuumConfigPage .continuumListFooter {
+            margin-top: 0.95rem;
+        }
+
+        #ContinuumConfigPage .continuumProgressBlock {
+            margin-top: 0.9rem;
+        }
+
+        #ContinuumConfigPage .continuumProgressBar {
+            width: 100%;
+            height: 0.55rem;
+            border-radius: 999px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.09);
+            margin-top: 0.45rem;
+        }
+
+        #ContinuumConfigPage .continuumProgressFill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, rgba(0, 164, 220, 0.85), rgba(72, 187, 120, 0.85));
+            transition: width 180ms ease;
+        }
+
+        #ContinuumConfigPage .continuumSettingsIntro {
+            margin-bottom: 1rem;
+        }
+
         #ContinuumConfigPage .hide {
             display: none;
         }
 
-        #ContinuumConfigPage .listActionRow {
-            display: flex;
-            gap: 0.75em;
-            flex-wrap: wrap;
-            margin-bottom: 1em;
-        }
-
-        #ContinuumConfigPage .statusCard,
-        #ContinuumConfigPage .infoCard,
-        #ContinuumConfigPage .listCard {
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 0.5em;
-            padding: 1em;
-            margin-bottom: 1em;
-            background: rgba(255, 255, 255, 0.03);
-        }
-
-        #ContinuumConfigPage .statusCard.isError {
-            border-color: rgba(255, 99, 71, 0.8);
-        }
-
-        #ContinuumConfigPage .statusCard.isSuccess {
-            border-color: rgba(72, 187, 120, 0.8);
-        }
-
-        #ContinuumConfigPage .cardTitle,
-        #ContinuumConfigPage .listCardTitle {
-            font-weight: 600;
-            margin-bottom: 0.4em;
-        }
-
-        #ContinuumConfigPage .mutedText,
-        #ContinuumConfigPage .listMeta,
-        #ContinuumConfigPage .listDescription {
-            color: var(--secondaryTextColor);
-        }
-
-        #ContinuumConfigPage .listGrid {
-            display: grid;
-            gap: 1em;
-        }
-
-        #ContinuumConfigPage .listCardHeader,
-        #ContinuumConfigPage .listCardFooter {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1em;
-            flex-wrap: wrap;
-        }
-
-        #ContinuumConfigPage .listDescription {
-            margin: 0.5em 0 0.75em;
-        }
-
-        #ContinuumConfigPage .listMeta {
-            display: flex;
-            gap: 1em;
-            flex-wrap: wrap;
-            font-size: 0.95em;
-        }
-
-        #ContinuumConfigPage .listBadge {
-            display: inline-flex;
-            align-items: center;
-            border-radius: 999px;
-            padding: 0.2em 0.7em;
-            font-size: 0.85em;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-        }
-
-        #ContinuumConfigPage .listBadge.isDisabled {
-            opacity: 0.75;
-        }
-
-        @media (max-width: 700px) {
-            #ContinuumConfigPage .listActionRow,
-            #ContinuumConfigPage .listCardHeader,
-            #ContinuumConfigPage .listCardFooter {
-                align-items: stretch;
+        @media (max-width: 720px) {
+            #ContinuumConfigPage .continuumHeroActions,
+            #ContinuumConfigPage .continuumListFooter {
+                width: 100%;
             }
 
-            #ContinuumConfigPage .listActionRow button,
-            #ContinuumConfigPage .listCardFooter button {
+            #ContinuumConfigPage .continuumHeroActions button,
+            #ContinuumConfigPage .continuumListFooter button {
                 width: 100%;
             }
         }
@@ -176,178 +267,29 @@
             const pluginId = "42475945-c55b-4ba9-bfd4-884d5cd8a829";
             const page = document.querySelector("#ContinuumConfigPage");
             const form = document.querySelector("#ContinuumConfigForm");
-            const tabs = Array.from(document.querySelectorAll(".sectionTab"));
-            const statusCard = document.querySelector("#ContinuumStatusCard");
+            const alertCard = document.querySelector("#ContinuumAlertCard");
+            const activityCard = document.querySelector("#ContinuumActivityCard");
+            const activityState = document.querySelector("#ContinuumActivityState");
+            const activityText = document.querySelector("#ContinuumActivityText");
+            const overallProgress = document.querySelector("#ContinuumOverallProgress");
+            const overallProgressLabel = document.querySelector("#ContinuumOverallProgressLabel");
+            const overallProgressValue = document.querySelector("#ContinuumOverallProgressValue");
+            const overallProgressFill = document.querySelector("#ContinuumOverallProgressFill");
             const lastRefreshCard = document.querySelector("#ContinuumLastRefreshCard");
-            const lastRefreshBody = document.querySelector("#ContinuumLastRefreshBody");
+            const lastRefreshText = document.querySelector("#ContinuumLastRefreshText");
             const listsSummary = document.querySelector("#ContinuumListsSummary");
             const listsContainer = document.querySelector("#ContinuumListsContainer");
             const refreshAllButton = document.querySelector("#RefreshAllListsButton");
-            const reloadListsButton = document.querySelector("#ReloadListsButton");
-
-            function setActiveTab(tabName) {
-                tabs.forEach(function (button) {
-                    const isActive = button.dataset.tab === tabName;
-                    button.classList.toggle("tabActive", isActive);
-                });
-
-                document.querySelector("#ContinuumListsTab").classList.toggle("hide", tabName !== "lists");
-                document.querySelector("#ContinuumSettingsTab").classList.toggle("hide", tabName !== "settings");
-            }
-
-            function setBusy(isBusy) {
-                refreshAllButton.disabled = isBusy;
-                reloadListsButton.disabled = isBusy;
-                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
-                    button.disabled = isBusy || button.dataset.enabled !== "true";
-                });
-            }
-
-            function showStatus(message, tone) {
-                statusCard.textContent = message;
-                statusCard.classList.remove("hide", "isError", "isSuccess");
-
-                if (tone === "error") {
-                    statusCard.classList.add("isError");
-                } else if (tone === "success") {
-                    statusCard.classList.add("isSuccess");
-                }
-            }
-
-            function clearStatus() {
-                statusCard.classList.add("hide");
-                statusCard.classList.remove("isError", "isSuccess");
-                statusCard.textContent = "";
-            }
-
-            function formatDate(value) {
-                if (!value) {
-                    return "Never";
-                }
-
-                const date = new Date(value);
-                return date.toLocaleString();
-            }
-
-            function buildResultSummary(result) {
-                if (!result) {
-                    return "No refresh has run in this server session yet.";
-                }
-
-                const parts = [
-                    readValue(result, "listsProcessed", "ListsProcessed", 0) + " list(s)",
-                    readValue(result, "usersProcessed", "UsersProcessed", 0) + " user(s)",
-                    readValue(result, "playlistsCreated", "PlaylistsCreated", 0) + " created",
-                    readValue(result, "playlistsUpdated", "PlaylistsUpdated", 0) + " updated",
-                    readValue(result, "itemsResolved", "ItemsResolved", 0) + " resolved",
-                    readValue(result, "itemsMissing", "ItemsMissing", 0) + " missing",
-                    readValue(result, "itemsAmbiguous", "ItemsAmbiguous", 0) + " ambiguous"
-                ];
-
-                let text = "Completed " + formatDate(readValue(result, "completedAtUtc", "CompletedAtUtc", null)) + " • " + parts.join(" • ");
-
-                const warnings = readValue(result, "warnings", "Warnings", []);
-                if (warnings && warnings.length) {
-                    text += " • " + warnings.length + " warning(s)";
-                }
-
-                return text;
-            }
-
-            function renderLastResult(result) {
-                if (!result) {
-                    lastRefreshCard.classList.add("hide");
-                    lastRefreshBody.textContent = "";
-                    return;
-                }
-
-                lastRefreshBody.textContent = buildResultSummary(result);
-                lastRefreshCard.classList.remove("hide");
-            }
-
-            function renderLists(lists) {
-                listsContainer.innerHTML = "";
-
-                if (!lists || !lists.length) {
-                    listsSummary.textContent = "No Continuum lists were found in the bundled archive.";
-                    return;
-                }
-
-                const enabledCount = lists.filter(function (list) {
-                    return !!readValue(list, "enabled", "Enabled", false);
-                }).length;
-
-                listsSummary.textContent = lists.length + " list(s) loaded • " + enabledCount + " enabled";
-
-                lists.forEach(function (list) {
-                    const card = document.createElement("div");
-                    card.className = "listCard";
-
-                    const descriptionText = readValue(list, "description", "Description", "");
-                    const enabled = !!readValue(list, "enabled", "Enabled", false);
-                    const slug = readValue(list, "slug", "Slug", "");
-
-                    const description = descriptionText
-                        ? "<div class=\"listDescription\">" + escapeHtml(descriptionText) + "</div>"
-                        : "";
-
-                    const badgeClass = enabled ? "listBadge" : "listBadge isDisabled";
-                    const badgeText = enabled ? "Enabled" : "Disabled";
-
-                    card.innerHTML = [
-                        "<div class=\"listCardHeader\">",
-                        "  <div>",
-                        "    <div class=\"listCardTitle\">" + escapeHtml(readValue(list, "name", "Name", "")) + "</div>",
-                        "    <div class=\"" + badgeClass + "\">" + badgeText + "</div>",
-                        "  </div>",
-                        "</div>",
-                        description,
-                        "<div class=\"listMeta\">",
-                        "  <span>Slug: " + escapeHtml(slug) + "</span>",
-                        "  <span>Archive items: " + readValue(list, "itemCount", "ItemCount", 0) + "</span>",
-                        "  <span>Tracked playlists: " + readValue(list, "playlistCount", "PlaylistCount", 0) + "</span>",
-                        "  <span>Last playlist size: " + readValue(list, "lastPlaylistItemCount", "LastPlaylistItemCount", 0) + "</span>",
-                        "  <span>Last refresh: " + escapeHtml(formatDate(readValue(list, "lastRefreshUtc", "LastRefreshUtc", null))) + "</span>",
-                        "</div>",
-                        "<div class=\"listCardFooter\">",
-                        "  <div class=\"mutedText\">Manual refresh updates this list for all eligible users.</div>",
-                        "  <button is=\"emby-button\" type=\"button\" class=\"refreshListButton\" data-slug=\"" + escapeAttribute(slug) + "\" data-enabled=\"" + String(enabled) + "\"" + (enabled ? "" : " disabled") + ">",
-                        "    <span>Refresh This List</span>",
-                        "  </button>",
-                        "</div>"
-                    ].join("");
-
-                    listsContainer.appendChild(card);
-                });
-
-                bindListButtons();
-            }
-
-            function bindListButtons() {
-                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
-                    button.addEventListener("click", function () {
-                        const slug = button.dataset.slug;
-                        if (!slug) {
-                            return;
-                        }
-
-                        refreshSingleList(slug);
-                    });
-                });
-            }
-
-            function escapeHtml(value) {
-                return String(value)
-                    .replaceAll("&", "&amp;")
-                    .replaceAll("<", "&lt;")
-                    .replaceAll(">", "&gt;")
-                    .replaceAll("\"", "&quot;")
-                    .replaceAll("'", "&#39;");
-            }
-
-            function escapeAttribute(value) {
-                return escapeHtml(value);
-            }
+            const reloadDashboardButton = document.querySelector("#ReloadDashboardButton");
+            const saveSettingsButton = document.querySelector("#SaveSettingsButton");
+            const state = {
+                actionInFlight: false,
+                configLoaded: false,
+                dashboardLoaded: false,
+                operationStatus: null,
+                pollHandle: 0,
+                pollInFlight: false
+            };
 
             function readValue(source, camelName, pascalName, fallback) {
                 if (!source) {
@@ -363,6 +305,96 @@
                 }
 
                 return fallback;
+            }
+
+            function escapeHtml(value) {
+                return String(value)
+                    .replaceAll("&", "&amp;")
+                    .replaceAll("<", "&lt;")
+                    .replaceAll(">", "&gt;")
+                    .replaceAll("\"", "&quot;")
+                    .replaceAll("'", "&#39;");
+            }
+
+            function formatDate(value) {
+                if (!value) {
+                    return "Never";
+                }
+
+                return new Date(value).toLocaleString();
+            }
+
+            function isRunningStatus(status) {
+                return readValue(status, "state", "State", "idle") === "running";
+            }
+
+            function isFailedStatus(status) {
+                return readValue(status, "state", "State", "idle") === "failed";
+            }
+
+            function computePercent(status) {
+                const processedUserOps = readValue(status, "processedUserOperationCount", "ProcessedUserOperationCount", 0);
+                const totalUserOps = readValue(status, "totalUserOperationCount", "TotalUserOperationCount", 0);
+                if (totalUserOps > 0) {
+                    return Math.max(0, Math.min(100, Math.round((processedUserOps / totalUserOps) * 100)));
+                }
+
+                const processedLists = readValue(status, "processedListCount", "ProcessedListCount", 0);
+                const totalLists = readValue(status, "totalListCount", "TotalListCount", 0);
+                if (totalLists > 0) {
+                    return Math.max(0, Math.min(100, Math.round((processedLists / totalLists) * 100)));
+                }
+
+                return 0;
+            }
+
+            function showAlert(message, tone) {
+                alertCard.innerHTML = escapeHtml(message);
+                alertCard.classList.remove("hide", "isError", "isSuccess");
+
+                if (tone === "error") {
+                    alertCard.classList.add("isError");
+                } else if (tone === "success") {
+                    alertCard.classList.add("isSuccess");
+                }
+            }
+
+            function clearAlert() {
+                alertCard.classList.add("hide");
+                alertCard.classList.remove("isError", "isSuccess");
+                alertCard.textContent = "";
+            }
+
+            function setRefreshButtonsState() {
+                const isBusy = state.actionInFlight || isRunningStatus(state.operationStatus);
+
+                refreshAllButton.disabled = isBusy;
+                reloadDashboardButton.disabled = state.actionInFlight;
+
+                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
+                    const enabled = button.dataset.enabled === "true";
+                    button.disabled = isBusy || !enabled;
+                });
+            }
+
+            function parseErrorResponse(response) {
+                return response.text().then(function (text) {
+                    if (!text) {
+                        throw new Error("Request failed: " + response.status);
+                    }
+
+                    try {
+                        const payload = JSON.parse(text);
+                        const detail = payload.detail || payload.Detail || payload.title || payload.Title;
+                        throw new Error(detail || text);
+                    } catch (error) {
+                        if (error instanceof Error && error.message !== "Unexpected end of JSON input") {
+                            throw error;
+                        }
+
+                        throw new Error(text);
+                    }
+                });
             }
 
             function adminFetch(path, options) {
@@ -386,13 +418,215 @@
 
                 return fetch(ApiClient.getUrl(path), requestOptions).then(function (response) {
                     if (!response.ok) {
-                        return response.text().then(function (text) {
-                            throw new Error(text || ("Request failed: " + response.status));
-                        });
+                        return parseErrorResponse(response);
                     }
 
                     return response.status === 204 ? null : response.json();
                 });
+            }
+
+            function buildLastRefreshSummary(result) {
+                if (!result) {
+                    return "No refresh has completed in this server session yet.";
+                }
+
+                const pieces = [
+                    readValue(result, "listsProcessed", "ListsProcessed", 0) + " list(s)",
+                    readValue(result, "usersProcessed", "UsersProcessed", 0) + " user(s)",
+                    readValue(result, "playlistsCreated", "PlaylistsCreated", 0) + " created",
+                    readValue(result, "playlistsUpdated", "PlaylistsUpdated", 0) + " updated",
+                    readValue(result, "itemsResolved", "ItemsResolved", 0) + " resolved",
+                    readValue(result, "itemsMissing", "ItemsMissing", 0) + " missing",
+                    readValue(result, "itemsAmbiguous", "ItemsAmbiguous", 0) + " ambiguous"
+                ];
+
+                const warnings = readValue(result, "warnings", "Warnings", []);
+                if (warnings && warnings.length) {
+                    pieces.push(warnings.length + " warning(s)");
+                }
+
+                return "Completed " + formatDate(readValue(result, "completedAtUtc", "CompletedAtUtc", null)) + " • " + pieces.join(" • ");
+            }
+
+            function renderLastRefresh(result) {
+                if (!result) {
+                    lastRefreshCard.classList.add("hide");
+                    lastRefreshText.textContent = "";
+                    return;
+                }
+
+                lastRefreshText.textContent = buildLastRefreshSummary(result);
+                lastRefreshCard.classList.remove("hide");
+            }
+
+            function renderActivity(status) {
+                state.operationStatus = status;
+                activityCard.classList.remove("continuumActivityCardError");
+                activityState.className = "continuumPill";
+
+                if (!status) {
+                    activityCard.classList.add("hide");
+                    overallProgress.classList.add("hide");
+                    return;
+                }
+
+                const statusState = readValue(status, "state", "State", "idle");
+                const scope = readValue(status, "scope", "Scope", "all-lists");
+                const targetSlug = readValue(status, "targetSlug", "TargetSlug", "");
+                const currentListSlug = readValue(status, "currentListSlug", "CurrentListSlug", "");
+                const message = readValue(status, "message", "Message", "");
+                const processedLists = readValue(status, "processedListCount", "ProcessedListCount", 0);
+                const totalLists = readValue(status, "totalListCount", "TotalListCount", 0);
+                const processedUserOps = readValue(status, "processedUserOperationCount", "ProcessedUserOperationCount", 0);
+                const totalUserOps = readValue(status, "totalUserOperationCount", "TotalUserOperationCount", 0);
+                const percent = computePercent(status);
+
+                if (statusState === "idle") {
+                    activityCard.classList.add("hide");
+                    overallProgress.classList.add("hide");
+                    return;
+                }
+
+                activityCard.classList.remove("hide");
+
+                if (statusState === "running") {
+                    activityState.textContent = "Running";
+                    activityState.classList.add("isActive");
+
+                    if (scope === "single-list") {
+                        activityText.textContent = "Refreshing " + (targetSlug || "selected list") + " • " + processedUserOps + " of " + totalUserOps + " user playlist operation(s) complete.";
+                        overallProgress.classList.add("hide");
+                    } else {
+                        activityText.textContent = "Refreshing all enabled lists • " + processedLists + " of " + totalLists + " list(s) complete."
+                            + (currentListSlug ? " Currently processing " + currentListSlug + "." : "");
+                        overallProgress.classList.remove("hide");
+                        overallProgressLabel.textContent = totalUserOps > 0
+                            ? processedUserOps + " of " + totalUserOps + " user operations"
+                            : processedLists + " of " + totalLists + " lists";
+                        overallProgressValue.textContent = percent + "%";
+                        overallProgressFill.style.width = percent + "%";
+                    }
+
+                    return;
+                }
+
+                if (statusState === "failed") {
+                    activityState.textContent = "Failed";
+                    activityState.classList.add("isFailed");
+                    activityCard.classList.add("continuumActivityCardError");
+                    activityText.textContent = (message || "The most recent refresh operation failed.") + " Last update: " + formatDate(readValue(status, "completedAtUtc", "CompletedAtUtc", null));
+                    overallProgress.classList.add("hide");
+                    return;
+                }
+
+                activityState.textContent = "Completed";
+                activityState.classList.add("isCompleted");
+                activityText.textContent = "Most recent operation completed " + formatDate(readValue(status, "completedAtUtc", "CompletedAtUtc", null)) + ".";
+                overallProgress.classList.add("hide");
+            }
+
+            function renderLists(lists, status) {
+                listsContainer.innerHTML = "";
+
+                if (!lists || !lists.length) {
+                    listsSummary.textContent = "No bundled Continuum lists were found in Playlist-Data/.";
+                    return;
+                }
+
+                const enabledCount = lists.filter(function (list) {
+                    return !!readValue(list, "enabled", "Enabled", false);
+                }).length;
+                listsSummary.textContent = lists.length + " list(s) loaded • " + enabledCount + " enabled";
+
+                const running = isRunningStatus(status);
+                const scope = readValue(status, "scope", "Scope", "");
+                const targetSlug = readValue(status, "targetSlug", "TargetSlug", "");
+                const currentListSlug = readValue(status, "currentListSlug", "CurrentListSlug", "");
+                const singleListPercent = computePercent(status);
+
+                lists.forEach(function (list) {
+                    const slug = readValue(list, "slug", "Slug", "");
+                    const enabled = !!readValue(list, "enabled", "Enabled", false);
+                    const description = readValue(list, "description", "Description", "");
+                    const isCurrentList = running && currentListSlug && currentListSlug === slug;
+                    const isTargetedSingleList = running && scope === "single-list" && targetSlug === slug;
+                    const row = document.createElement("div");
+
+                    row.className = "continuumListRow" + (enabled ? "" : " isDisabled");
+
+                    const pills = [
+                        "<span class=\"continuumPill" + (enabled ? "" : " isDisabled") + "\">" + (enabled ? "Enabled" : "Disabled") + "</span>"
+                    ];
+
+                    if (isCurrentList && scope === "all-lists") {
+                        pills.push("<span class=\"continuumPill isActive\">Active</span>");
+                    }
+
+                    if (isTargetedSingleList) {
+                        pills.push("<span class=\"continuumPill isActive\">Refreshing</span>");
+                    }
+
+                    const progressBlock = isTargetedSingleList ? [
+                        "<div class=\"continuumProgressBlock\">",
+                        "  <div class=\"continuumProgressMeta\">",
+                        "    <span>Per-user progress</span>",
+                        "    <span>" + singleListPercent + "%</span>",
+                        "  </div>",
+                        "  <div class=\"continuumProgressBar\">",
+                        "    <div class=\"continuumProgressFill\" style=\"width: " + singleListPercent + "%;\"></div>",
+                        "  </div>",
+                        "</div>"
+                    ].join("") : "";
+
+                    row.innerHTML = [
+                        "<div class=\"continuumListHeader\">",
+                        "  <div>",
+                        "    <div class=\"continuumListNameRow\">",
+                        "      <div class=\"continuumListName\">" + escapeHtml(readValue(list, "name", "Name", "")) + "</div>",
+                        "      " + pills.join(" "),
+                        "    </div>",
+                        description ? "    <div class=\"continuumListDescription\">" + escapeHtml(description) + "</div>" : "",
+                        "    <div class=\"continuumMetaGrid\">",
+                        "      <span>Archive items: " + readValue(list, "itemCount", "ItemCount", 0) + "</span>",
+                        "      <span>Tracked playlists: " + readValue(list, "playlistCount", "PlaylistCount", 0) + "</span>",
+                        "      <span>Last refresh: " + escapeHtml(formatDate(readValue(list, "lastRefreshUtc", "LastRefreshUtc", null))) + "</span>",
+                        "      <span>Last playlist size: " + readValue(list, "lastPlaylistItemCount", "LastPlaylistItemCount", 0) + "</span>",
+                        "    </div>",
+                        progressBlock,
+                        "  </div>",
+                        "</div>",
+                        "<div class=\"continuumListFooter\">",
+                        "  <div class=\"continuumMuted\">" + (enabled
+                            ? "Refreshes this list for every eligible user."
+                            : "Disabled lists stay visible here but cannot be refreshed.") + "</div>",
+                        "  <button is=\"emby-button\" type=\"button\" class=\"refreshListButton\" data-slug=\"" + escapeHtml(slug) + "\" data-enabled=\"" + String(enabled) + "\"" + (enabled ? "" : " disabled") + ">",
+                        "    <span>Refresh This List</span>",
+                        "  </button>",
+                        "</div>"
+                    ].join("");
+
+                    listsContainer.appendChild(row);
+                });
+
+                Array.from(document.querySelectorAll(".refreshListButton")).forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        const slug = button.dataset.slug;
+                        if (!slug) {
+                            return;
+                        }
+
+                        triggerRefresh("Continuum/Admin/Lists/" + encodeURIComponent(slug) + "/Refresh", "Refreshed " + slug + ".", "Failed to refresh " + slug + ".");
+                    });
+                });
+
+                setRefreshButtonsState();
+            }
+
+            function renderDashboard(payload) {
+                renderActivity(readValue(payload, "operationStatus", "OperationStatus", null));
+                renderLastRefresh(readValue(payload, "lastResult", "LastResult", null));
+                renderLists(readValue(payload, "lists", "Lists", []), state.operationStatus);
+                syncPolling();
             }
 
             function loadConfig() {
@@ -400,96 +634,105 @@
                     document.querySelector("#Enabled").checked = !!config.Enabled;
                     document.querySelector("#RefreshIntervalMinutes").value = config.RefreshIntervalMinutes ?? 60;
                     document.querySelector("#PlaylistSize").value = config.PlaylistSize ?? 100;
+                    state.configLoaded = true;
                 });
             }
 
-            function loadLists() {
+            function loadDashboard() {
+                if (state.pollInFlight) {
+                    return Promise.resolve();
+                }
+
+                state.pollInFlight = true;
                 return adminFetch("Continuum/Admin/Lists").then(function (payload) {
-                    renderLists(readValue(payload, "lists", "Lists", []));
-                    renderLastResult(readValue(payload, "lastResult", "LastResult", null));
+                    state.dashboardLoaded = true;
+                    renderDashboard(payload);
+                }).finally(function () {
+                    state.pollInFlight = false;
                 });
             }
 
-            function refreshSingleList(slug) {
-                clearStatus();
-                setBusy(true);
-                Dashboard.showLoadingMsg();
-
-                adminFetch("Continuum/Admin/Lists/" + encodeURIComponent(slug) + "/Refresh", {
-                    method: "POST"
-                }).then(function (result) {
-                    showStatus("Refreshed " + slug + ". " + buildResultSummary(result), "success");
-                    renderLastResult(result);
-                    return loadLists();
-                }).catch(function (error) {
-                    showStatus("Failed to refresh " + slug + ". " + error.message, "error");
-                }).finally(function () {
-                    setBusy(false);
-                    Dashboard.hideLoadingMsg();
-                });
+            function stopPolling() {
+                if (state.pollHandle) {
+                    window.clearInterval(state.pollHandle);
+                    state.pollHandle = 0;
+                }
             }
 
-            function refreshAllLists() {
-                clearStatus();
-                setBusy(true);
-                Dashboard.showLoadingMsg();
+            function syncPolling() {
+                if (isRunningStatus(state.operationStatus) || state.actionInFlight) {
+                    if (!state.pollHandle) {
+                        state.pollHandle = window.setInterval(function () {
+                            loadDashboard().catch(function () {
+                                return null;
+                            });
+                        }, 1500);
+                    }
 
-                adminFetch("Continuum/Admin/RefreshAll", {
-                    method: "POST"
-                }).then(function (result) {
-                    showStatus("Refreshed all enabled lists. " + buildResultSummary(result), "success");
-                    renderLastResult(result);
-                    return loadLists();
-                }).catch(function (error) {
-                    showStatus("Failed to refresh Continuum lists. " + error.message, "error");
-                }).finally(function () {
-                    setBusy(false);
-                    Dashboard.hideLoadingMsg();
-                });
+                    return;
+                }
+
+                stopPolling();
             }
 
             function loadPage() {
+                clearAlert();
                 Dashboard.showLoadingMsg();
-                setBusy(true);
 
                 return Promise.all([
                     loadConfig(),
-                    loadLists()
+                    loadDashboard()
                 ]).catch(function (error) {
-                    showStatus("Failed to load Continuum admin data. " + error.message, "error");
+                    showAlert("Failed to load Continuum admin data. " + error.message, "error");
                 }).finally(function () {
-                    setBusy(false);
                     Dashboard.hideLoadingMsg();
+                    setRefreshButtonsState();
                 });
             }
 
-            tabs.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    setActiveTab(button.dataset.tab);
+            function triggerRefresh(path, successPrefix, errorPrefix) {
+                clearAlert();
+                state.actionInFlight = true;
+                setRefreshButtonsState();
+                syncPolling();
+
+                adminFetch(path, {
+                    method: "POST"
+                }).then(function (result) {
+                    showAlert(successPrefix + " " + buildLastRefreshSummary(result), "success");
+                    renderLastRefresh(result);
+                }).catch(function (error) {
+                    showAlert(errorPrefix + " " + error.message, "error");
+                }).finally(function () {
+                    state.actionInFlight = false;
+                    loadDashboard().catch(function (error) {
+                        showAlert("Failed to reload Continuum admin data. " + error.message, "error");
+                    }).finally(function () {
+                        setRefreshButtonsState();
+                        syncPolling();
+                    });
                 });
+            }
+
+            refreshAllButton.addEventListener("click", function () {
+                triggerRefresh("Continuum/Admin/RefreshAll", "Refreshed all enabled lists.", "Failed to refresh Continuum lists.");
             });
 
-            refreshAllButton.addEventListener("click", refreshAllLists);
-            reloadListsButton.addEventListener("click", function () {
-                clearStatus();
-                setBusy(true);
+            reloadDashboardButton.addEventListener("click", function () {
+                clearAlert();
                 Dashboard.showLoadingMsg();
 
-                loadLists().catch(function (error) {
-                    showStatus("Failed to reload list status. " + error.message, "error");
+                loadDashboard().catch(function (error) {
+                    showAlert("Failed to reload Continuum admin data. " + error.message, "error");
                 }).finally(function () {
-                    setBusy(false);
                     Dashboard.hideLoadingMsg();
                 });
-            });
-
-            page.addEventListener("pageshow", function () {
-                setActiveTab("lists");
-                loadPage();
             });
 
             form.addEventListener("submit", function (event) {
                 event.preventDefault();
+                clearAlert();
+                saveSettingsButton.disabled = true;
                 Dashboard.showLoadingMsg();
 
                 ApiClient.getPluginConfiguration(pluginId).then(function (config) {
@@ -499,10 +742,21 @@
                     return ApiClient.updatePluginConfiguration(pluginId, config);
                 }).then(function (result) {
                     Dashboard.processPluginConfigurationUpdateResult(result);
-                    showStatus("Continuum settings saved.", "success");
+                    showAlert("Continuum settings saved.", "success");
+                }).catch(function (error) {
+                    showAlert("Failed to save Continuum settings. " + error.message, "error");
                 }).finally(function () {
+                    saveSettingsButton.disabled = false;
                     Dashboard.hideLoadingMsg();
                 });
+            });
+
+            page.addEventListener("pageshow", function () {
+                loadPage();
+            });
+
+            page.addEventListener("pagehide", function () {
+                stopPolling();
             });
         })();
     </script>

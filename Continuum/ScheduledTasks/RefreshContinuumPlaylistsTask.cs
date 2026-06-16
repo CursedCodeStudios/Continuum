@@ -1,8 +1,5 @@
 using Continuum.Configuration;
 using Continuum.Services;
-using MediaBrowser.Common.Configuration;
-using MediaBrowser.Controller.Library;
-using MediaBrowser.Controller.Playlists;
 using MediaBrowser.Model.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -20,29 +17,11 @@ public sealed class RefreshContinuumPlaylistsTask : IScheduledTask
     /// Initializes a new instance of the <see cref="RefreshContinuumPlaylistsTask"/> class.
     /// </summary>
     public RefreshContinuumPlaylistsTask(
-        ILibraryManager libraryManager,
-        IUserManager userManager,
-        IUserDataManager userDataManager,
-        IPlaylistManager playlistManager,
-        IApplicationPaths applicationPaths,
+        IContinuumRefreshService refreshService,
         ILoggerFactory loggerFactory)
     {
         _logger = loggerFactory.CreateLogger<RefreshContinuumPlaylistsTask>();
-
-        ContinuumListLoader listLoader = new ContinuumListLoader(applicationPaths, loggerFactory.CreateLogger<ContinuumListLoader>());
-        ContinuumItemResolver itemResolver = new ContinuumItemResolver(libraryManager, loggerFactory.CreateLogger<ContinuumItemResolver>());
-        UserWatchStateFilter watchStateFilter = new UserWatchStateFilter(userDataManager, loggerFactory.CreateLogger<UserWatchStateFilter>());
-        ContinuumPlaylistService playlistService = new ContinuumPlaylistService(playlistManager, loggerFactory.CreateLogger<ContinuumPlaylistService>());
-        ContinuumStateStore stateStore = new ContinuumStateStore(applicationPaths, loggerFactory.CreateLogger<ContinuumStateStore>());
-
-        _refreshService = new ContinuumRefreshService(
-            listLoader,
-            itemResolver,
-            watchStateFilter,
-            playlistService,
-            stateStore,
-            userManager,
-            loggerFactory.CreateLogger<ContinuumRefreshService>());
+        _refreshService = refreshService;
     }
 
     /// <inheritdoc />
@@ -78,6 +57,10 @@ public sealed class RefreshContinuumPlaylistsTask : IScheduledTask
         {
             _logger.LogWarning("Scheduled Continuum playlist refresh was canceled.");
             throw;
+        }
+        catch (ContinuumRefreshConflictException ex)
+        {
+            _logger.LogWarning(ex, "Scheduled Continuum playlist refresh skipped because another refresh is already running.");
         }
         catch (Exception ex)
         {

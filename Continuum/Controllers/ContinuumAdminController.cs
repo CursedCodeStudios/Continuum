@@ -29,6 +29,7 @@ public sealed class ContinuumAdminController(
         return Ok(new ContinuumAdminDashboard
         {
             Lists = lists,
+            OperationStatus = refreshService.CurrentOperationStatus,
             LastResult = refreshService.LastResult
         });
     }
@@ -39,13 +40,24 @@ public sealed class ContinuumAdminController(
     [HttpPost("RefreshAll")]
     public async Task<ActionResult<ContinuumRefreshResult>> RefreshAll(CancellationToken cancellationToken)
     {
-        logger.LogInformation("Manual Continuum refresh requested for all lists.");
+        try
+        {
+            logger.LogInformation("Manual Continuum refresh requested for all lists.");
 
-        ContinuumRefreshResult result = await refreshService
-            .RefreshAllAsync(progress: null, cancellationToken)
-            .ConfigureAwait(false);
+            ContinuumRefreshResult result = await refreshService
+                .RefreshAllAsync(progress: null, cancellationToken)
+                .ConfigureAwait(false);
 
-        return Ok(result);
+            return Ok(result);
+        }
+        catch (ContinuumRefreshConflictException ex)
+        {
+            return Conflict(new ProblemDetails
+            {
+                Title = "Refresh already running",
+                Detail = ex.Message
+            });
+        }
     }
 
     /// <summary>
@@ -72,6 +84,14 @@ public sealed class ContinuumAdminController(
             {
                 Title = "Continuum list not found",
                 Detail = $"No enabled Continuum list with slug '{slug}' was found."
+            });
+        }
+        catch (ContinuumRefreshConflictException ex)
+        {
+            return Conflict(new ProblemDetails
+            {
+                Title = "Refresh already running",
+                Detail = ex.Message
             });
         }
     }

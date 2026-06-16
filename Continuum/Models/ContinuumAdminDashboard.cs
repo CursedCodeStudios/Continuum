@@ -11,6 +11,11 @@ public sealed class ContinuumAdminDashboard
     public IReadOnlyList<ContinuumAdminListSummary> Lists { get; set; } = [];
 
     /// <summary>
+    /// Gets or sets the current refresh operation status.
+    /// </summary>
+    public ContinuumRefreshOperationStatus OperationStatus { get; set; } = ContinuumRefreshOperationStatus.CreateIdle();
+
+    /// <summary>
     /// Gets or sets the last refresh result, if any.
     /// </summary>
     public ContinuumRefreshResult? LastResult { get; set; }

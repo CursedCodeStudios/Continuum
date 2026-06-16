@@ -19,6 +19,7 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
     private readonly IContinuumStateStore _stateStore;
     private readonly IUserManager _userManager;
     private readonly ILogger<ContinuumRefreshService> _logger;
+    private readonly ContinuumRefreshOperationTracker _operationTracker = new();
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ContinuumRefreshService"/> class.
@@ -43,6 +44,9 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
 
     /// <inheritdoc />
     public ContinuumRefreshResult? LastResult { get; private set; }
+
+    /// <inheritdoc />
+    public ContinuumRefreshOperationStatus CurrentOperationStatus => _operationTracker.GetSnapshot();
 
     /// <inheritdoc />
     public async Task<IReadOnlyList<ContinuumAdminListSummary>> GetListSummariesAsync(CancellationToken cancellationToken)
@@ -78,6 +82,8 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
         IProgress<double>? progress,
         CancellationToken cancellationToken)
     {
+        _operationTracker.Start(targetSlug);
+
         DateTimeOffset startedAt = DateTimeOffset.UtcNow;
         PluginConfiguration? rawConfiguration = Plugin.Instance?.Configuration;
         PluginConfiguration configuration = PluginConfigurationSanitizer.Sanitize(rawConfiguration);
@@ -98,121 +104,157 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
             _logger.LogInformation("Continuum refresh skipped because the plugin is disabled.");
             result.CompletedAtUtc = DateTimeOffset.UtcNow;
             LastResult = result;
+            _operationTracker.Complete(result);
             return result;
         }
 
-        ContinuumListDefinition[] lists = (await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false))
-            .Where(list => list.Enabled)
-            .Where(list => string.IsNullOrWhiteSpace(targetSlug)
-                || string.Equals(list.Slug, targetSlug, StringComparison.OrdinalIgnoreCase))
-            .ToArray();
-
-        if (!string.IsNullOrWhiteSpace(targetSlug) && lists.Length == 0)
+        try
         {
-            throw new KeyNotFoundException($"No enabled Continuum list with slug '{targetSlug}' was found.");
-        }
-        User[] users = _userManager.Users.OfType<User>().ToArray();
-        ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
-        User[] enabledUsers = configuration.CreatePlaylistsForDisabledUsers
-            ? users
-            : users.Where(user => !ReflectionHelpers.IsDisabled(user)).ToArray();
+            ContinuumListDefinition[] loadedLists = (await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false)).ToArray();
+            ContinuumListDefinition[] lists = ContinuumRefreshSelection.GetTargetLists(loadedLists, targetSlug);
+            User[] users = _userManager.Users.OfType<User>().ToArray();
+            ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
+            User[] enabledUsers = configuration.CreatePlaylistsForDisabledUsers
+                ? users
+                : users.Where(user => !ReflectionHelpers.IsDisabled(user)).ToArray();
 
-        _logger.LogInformation(
-            "Starting Continuum refresh for {ListCount} list(s) across {UserCount} user(s).",
-            lists.Length,
-            enabledUsers.Length);
+            _logger.LogInformation(
+                "Starting Continuum refresh for {ListCount} list(s) across {UserCount} user(s).",
+                lists.Length,
+                enabledUsers.Length);
 
-        result.ListsProcessed = lists.Length;
-        result.UsersProcessed = enabledUsers.Length;
+            result.ListsProcessed = lists.Length;
+            result.UsersProcessed = enabledUsers.Length;
 
-        int totalUserOperations = Math.Max(1, lists.Length * Math.Max(1, enabledUsers.Length));
-        int operationIndex = 0;
+            int totalListCount = lists.Length;
+            int totalUserOperations = totalListCount * enabledUsers.Length;
+            int processedListCount = 0;
+            int processedUserOperations = 0;
 
-        foreach (ContinuumListDefinition list in lists)
-        {
-            cancellationToken.ThrowIfCancellationRequested();
+            _operationTracker.SetPlan(totalListCount, totalUserOperations);
 
-            ContinuumListDefinition orderedList = list;
-            orderedList.Items = orderedList.Items.OrderBy(item => item.Order).ToList();
-
-            IReadOnlyList<ResolvedContinuumEntry> resolvedEntries = await _itemResolver.ResolveAsync(orderedList, cancellationToken).ConfigureAwait(false);
-            result.ItemsResolved += resolvedEntries.Count(entry => entry.IsResolved);
-            result.ItemsMissing += resolvedEntries.Count(entry => entry.IsMissing);
-            result.ItemsAmbiguous += resolvedEntries.Count(entry => entry.IsAmbiguous);
-
-            foreach (ResolvedContinuumEntry entry in resolvedEntries.Where(entry => entry.IsMissing || entry.IsAmbiguous))
-            {
-                if (!string.IsNullOrWhiteSpace(entry.Message))
-                {
-                    result.Warnings.Add($"{list.Slug}#{entry.Source.Order}: {entry.Message}");
-                }
-            }
-
-            ContinuumListState listState = GetOrCreateListState(state, list.Slug);
-
-            foreach (User user in enabledUsers)
+            foreach (ContinuumListDefinition list in lists)
             {
                 cancellationToken.ThrowIfCancellationRequested();
+                _operationTracker.Advance(list.Slug, processedListCount, processedUserOperations);
 
-                BaseItem[] eligibleItems = resolvedEntries
-                    .Where(entry => entry.Item is not null)
-                    .Select(entry => entry.Item!)
-                    .Where(item => _watchStateFilter.ShouldInclude(user, item, configuration))
-                    .Take(configuration.PlaylistSize)
-                    .ToArray();
+                ContinuumListDefinition orderedList = list;
+                orderedList.Items = orderedList.Items.OrderBy(item => item.Order).ToList();
 
-                string userStateKey = user.Id.ToString("D");
-                listState.Users.TryGetValue(userStateKey, out ContinuumUserPlaylistState? existingUserState);
+                IReadOnlyList<ResolvedContinuumEntry> resolvedEntries = await _itemResolver.ResolveAsync(orderedList, cancellationToken).ConfigureAwait(false);
+                result.ItemsResolved += resolvedEntries.Count(entry => entry.IsResolved);
+                result.ItemsMissing += resolvedEntries.Count(entry => entry.IsMissing);
+                result.ItemsAmbiguous += resolvedEntries.Count(entry => entry.IsAmbiguous);
 
-                ContinuumPlaylistUpdateResult playlistUpdate = await _playlistService.CreateOrUpdateAsync(
-                    list,
-                    user,
-                    eligibleItems,
-                    configuration,
-                    existingUserState,
-                    cancellationToken).ConfigureAwait(false);
-
-                if (!listState.Users.TryGetValue(userStateKey, out ContinuumUserPlaylistState? persistedUserState))
+                foreach (ResolvedContinuumEntry entry in resolvedEntries.Where(entry => entry.IsMissing || entry.IsAmbiguous))
                 {
-                    persistedUserState = new ContinuumUserPlaylistState();
-                    listState.Users[userStateKey] = persistedUserState;
+                    if (!string.IsNullOrWhiteSpace(entry.Message))
+                    {
+                        result.Warnings.Add($"{list.Slug}#{entry.Source.Order}: {entry.Message}");
+                    }
                 }
 
-                persistedUserState.PlaylistId = playlistUpdate.PlaylistId ?? persistedUserState.PlaylistId;
-                persistedUserState.LastItemCount = playlistUpdate.ItemCount;
-                persistedUserState.LastRefreshUtc = DateTimeOffset.UtcNow;
+                ContinuumListState listState = GetOrCreateListState(state, list.Slug);
 
-                if (playlistUpdate.Created)
+                foreach (User user in enabledUsers)
                 {
-                    result.PlaylistsCreated++;
+                    cancellationToken.ThrowIfCancellationRequested();
+
+                    BaseItem[] eligibleItems = resolvedEntries
+                        .Where(entry => entry.Item is not null)
+                        .Select(entry => entry.Item!)
+                        .Where(item => _watchStateFilter.ShouldInclude(user, item, configuration))
+                        .Take(configuration.PlaylistSize)
+                        .ToArray();
+
+                    string userStateKey = user.Id.ToString("D");
+                    listState.Users.TryGetValue(userStateKey, out ContinuumUserPlaylistState? existingUserState);
+
+                    ContinuumPlaylistUpdateResult playlistUpdate = await _playlistService.CreateOrUpdateAsync(
+                        list,
+                        user,
+                        eligibleItems,
+                        configuration,
+                        existingUserState,
+                        cancellationToken).ConfigureAwait(false);
+
+                    if (!listState.Users.TryGetValue(userStateKey, out ContinuumUserPlaylistState? persistedUserState))
+                    {
+                        persistedUserState = new ContinuumUserPlaylistState();
+                        listState.Users[userStateKey] = persistedUserState;
+                    }
+
+                    persistedUserState.PlaylistId = playlistUpdate.PlaylistId ?? persistedUserState.PlaylistId;
+                    persistedUserState.LastItemCount = playlistUpdate.ItemCount;
+                    persistedUserState.LastRefreshUtc = DateTimeOffset.UtcNow;
+
+                    if (playlistUpdate.Created)
+                    {
+                        result.PlaylistsCreated++;
+                    }
+
+                    if (playlistUpdate.Updated)
+                    {
+                        result.PlaylistsUpdated++;
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(playlistUpdate.Warning))
+                    {
+                        result.Warnings.Add(playlistUpdate.Warning);
+                    }
+
+                    processedUserOperations++;
+                    _operationTracker.Advance(list.Slug, processedListCount, processedUserOperations);
+                    progress?.Report(CalculateProgress(processedListCount, totalListCount, processedUserOperations, totalUserOperations));
                 }
 
-                if (playlistUpdate.Updated)
-                {
-                    result.PlaylistsUpdated++;
-                }
-
-                if (!string.IsNullOrWhiteSpace(playlistUpdate.Warning))
-                {
-                    result.Warnings.Add(playlistUpdate.Warning);
-                }
-
-                operationIndex++;
-                progress?.Report(operationIndex / (double)totalUserOperations);
+                processedListCount++;
+                _operationTracker.Advance(list.Slug, processedListCount, processedUserOperations);
+                progress?.Report(CalculateProgress(processedListCount, totalListCount, processedUserOperations, totalUserOperations));
             }
+
+            await _stateStore.SaveAsync(state, cancellationToken).ConfigureAwait(false);
+            result.CompletedAtUtc = DateTimeOffset.UtcNow;
+            LastResult = result;
+            _operationTracker.Complete(result);
+
+            _logger.LogInformation(
+                "Completed Continuum refresh in {DurationMs} ms. Created {CreatedCount} playlist(s), updated {UpdatedCount} playlist(s).",
+                (result.CompletedAtUtc - result.StartedAtUtc).TotalMilliseconds,
+                result.PlaylistsCreated,
+                result.PlaylistsUpdated);
+
+            return result;
+        }
+        catch (OperationCanceledException ex)
+        {
+            _operationTracker.Fail(ex, "Refresh was canceled.");
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _operationTracker.Fail(ex);
+            throw;
+        }
+    }
+
+    private static double CalculateProgress(
+        int processedListCount,
+        int totalListCount,
+        int processedUserOperations,
+        int totalUserOperations)
+    {
+        if (totalUserOperations > 0)
+        {
+            return processedUserOperations / (double)totalUserOperations;
         }
 
-        await _stateStore.SaveAsync(state, cancellationToken).ConfigureAwait(false);
-        result.CompletedAtUtc = DateTimeOffset.UtcNow;
-        LastResult = result;
+        if (totalListCount > 0)
+        {
+            return processedListCount / (double)totalListCount;
+        }
 
-        _logger.LogInformation(
-            "Completed Continuum refresh in {DurationMs} ms. Created {CreatedCount} playlist(s), updated {UpdatedCount} playlist(s).",
-            (result.CompletedAtUtc - result.StartedAtUtc).TotalMilliseconds,
-            result.PlaylistsCreated,
-            result.PlaylistsUpdated);
-
-        return result;
+        return 1D;
     }
 
     private static ContinuumAdminListSummary CreateListSummary(ContinuumListDefinition list, ContinuumState state)
