@@ -165,7 +165,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          CHECKSUM="$(sha256sum "${{ steps.version.outputs.zip_path }}" | awk '{print $1}')"
+          CHECKSUM="$(md5sum "${{ steps.version.outputs.zip_path }}" | awk '{print $1}')"
           echo "checksum=${CHECKSUM}" >> "${GITHUB_OUTPUT}"
 
       - name: Create release body
@@ -286,6 +286,6 @@ jobs:
         run: |
           echo "Released ${PLUGIN_NAME} ${{ steps.version.outputs.version }}"
           echo "ZIP: ${{ steps.version.outputs.zip_path }}"
-          echo "SHA256: ${{ steps.checksum.outputs.checksum }}"
+          echo "MD5: ${{ steps.checksum.outputs.checksum }}"
           echo "Manifest repository updated in ${MANIFEST_REPO}"
           echo "Jellyfin repo URL: ${MANIFEST_REPOSITORY_URL}"
