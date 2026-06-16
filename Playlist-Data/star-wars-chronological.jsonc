@@ -1504,6 +1504,394 @@
       },
       "seasonNumber": 7,
       "episodeNumber": 12
+    },
+
+    // Star Wars: The Bad Batch - S01E01 - Aftermath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Bad Batch - S01E02 - Cut and Run
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Bad Batch - S01E03 - Replacements
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Bad Batch - S01E04 - Cornered
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Bad Batch - S01E05 - Rampage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Bad Batch - S01E06 - Decommissioned
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Bad Batch - S01E07 - Battle Scars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Bad Batch - S01E08 - Reunion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Bad Batch - S01E09 - Bounty Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Bad Batch - S01E10 - Common Ground
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Bad Batch - S01E11 - Devil's Deal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Bad Batch - S01E12 - Rescue on Ryloth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Bad Batch - S01E13 - Infested
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Bad Batch - S01E14 - War-Mantle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Wars: The Bad Batch - S01E15 - Return to Kamino
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Bad Batch - S01E16 - Kamino Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Bad Batch - S02E01 - Spoils of War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Bad Batch - S02E02 - Ruins of War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Bad Batch - S02E03 - The Solitary Clone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Bad Batch - S02E04 - Faster
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Bad Batch - S02E05 - Entombed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Bad Batch - S02E06 - Tribe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Bad Batch - S02E07 - The Clone Conspiracy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Bad Batch - S02E08 - Truth & Consequences
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Bad Batch - S02E09 - The Crossing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Bad Batch - S02E10 - Retrieval
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Bad Batch - S02E11 - Metamorphosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Bad Batch - S02E12 - The Outpost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Bad Batch - S02E13 - Pabu
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Bad Batch - S02E14 - Tipping Point
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Wars: The Bad Batch - S02E15 - The Summit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Bad Batch - S02E16 - Plan 99
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385376"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Solo: A Star Wars Story
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "348350"
+      }
+    },
+
+    // Obi-Wan Kenobi - S01E01 - Part I
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Obi-Wan Kenobi - S01E02 - Part II
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Obi-Wan Kenobi - S01E03 - Part III
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Obi-Wan Kenobi - S01E04 - Part IV
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Obi-Wan Kenobi - S01E05 - Part V
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Obi-Wan Kenobi - S01E06 - Part VI
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393199"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
     }
   ]
 }
