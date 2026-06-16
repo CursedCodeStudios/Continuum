@@ -47,6 +47,8 @@ Continuum exposes a basic plugin configuration page with:
 - `Enabled`
 - `RefreshIntervalMinutes`
 - `PlaylistSize`
+- `PlaylistSuffix`
+- `EnabledLists`
 
 Additional stored config fields already exist for future work:
 
@@ -61,6 +63,7 @@ Sanitization rules:
 - `PlaylistSize` range: `1..150`
 - Default refresh interval: `60`
 - Default playlist size: `100`
+- Per-list enablement defaults to `off` until each server admin checks the list on the Continuum admin page
 - If both watch-state include flags are false, Continuum treats both as enabled and logs a warning
 
 ## Manual List Format
@@ -79,7 +82,6 @@ Example:
   "name": "Chicago Universe",
   "slug": "chicago-universe",
   "description": "Manual chronological watch order for the Chicago franchise.",
-  "enabled": true,
   "items": [
     {
       "type": "episode",
@@ -104,7 +106,7 @@ Example:
 }
 ```
 
-At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, using `Playlist-Data/playlist-manifest.json` to discover which playlist files are live. Item order comes directly from array position, so you do not need to set an `order` property on each entry.
+At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, using `Playlist-Data/playlist-manifest.json` to discover which playlist files are live. Item order comes directly from array position, so you do not need to set an `order` property on each entry. Archive files do not control whether a list is active on a given server; each admin enables lists locally from the Continuum admin page, and new lists start disabled by default.
 
 The community archive is indexed by [`Playlist-Data/playlist-manifest.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/playlist-manifest.json) and currently includes [`Playlist-Data/chicago-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.jsonc), [`Playlist-Data/star-wars-test.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.jsonc), and [`Playlist-Data/marvel-cinematic-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/marvel-cinematic-universe.jsonc).
 
@@ -137,14 +139,14 @@ The token must be able to call `repository_dispatch` on:
 ### Create a release
 
 ```bash
-git tag v0.1.4.1
-git push origin v0.1.4.1
+git tag v0.1.5.0
+git push origin v0.1.5.0
 ```
 
 The release workflow will:
 
 1. build the plugin;
-2. create `Continuum_0.1.4.1.zip`;
+2. create `Continuum_0.1.5.0.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;

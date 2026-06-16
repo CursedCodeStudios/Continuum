@@ -1,10 +1,41 @@
 using Continuum.Models;
 using Continuum.Services;
+using Continuum.Configuration;
 
 namespace Continuum.Tests;
 
 public sealed class ContinuumRefreshCoordinationTests
 {
+    [Fact]
+    public void GetTargetLists_ReturnsOnlyListsEnabledInConfiguration()
+    {
+        ContinuumListDefinition[] loadedLists =
+        [
+            new ContinuumListDefinition
+            {
+                Name = "Chicago Universe",
+                Slug = "chicago-universe"
+            },
+            new ContinuumListDefinition
+            {
+                Name = "Star Wars",
+                Slug = "star-wars"
+            }
+        ];
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            EnabledLists = new Dictionary<string, bool>
+            {
+                ["star-wars"] = true
+            }
+        };
+
+        ContinuumListDefinition[] targetLists = ContinuumRefreshSelection.GetTargetLists(loadedLists, configuration, targetSlug: null);
+
+        Assert.Single(targetLists);
+        Assert.Equal("star-wars", targetLists[0].Slug);
+    }
+
     [Fact]
     public void GetTargetLists_RejectsUnknownSlug()
     {
@@ -13,15 +44,40 @@ public sealed class ContinuumRefreshCoordinationTests
             new ContinuumListDefinition
             {
                 Name = "Chicago Universe",
-                Slug = "chicago-universe",
-                Enabled = true
+                Slug = "chicago-universe"
             }
         ];
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            EnabledLists = new Dictionary<string, bool>
+            {
+                ["chicago-universe"] = true
+            }
+        };
 
         KeyNotFoundException exception = Assert.Throws<KeyNotFoundException>(() =>
-            ContinuumRefreshSelection.GetTargetLists(loadedLists, "missing-list"));
+            ContinuumRefreshSelection.GetTargetLists(loadedLists, configuration, "missing-list"));
 
         Assert.Contains("missing-list", exception.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void GetTargetLists_RejectsDisabledSlug()
+    {
+        ContinuumListDefinition[] loadedLists =
+        [
+            new ContinuumListDefinition
+            {
+                Name = "Chicago Universe",
+                Slug = "chicago-universe"
+            }
+        ];
+        PluginConfiguration configuration = new PluginConfiguration();
+
+        KeyNotFoundException exception = Assert.Throws<KeyNotFoundException>(() =>
+            ContinuumRefreshSelection.GetTargetLists(loadedLists, configuration, "chicago-universe"));
+
+        Assert.Contains("chicago-universe", exception.Message, StringComparison.Ordinal);
     }
 
     [Fact]

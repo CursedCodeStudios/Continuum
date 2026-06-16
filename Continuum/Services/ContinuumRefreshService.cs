@@ -51,12 +51,13 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
     /// <inheritdoc />
     public async Task<IReadOnlyList<ContinuumAdminListSummary>> GetListSummariesAsync(CancellationToken cancellationToken)
     {
+        PluginConfiguration configuration = PluginConfigurationSanitizer.Sanitize(Plugin.Instance?.Configuration);
         IReadOnlyList<ContinuumListDefinition> lists = await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false);
         ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
 
         return lists
             .OrderBy(list => list.Name, StringComparer.OrdinalIgnoreCase)
-            .Select(list => CreateListSummary(list, state))
+            .Select(list => CreateListSummary(list, state, configuration))
             .ToArray();
     }
 
@@ -111,7 +112,7 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
         try
         {
             ContinuumListDefinition[] loadedLists = (await _listLoader.LoadAllAsync(cancellationToken).ConfigureAwait(false)).ToArray();
-            ContinuumListDefinition[] lists = ContinuumRefreshSelection.GetTargetLists(loadedLists, targetSlug);
+            ContinuumListDefinition[] lists = ContinuumRefreshSelection.GetTargetLists(loadedLists, configuration, targetSlug);
             User[] users = ReflectionHelpers.GetUsers(_userManager);
             ContinuumState state = await _stateStore.LoadAsync(cancellationToken).ConfigureAwait(false);
             User[] enabledUsers = configuration.CreatePlaylistsForDisabledUsers
@@ -257,14 +258,17 @@ public sealed class ContinuumRefreshService : IContinuumRefreshService
         return 1D;
     }
 
-    private static ContinuumAdminListSummary CreateListSummary(ContinuumListDefinition list, ContinuumState state)
+    private static ContinuumAdminListSummary CreateListSummary(
+        ContinuumListDefinition list,
+        ContinuumState state,
+        PluginConfiguration configuration)
     {
         ContinuumAdminListSummary summary = new ContinuumAdminListSummary
         {
             Name = list.Name,
             Slug = list.Slug,
             Description = list.Description,
-            Enabled = list.Enabled,
+            Enabled = ContinuumRefreshSelection.IsListEnabled(configuration, list.Slug),
             ItemCount = list.Items.Count
         };
 

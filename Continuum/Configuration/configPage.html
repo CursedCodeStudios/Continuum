@@ -120,7 +120,7 @@
                     <div class="continuumSectionTitleRow">
                         <div>
                             <div class="continuumSectionTitle">Live Archive Lists</div>
-                            <div class="continuumMuted">These lists are fetched live from this repository's raw GitHub URLs and are read-only on the server.</div>
+                            <div class="continuumMuted">These lists are fetched live from this repository's raw GitHub URLs and are read-only on the server. New lists default to off until you enable them here.</div>
                         </div>
                         <div id="ContinuumListsSummary" class="continuumMuted">Loading lists...</div>
                     </div>
@@ -148,6 +148,11 @@
                         <div class="inputContainer">
                             <input id="PlaylistSize" name="PlaylistSize" type="number" is="emby-input" min="1" max="150" step="1" />
                             <label class="inputLabel inputLabelUnfocused" for="PlaylistSize">Playlist size</label>
+                        </div>
+
+                        <div class="inputContainer">
+                            <input id="PlaylistSuffix" name="PlaylistSuffix" type="text" is="emby-input" />
+                            <label class="inputLabel inputLabelUnfocused" for="PlaylistSuffix">Playlist suffix</label>
                         </div>
 
                         <button id="SaveSettingsButton" is="emby-button" type="submit" class="raised button-submit block">
@@ -320,6 +325,11 @@
             margin-top: 0.95rem;
         }
 
+        #ContinuumConfigPage .continuumListToggle {
+            display: inline-flex;
+            margin-bottom: 0.45rem;
+        }
+
         #ContinuumConfigPage .continuumProgressBlock {
             margin-top: 0.9rem;
         }
@@ -458,6 +468,7 @@
                 operationStatus: null,
                 pollHandle: 0,
                 pollInFlight: false,
+                pluginConfig: null,
                 resolverDrawerOpen: false
             };
 
@@ -551,6 +562,92 @@
                     const enabled = button.dataset.enabled === "true";
                     button.disabled = isBusy || !enabled;
                 });
+
+                Array.from(document.querySelectorAll(".listEnabledCheckbox")).forEach(function (checkbox) {
+                    checkbox.disabled = isBusy;
+                });
+            }
+
+            function normalizeEnabledLists(enabledLists) {
+                const normalized = {};
+                const source = enabledLists || {};
+                Object.keys(source).forEach(function (key) {
+                    const trimmedKey = String(key || "").trim();
+                    if (!trimmedKey) {
+                        return;
+                    }
+
+                    normalized[trimmedKey] = !!source[key];
+                });
+
+                return normalized;
+            }
+
+            function normalizeConfig(config) {
+                const normalized = config || {};
+                normalized.EnabledLists = normalizeEnabledLists(readValue(normalized, "enabledLists", "EnabledLists", {}));
+                state.pluginConfig = normalized;
+                return normalized;
+            }
+
+            function getMutableConfig() {
+                if (!state.pluginConfig) {
+                    throw new Error("Continuum configuration has not finished loading yet.");
+                }
+
+                return normalizeConfig(state.pluginConfig);
+            }
+
+            function savePluginConfig(config, successMessage, errorPrefix) {
+                state.actionInFlight = true;
+                setRefreshButtonsState();
+
+                return ApiClient.updatePluginConfiguration(pluginId, config).then(function (result) {
+                    Dashboard.processPluginConfigurationUpdateResult(result);
+                    showAlert(successMessage, "success");
+                    state.pluginConfig = normalizeConfig(config);
+                    return Promise.all([
+                        loadConfig(),
+                        loadDashboard()
+                    ]);
+                }).catch(function (error) {
+                    showAlert(errorPrefix + " " + error.message, "error");
+                    return loadConfig().catch(function () {
+                        return null;
+                    }).then(function () {
+                        return loadDashboard().catch(function () {
+                            return null;
+                        });
+                    }).then(function () {
+                        throw error;
+                    });
+                }).finally(function () {
+                    state.actionInFlight = false;
+                    setRefreshButtonsState();
+                    syncPolling();
+                });
+            }
+
+            function updateListEnabledState(slug, enabled) {
+                const config = getMutableConfig();
+                const enabledLists = normalizeEnabledLists(readValue(config, "enabledLists", "EnabledLists", {}));
+
+                enabledLists[slug] = !!enabled;
+                config.EnabledLists = enabledLists;
+
+                return savePluginConfig(
+                    config,
+                    (enabled ? "Enabled " : "Disabled ") + slug + " on this server.",
+                    "Failed to update list enablement for " + slug + ".");
+            }
+
+            function createListToggleMarkup(slug, enabled) {
+                return [
+                    "<label class=\"checkboxContainer continuumListToggle\">",
+                    "  <input type=\"checkbox\" class=\"listEnabledCheckbox\" data-slug=\"" + escapeHtml(slug) + "\" is=\"emby-checkbox\"" + (enabled ? " checked" : "") + " />",
+                    "  <span>Enable this list on this server</span>",
+                    "</label>"
+                ].join("");
             }
 
             function readTrimmedValue(selector) {
@@ -913,9 +1010,12 @@
                         "  </div>",
                         "</div>",
                         "<div class=\"continuumListFooter\">",
-                        "  <div class=\"continuumMuted\">" + (enabled
+                        "  <div>",
+                        "    " + createListToggleMarkup(slug, enabled),
+                        "    <div class=\"continuumMuted\">" + (enabled
                             ? "Refreshes this list for every eligible user."
-                            : "Disabled lists stay visible here but cannot be refreshed.") + "</div>",
+                            : "Enable this list here before running refreshes on this server.") + "</div>",
+                        "  </div>",
                         "  <button is=\"emby-button\" type=\"button\" class=\"refreshListButton\" data-slug=\"" + escapeHtml(slug) + "\" data-enabled=\"" + String(enabled) + "\"" + (enabled ? "" : " disabled") + ">",
                         "    <span>Refresh This List</span>",
                         "  </button>",
@@ -936,6 +1036,20 @@
                     });
                 });
 
+                Array.from(document.querySelectorAll(".listEnabledCheckbox")).forEach(function (checkbox) {
+                    checkbox.addEventListener("change", function () {
+                        const slug = checkbox.dataset.slug;
+                        if (!slug) {
+                            return;
+                        }
+
+                        clearAlert();
+                        updateListEnabledState(slug, checkbox.checked).catch(function () {
+                            return null;
+                        });
+                    });
+                });
+
                 setRefreshButtonsState();
             }
 
@@ -948,9 +1062,11 @@
 
             function loadConfig() {
                 return ApiClient.getPluginConfiguration(pluginId).then(function (config) {
-                    document.querySelector("#Enabled").checked = !!config.Enabled;
-                    document.querySelector("#RefreshIntervalMinutes").value = config.RefreshIntervalMinutes ?? 60;
-                    document.querySelector("#PlaylistSize").value = config.PlaylistSize ?? 100;
+                    const normalizedConfig = normalizeConfig(config);
+                    document.querySelector("#Enabled").checked = !!readValue(normalizedConfig, "enabled", "Enabled", true);
+                    document.querySelector("#RefreshIntervalMinutes").value = readValue(normalizedConfig, "refreshIntervalMinutes", "RefreshIntervalMinutes", 60);
+                    document.querySelector("#PlaylistSize").value = readValue(normalizedConfig, "playlistSize", "PlaylistSize", 100);
+                    document.querySelector("#PlaylistSuffix").value = readValue(normalizedConfig, "playlistSuffix", "PlaylistSuffix", "Continuum");
                     state.configLoaded = true;
                 });
             }
@@ -1089,16 +1205,15 @@
                 saveSettingsButton.disabled = true;
                 Dashboard.showLoadingMsg();
 
-                ApiClient.getPluginConfiguration(pluginId).then(function (config) {
+                Promise.resolve().then(function () {
+                    const config = getMutableConfig();
                     config.Enabled = document.querySelector("#Enabled").checked;
                     config.RefreshIntervalMinutes = parseInt(document.querySelector("#RefreshIntervalMinutes").value || "60", 10);
                     config.PlaylistSize = parseInt(document.querySelector("#PlaylistSize").value || "100", 10);
-                    return ApiClient.updatePluginConfiguration(pluginId, config);
-                }).then(function (result) {
-                    Dashboard.processPluginConfigurationUpdateResult(result);
-                    showAlert("Continuum settings saved.", "success");
+                    config.PlaylistSuffix = (document.querySelector("#PlaylistSuffix").value || "Continuum").trim();
+                    return savePluginConfig(config, "Continuum settings saved.", "Failed to save Continuum settings.");
                 }).catch(function (error) {
-                    showAlert("Failed to save Continuum settings. " + error.message, "error");
+                    return null;
                 }).finally(function () {
                     saveSettingsButton.disabled = false;
                     Dashboard.hideLoadingMsg();

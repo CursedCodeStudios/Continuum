@@ -24,6 +24,11 @@ public class PluginConfiguration : BasePluginConfiguration
     public int PlaylistSize { get; set; } = 100;
 
     /// <summary>
+    /// Gets or sets the suffix appended to generated playlist names.
+    /// </summary>
+    public string PlaylistSuffix { get; set; } = "Continuum";
+
+    /// <summary>
     /// Gets or sets a value indicating whether disabled users should receive playlists.
     /// </summary>
     public bool CreatePlaylistsForDisabledUsers { get; set; }
@@ -43,4 +48,10 @@ public class PluginConfiguration : BasePluginConfiguration
     /// </summary>
     [XmlIgnore]
     public Dictionary<string, string> PlaylistImagePaths { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Gets or sets the per-list enabled state keyed by list slug.
+    /// </summary>
+    [XmlIgnore]
+    public Dictionary<string, bool> EnabledLists { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 }

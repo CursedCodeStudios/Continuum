@@ -37,8 +37,9 @@ public sealed class ContinuumPlaylistService : IContinuumPlaylistService
         cancellationToken.ThrowIfCancellationRequested();
 
         PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
-        string playlistName = BuildPlaylistName(list, user, preferUserQualifiedName: false);
-        Playlist? playlist = FindExistingPlaylist(user, playlistName, existingState?.PlaylistId);
+        string playlistName = BuildDefaultPlaylistName(list.Name, sanitized.PlaylistSuffix);
+        string fallbackPlaylistName = BuildUserQualifiedPlaylistName(list.Name, ReflectionHelpers.GetUserName(user), sanitized.PlaylistSuffix);
+        Playlist? playlist = FindExistingPlaylist(user, playlistName, fallbackPlaylistName, existingState?.PlaylistId);
         int currentItemCount = playlist?.GetManageableItems().Count ?? 0;
         int previousRecordedItemCount = existingState?.LastItemCount ?? 0;
 
@@ -72,7 +73,7 @@ public sealed class ContinuumPlaylistService : IContinuumPlaylistService
             }).ConfigureAwait(false);
 
             playlist = FindExistingPlaylist(user, playlistName, null)
-                ?? FindExistingPlaylist(user, BuildPlaylistName(list, user, preferUserQualifiedName: true), null);
+                ?? FindExistingPlaylist(user, fallbackPlaylistName, null);
 
             if (playlist is null)
             {
@@ -118,6 +119,11 @@ public sealed class ContinuumPlaylistService : IContinuumPlaylistService
 
     private Playlist? FindExistingPlaylist(User user, string playlistName, Guid? playlistId)
     {
+        return FindExistingPlaylist(user, playlistName, fallbackPlaylistName: null, playlistId);
+    }
+
+    private Playlist? FindExistingPlaylist(User user, string playlistName, string? fallbackPlaylistName, Guid? playlistId)
+    {
         Playlist[] availablePlaylists = _playlistManager.GetPlaylists(user.Id).ToArray();
 
         if (playlistId is Guid knownPlaylistId)
@@ -137,21 +143,23 @@ public sealed class ContinuumPlaylistService : IContinuumPlaylistService
             return byDefaultName;
         }
 
-        string fallbackName = BuildPlaylistNameFromValues(playlistName, ReflectionHelpers.GetUserName(user));
+        if (string.IsNullOrWhiteSpace(fallbackPlaylistName))
+        {
+            return null;
+        }
+
         return availablePlaylists.FirstOrDefault(playlist =>
-            string.Equals(playlist.Name, fallbackName, StringComparison.OrdinalIgnoreCase)
+            string.Equals(playlist.Name, fallbackPlaylistName, StringComparison.OrdinalIgnoreCase)
             && playlist.OwnerUserId == user.Id);
     }
 
-    private static string BuildPlaylistName(ContinuumListDefinition list, User user, bool preferUserQualifiedName)
+    internal static string BuildDefaultPlaylistName(string listName, string playlistSuffix)
     {
-        return preferUserQualifiedName
-            ? BuildPlaylistNameFromValues(list.Name, ReflectionHelpers.GetUserName(user))
-            : $"{list.Name} - Continuum";
+        return $"{listName} - {playlistSuffix}";
     }
 
-    private static string BuildPlaylistNameFromValues(string listName, string userName)
+    internal static string BuildUserQualifiedPlaylistName(string listName, string userName, string playlistSuffix)
     {
-        return $"{listName} - {userName} - Continuum";
+        return $"{listName} - {userName} - {playlistSuffix}";
     }
 }

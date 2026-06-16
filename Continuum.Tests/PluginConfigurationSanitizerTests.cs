@@ -33,4 +33,53 @@ public class PluginConfigurationSanitizerTests
         Assert.True(sanitized.IncludePartiallyWatched);
         Assert.True(sanitized.IncludeUnwatched);
     }
+
+    [Fact]
+    public void Sanitize_DefaultsBlankPlaylistSuffixToContinuum()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            PlaylistSuffix = "   "
+        };
+
+        PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
+
+        Assert.Equal("Continuum", sanitized.PlaylistSuffix);
+    }
+
+    [Fact]
+    public void Sanitize_TrimsPlaylistSuffix()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            PlaylistSuffix = "  Rolling Watch  "
+        };
+
+        PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
+
+        Assert.Equal("Rolling Watch", sanitized.PlaylistSuffix);
+    }
+
+    [Fact]
+    public void Sanitize_TrimsEnabledListKeysAndDropsBlankKeys()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            EnabledLists = new Dictionary<string, bool>
+            {
+                [" chicago-universe "] = true,
+                ["   "] = true,
+                ["marvel-cinematic-universe"] = false
+            }
+        };
+
+        PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
+
+        Assert.True(sanitized.EnabledLists.TryGetValue("chicago-universe", out bool chicagoEnabled));
+        Assert.True(chicagoEnabled);
+        Assert.True(sanitized.EnabledLists.TryGetValue("marvel-cinematic-universe", out bool marvelEnabled));
+        Assert.False(marvelEnabled);
+        Assert.DoesNotContain("   ", sanitized.EnabledLists.Keys);
+        Assert.DoesNotContain(string.Empty, sanitized.EnabledLists.Keys);
+    }
 }
