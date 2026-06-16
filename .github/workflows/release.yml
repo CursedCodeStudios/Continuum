@@ -16,7 +16,7 @@ permissions:
 
 env:
   PLUGIN_NAME: Continuum
-  PLUGIN_ID: Continuum
+  PLUGIN_ID: Jellyfin.Plugin.Continuum
   PROJECT_PATH: Continuum/Continuum.csproj
   TARGET_ABI: 10.11.0.0
   MANIFEST_REPO: CursedCodeStudios/Jellyfin-Plugins
@@ -96,27 +96,27 @@ jobs:
           set -euo pipefail
 
           PLUGIN_GUID="$(python3 - <<'PY'
-import pathlib
-import re
-import sys
+          import pathlib
+          import re
+          import sys
 
-plugin_file = pathlib.Path("Continuum/Plugin.cs")
-text = plugin_file.read_text(encoding="utf-8")
+          plugin_file = pathlib.Path("Continuum/Plugin.cs")
+          text = plugin_file.read_text(encoding="utf-8")
 
-patterns = [
-    r'Guid\.Parse\("([0-9a-fA-F-]{36})"\)',
-    r'new Guid\("([0-9a-fA-F-]{36})"\)'
-]
+          patterns = [
+              r'Guid\.Parse\("([0-9a-fA-F-]{36})"\)',
+              r'new Guid\("([0-9a-fA-F-]{36})"\)'
+          ]
 
-for pattern in patterns:
-    match = re.search(pattern, text)
-    if match:
-        print(match.group(1).lower())
-        sys.exit(0)
+          for pattern in patterns:
+              match = re.search(pattern, text)
+              if match:
+                  print(match.group(1).lower())
+                  sys.exit(0)
 
-sys.exit(1)
-PY
-)"
+          sys.exit(1)
+          PY
+          )"
 
           if [[ -z "${PLUGIN_GUID}" ]]; then
             echo "Failed to determine the Continuum plugin GUID from Continuum/Plugin.cs." >&2
@@ -216,33 +216,33 @@ PY
           fi
 
           PAYLOAD="$(python3 - <<'PY'
-import json
-import os
+          import json
+          import os
 
-payload = {
-    "event_type": "update-plugin-release",
-    "client_payload": {
-        "pluginGuid": os.environ["PLUGIN_GUID"],
-        "pluginName": os.environ["PLUGIN_NAME"],
-        "description": os.environ["PLUGIN_DESCRIPTION"],
-        "overview": os.environ["PLUGIN_OVERVIEW"],
-        "owner": os.environ["OWNER_NAME"],
-        "category": os.environ["CATEGORY"],
-        "version": os.environ["VERSION"],
-        "targetAbi": os.environ["TARGET_ABI"],
-        "checksum": os.environ["CHECKSUM"],
-        "timestamp": os.environ["TIMESTAMP"],
-        "sourceUrl": os.environ["SOURCE_URL"],
-        "changelog": f"Release {os.environ['VERSION']}.",
-        "repositoryName": os.environ["MANIFEST_REPOSITORY_NAME"],
-        "repositoryUrl": os.environ["MANIFEST_REPOSITORY_URL"],
-        "url": os.environ["RELEASE_URL"],
-    },
-}
+          payload = {
+              "event_type": "update-plugin-release",
+              "client_payload": {
+                  "pluginGuid": os.environ["PLUGIN_GUID"],
+                  "pluginName": os.environ["PLUGIN_NAME"],
+                  "description": os.environ["PLUGIN_DESCRIPTION"],
+                  "overview": os.environ["PLUGIN_OVERVIEW"],
+                  "owner": os.environ["OWNER_NAME"],
+                  "category": os.environ["CATEGORY"],
+                  "version": os.environ["VERSION"],
+                  "targetAbi": os.environ["TARGET_ABI"],
+                  "checksum": os.environ["CHECKSUM"],
+                  "timestamp": os.environ["TIMESTAMP"],
+                  "sourceUrl": os.environ["SOURCE_URL"],
+                  "changelog": f"Release {os.environ['VERSION']}.",
+                  "repositoryName": os.environ["MANIFEST_REPOSITORY_NAME"],
+                  "repositoryUrl": os.environ["MANIFEST_REPOSITORY_URL"],
+                  "url": os.environ["RELEASE_URL"],
+              },
+          }
 
-print(json.dumps(payload))
-PY
-)"
+          print(json.dumps(payload))
+          PY
+          )"
 
           curl -X POST \
             -H "Authorization: Bearer ${MANIFEST_REPO_TOKEN}" \
