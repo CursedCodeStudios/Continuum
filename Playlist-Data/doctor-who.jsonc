@@ -1132,6 +1132,406 @@
       },
       "seasonNumber": 3,
       "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S03E01 - Prisoner of the Judoon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // The Sarah Jane Adventures - S03E02 - Prisoner of the Judoon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // The Sarah Jane Adventures - S03E03 - The Mad Woman in the Attic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // The Sarah Jane Adventures - S03E04 - The Mad Woman in the Attic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // The Sarah Jane Adventures - S03E05 - The Wedding of Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S03E06 - The Wedding of Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // The Sarah Jane Adventures - S03E07 - The Eternity Trap
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // The Sarah Jane Adventures - S03E08 - The Eternity Trap
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // The Sarah Jane Adventures - S03E09 - Mona Lisa's Revenge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // The Sarah Jane Adventures - S03E10 - Mona Lisa's Revenge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // The Sarah Jane Adventures - S03E11 - The Gift
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // The Sarah Jane Adventures - S03E12 - The Gift
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S00E14 - The Waters of Mars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 14
+    },
+
+    // Doctor Who (2005) - S00E16 - The End of Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 16
+    },
+
+    // Doctor Who (2005) - S00E17 - The End of Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 17
+    },
+
+    // Doctor Who (2005) - S05E01 - The Eleventh Hour
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 1
+    },
+
+    // Doctor Who (2005) - S05E02 - The Beast Below
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 2
+    },
+
+    // Doctor Who (2005) - S05E03 - Victory of the Daleks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 3
+    },
+
+    // Doctor Who (2005) - S05E04 - The Time of Angels
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 4
+    },
+
+    // Doctor Who (2005) - S05E05 - Flesh and Stone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 5
+    },
+
+    // Doctor Who (2005) - S05E06 - The Vampires of Venice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 6
+    },
+
+    // Doctor Who (2005) - S05E07 - Amy's Choice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 7
+    },
+
+    // Doctor Who (2005) - S05E08 - The Hungry Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 8
+    },
+
+    // Doctor Who (2005) - S05E09 - Cold Blood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 9
+    },
+
+    // Doctor Who (2005) - S05E10 - Vincent and the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 10
+    },
+
+    // Doctor Who (2005) - S05E11 - The Lodger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 11
+    },
+
+    // Doctor Who (2005) - S05E12 - The Pandorica Opens
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 12
+    },
+
+    // Doctor Who (2005) - S05E13 - The Big Bang
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "78804"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 13
+    },
+
+    // The Sarah Jane Adventures - S04E01 - The Nightmare Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // The Sarah Jane Adventures - S04E02 - The Nightmare Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // The Sarah Jane Adventures - S04E03 - The Vault of Secrets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // The Sarah Jane Adventures - S04E04 - The Vault of Secrets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // The Sarah Jane Adventures - S04E05 - Death of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // The Sarah Jane Adventures - S04E06 - Death of the Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // The Sarah Jane Adventures - S04E07 - The Empty Planet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // The Sarah Jane Adventures - S04E08 - The Empty Planet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // The Sarah Jane Adventures - S04E09 - Lost in Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // The Sarah Jane Adventures - S04E10 - Lost in Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // The Sarah Jane Adventures - S04E11 - Goodbye, Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // The Sarah Jane Adventures - S04E12 - Goodbye, Sarah Jane Smith
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "79815"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
     }
   ]
 }
