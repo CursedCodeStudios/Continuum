@@ -1426,6 +1426,536 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 13
+    },
+
+    // Ant-Man
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "102899"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E01 - Laws of Nature
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E02 - Purpose in the Machine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E03 - A Wanted (Inhu)man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E04 - Devils You Know
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E05 - 4,722 Hours
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E06 - Among Us Hide...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E07 - Chaos Theory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E08 - Many Heads, One Tale
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E09 - Closure
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E10 - Maveth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E11 - Bouncing Back
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E12 - The Inside Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E13 - Parting Shot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E14 - Watchdogs
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E15 - Spacetime
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E16 - Paradise Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E17 - The Team
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E18 - The Singularity
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E19 - Failed Experiments
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Marvel's Iron Fist - S01E01 - Snow Gives Way
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Iron Fist - S01E02 - Shadow Hawk Takes Flight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Iron Fist - S01E03 - Rolling Thunder Cannon Punch
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Iron Fist - S01E04 - Eight Diagram Dragon Palm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Iron Fist - S01E05 - Under Leaf Pluck Lotus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Iron Fist - S01E06 - Immortal Emerges from Cave
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Iron Fist - S01E07 - Felling Tree with Roots
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Iron Fist - S01E08 - The Blessing of Many Fractures
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Iron Fist - S01E09 - The Mistress of All Agonies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Iron Fist - S01E10 - Black Tiger Steals Heart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Iron Fist - S01E11 - Lead Horse Back to Stable
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Iron Fist - S01E12 - Bar the Big Boss
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Iron Fist - S01E13 - Dragon Plays with Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "317953"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Captain America: Civil War
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "271110"
+      }
+    },
+
+    // Team Thor
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "413279"
+      }
+    },
+
+    // Team Thor: Part 2
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "441829"
+      }
+    },
+
+    // Black Widow
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "497698"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E20 - Emancipation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E21 - Absolution
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S03E22 - Ascension
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Marvel's The Defenders - S01E01 - The H Word
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's The Defenders - S01E02 - Mean Right Hook
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's The Defenders - S01E03 - Worst Behavior
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's The Defenders - S01E04 - Royal Dragon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's The Defenders - S01E05 - Take Shelter
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's The Defenders - S01E06 - Ashes, Ashes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's The Defenders - S01E07 - Fish in the Jailhouse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's The Defenders - S01E08 - The Defenders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "326490"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E01 - The Ghost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E02 - Meet the New Boss
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E03 - Uprising
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E04 - Let Me Stand Next to Your Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E05 - Lockup
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E06 - The Good Samaritan
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
     }
   ]
 }
