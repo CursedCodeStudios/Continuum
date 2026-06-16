@@ -1956,6 +1956,576 @@
       },
       "seasonNumber": 4,
       "episodeNumber": 6
+    },
+
+    // Doctor Strange
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "284052"
+      }
+    },
+
+    // Black Panther
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "284054"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E07 - Deals with Our Devils
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E08 - The Laws of Inferno Dynamics
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E07 - Slingshot: Vendetta
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E08 - Slingshot: John Hancock
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E09 - Slingshot: Progress
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E10 - Slingshot: Reunion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E11 - Slingshot: Deal Breaker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S00E12 - Slingshot: Justicia
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 0,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E09 - Broken Promises
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E10 - The Patriot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E11 - Wake Up
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E12 - Hot Potato Soup
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E13 - BOOM
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E14 - The Man Behind the Shield
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 14
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E15 - Self Control
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 15
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E16 - What If...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 16
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E17 - Identity and Change
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 17
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E18 - No Regrets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 18
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E19 - All the Madame's Men
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 19
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E20 - Farewell, Cruel World!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 20
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E21 - The Return
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 21
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S04E22 - World's End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 22
+    },
+
+    // Spider-Man: Homecoming
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "315635"
+      }
+    },
+
+    // Thor: Ragnarok
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "284053"
+      }
+    },
+
+    // Team Darryl
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "505945"
+      }
+    },
+
+    // Marvel's Inhumans - S01E01 - Behold... The Inhumans
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Inhumans - S01E02 - Those Who Would Destroy Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Inhumans - S01E03 - Divide and Conquer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Inhumans - S01E04 - Make Way for... Medusa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Inhumans - S01E05 - Something Inhuman This Way Comes...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Inhumans - S01E06 - The Gentleman's Name is Gorgon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Inhumans - S01E07 - Havoc in the Hidden Land
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Inhumans - S01E08 - ...And Finally: Black Bolt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "320558"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's The Punisher - S01E01 - 3AM
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's The Punisher - S01E02 - Two Dead Men
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's The Punisher - S01E03 - Kandahar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's The Punisher - S01E04 - Resupply
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's The Punisher - S01E05 - Gunner
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's The Punisher - S01E06 - The Judas Goat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's The Punisher - S01E07 - Crosshairs
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's The Punisher - S01E08 - Cold Steel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's The Punisher - S01E09 - Front Toward Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's The Punisher - S01E10 - Virtue of the Vicious
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's The Punisher - S01E11 - Danger Close
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's The Punisher - S01E12 - Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's The Punisher - S01E13 - Memento Mori
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "331980"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Runaways - S01E01 - Reunion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Runaways - S01E02 - Rewind
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Runaways - S01E03 - Destiny
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Runaways - S01E04 - Fifteen
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Runaways - S01E05 - Kingdom
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Runaways - S01E06 - Metamorphosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Runaways - S01E07 - Refraction
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Marvel's Runaways - S01E08 - Tsunami
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Runaways - S01E09 - Doomsday
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Runaways - S01E10 - Hostile
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "332027"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
     }
   ]
 }
