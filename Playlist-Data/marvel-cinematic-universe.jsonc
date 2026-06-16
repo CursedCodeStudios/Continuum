@@ -5224,6 +5224,478 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 6
+    },
+
+    // Werewolf by Night
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "894205"
+      }
+    },
+
+    // The Guardians of the Galaxy Holiday Special
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "774752"
+      }
+    },
+
+    // Ant-Man and The Wasp: Quantumania
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "640146"
+      }
+    },
+
+    // Guardians of the Galaxy Vol. 3
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "447365"
+      }
+    },
+
+    // Secret Invasion - S01E01 - Resurrection
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Secret Invasion - S01E02 - Promises
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Secret Invasion - S01E03 - Betrayed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Secret Invasion - S01E04 - Beloved
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Secret Invasion - S01E05 - Harvest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Secret Invasion - S01E06 - Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393203"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // The Marvels
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "609681"
+      }
+    },
+
+    // Agatha All Along - S01E01 - Seekest Thou The Road
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Agatha All Along - S01E02 - Circle Sewn with Fate Unlock Thy Hidden Gate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Agatha All Along - S01E03 - Through Many Miles of Tricks and Trials
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Agatha All Along - S01E04 - If I Can’t Reach You Let My Song Teach You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Agatha All Along - S01E05 - Darkest Hour, Wake Thy Power
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Agatha All Along - S01E06 - Familiar By Thy Side
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Agatha All Along - S01E07 - Death’s Hand In Mine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Agatha All Along - S01E08 - Follow Me My Friend To Glory at the End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Agatha All Along - S01E09 - Maiden Mother Crone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412429"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Daredevil: Born Again - S01E01 - Heaven's Half Hour
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Daredevil: Born Again - S01E02 - Optics
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Daredevil: Born Again - S01E03 - The Hollow of His Hand
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Daredevil: Born Again - S01E04 - Sic Semper Systema
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Daredevil: Born Again - S01E05 - With Interest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Daredevil: Born Again - S01E06 - Excessive Force
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Daredevil: Born Again - S01E07 - Art for Art's Sake
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Daredevil: Born Again - S01E08 - Isle of Joy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Daredevil: Born Again - S01E09 - Straight to Hell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Captain America: Brave New World
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "822119"
+      }
+    },
+
+    // Thunderbolts*
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "986056"
+      }
+    },
+
+    // The Fantastic Four: First Steps
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "617126"
+      }
+    },
+
+    // Wonder Man - S01E01 - Matinee
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Wonder Man - S01E02 - Self-Tape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Wonder Man - S01E03 - Pacoima
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Wonder Man - S01E04 - Doorman
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Wonder Man - S01E05 - Found Footage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Wonder Man - S01E06 - Callback
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Wonder Man - S01E07 - Kathy Friedman
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Wonder Man - S01E08 - Yucca Valley
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "428629"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Daredevil: Born Again - S02E01 - The Northern Star
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Daredevil: Born Again - S02E02 - Shoot the Moon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Daredevil: Born Again - S02E03 - The Scales & The Sword
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Daredevil: Born Again - S02E04 - Gloves Off
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Daredevil: Born Again - S02E05 - The Grand Design
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Daredevil: Born Again - S02E06 - Requiem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Daredevil: Born Again - S02E07 - The Hateful Darkness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Daredevil: Born Again - S02E08 - The Southern Cross
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "422712"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // The Punisher: One Last Kill
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1439930"
+      }
     }
   ]
 }
