@@ -26,11 +26,12 @@ Supported matching today:
 
 ## How It Works
 
-1. Continuum fetches live `*.jsonc` files from hardcoded raw GitHub archive URLs that point at this repository's `Playlist-Data/` directory.
-2. Each manual entry is resolved against existing Jellyfin library metadata.
-3. Resolved entries keep the original manual order.
-4. For every eligible Jellyfin user, Continuum filters out fully watched items.
-5. The next `PlaylistSize` eligible items are written to that user's Continuum playlist.
+1. Continuum fetches a live `Playlist-Data/playlist-manifest.json` file from raw GitHub.
+2. The manifest tells Continuum which live `*.jsonc` playlist files to fetch from the same archive.
+3. Each manual entry is resolved against existing Jellyfin library metadata.
+4. Resolved entries keep the original manual order.
+5. For every eligible Jellyfin user, Continuum filters out fully watched items.
+6. The next `PlaylistSize` eligible items are written to that user's Continuum playlist.
 
 Safety behavior in this starter:
 
@@ -68,6 +69,7 @@ Continuum v1 uses JSONC so list files can include comments. Files live in this r
 
 ```text
 Playlist-Data/*.jsonc
+Playlist-Data/playlist-manifest.json
 ```
 
 Example:
@@ -102,11 +104,11 @@ Example:
 }
 ```
 
-At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, so edits merged to this repository can go live without publishing a new plugin build. Item order comes directly from array position, so you do not need to set an `order` property on each entry.
+At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, using `Playlist-Data/playlist-manifest.json` to discover which playlist files are live. Item order comes directly from array position, so you do not need to set an `order` property on each entry.
 
-The community archive currently includes [`Playlist-Data/chicago-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.jsonc) and [`Playlist-Data/star-wars-test.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.jsonc).
+The community archive is indexed by [`Playlist-Data/playlist-manifest.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/playlist-manifest.json) and currently includes [`Playlist-Data/chicago-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.jsonc), [`Playlist-Data/star-wars-test.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.jsonc), and [`Playlist-Data/marvel-cinematic-universe.jsonc`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/marvel-cinematic-universe.jsonc).
 
-To contribute a community playlist archive entry, update or add a JSON file in `Playlist-Data/`, merge it to `main`, and Continuum will pick it up on the next refresh.
+To contribute a community playlist archive entry, add or update a JSONC file in `Playlist-Data/`, update `Playlist-Data/playlist-manifest.json`, merge to `main`, and Continuum will pick it up on the next refresh without a plugin release.
 
 ## Build
 
@@ -135,14 +137,14 @@ The token must be able to call `repository_dispatch` on:
 ### Create a release
 
 ```bash
-git tag v0.1.3.4
-git push origin v0.1.3.4
+git tag v0.1.4.0
+git push origin v0.1.4.0
 ```
 
 The release workflow will:
 
 1. build the plugin;
-2. create `Continuum_0.1.3.4.zip`;
+2. create `Continuum_0.1.4.0.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;

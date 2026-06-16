@@ -6,18 +6,15 @@ namespace Continuum.Services;
 internal static class ContinuumArchiveCatalog
 {
     private const string RawArchiveBaseUrl = "https://raw.githubusercontent.com/CursedCodeStudios/Continuum/main/Playlist-Data/";
+    private const string ManifestFileName = "playlist-manifest.json";
 
-    private static readonly string[] ListFiles =
-    [
-        "chicago-universe.jsonc",
-        "star-wars-test.jsonc",
-        "marvel-cinematic-universe.jsonc",
-    ];
-
-    public static IReadOnlyList<Uri> GetListUrls()
+    public static Uri GetManifestUrl()
     {
-        return ListFiles
-            .Select(fileName => new Uri($"{RawArchiveBaseUrl}{fileName}", UriKind.Absolute))
-            .ToArray();
+        return new Uri($"{RawArchiveBaseUrl}{ManifestFileName}", UriKind.Absolute);
+    }
+
+    public static Uri GetListUrl(string fileName)
+    {
+        return new Uri($"{RawArchiveBaseUrl}{fileName}", UriKind.Absolute);
     }
 }

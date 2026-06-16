@@ -44,6 +44,80 @@ public class ContinuumListLoaderTests
     }
 
     [Fact]
+    public void DeserializeManifest_ParsesJsonManifest()
+    {
+        const string json = """
+            [
+              "first.jsonc",
+              "second.jsonc"
+            ]
+            """;
+
+        string[] fileNames = ContinuumListLoader.DeserializeManifest(json);
+
+        Assert.Equal(["first.jsonc", "second.jsonc"], fileNames);
+    }
+
+    [Fact]
+    public async Task LoadManifestAsync_ReadsLiveManifestAndBuildsUrls()
+    {
+        Uri manifestUrl = new Uri("https://example.invalid/playlist-manifest.json");
+        HttpClient client = new HttpClient(new StubHttpMessageHandler(request =>
+        {
+            Assert.Equal(manifestUrl, request.RequestUri);
+            return new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(
+                    """
+                    [
+                      "sample.jsonc",
+                      "sample.jsonc",
+                      "second.jsonc"
+                    ]
+                    """)
+            };
+        }));
+
+        IReadOnlyList<Uri> urls = await ContinuumListLoader.LoadManifestAsync(
+            manifestUrl,
+            client,
+            NullLogger.Instance,
+            CancellationToken.None);
+
+        Assert.Equal(2, urls.Count);
+        Assert.Equal("https://raw.githubusercontent.com/CursedCodeStudios/Continuum/main/Playlist-Data/sample.jsonc", urls[0].ToString());
+        Assert.Equal("https://raw.githubusercontent.com/CursedCodeStudios/Continuum/main/Playlist-Data/second.jsonc", urls[1].ToString());
+    }
+
+    [Fact]
+    public async Task LoadManifestAsync_SkipsInvalidManifestEntries()
+    {
+        Uri manifestUrl = new Uri("https://example.invalid/playlist-manifest.json");
+        HttpClient client = new HttpClient(new StubHttpMessageHandler(_ =>
+            new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(
+                    """
+                    [
+                      "valid.jsonc",
+                      "nested/path.jsonc",
+                      "",
+                      "other\\path.jsonc"
+                    ]
+                    """)
+            }));
+
+        IReadOnlyList<Uri> urls = await ContinuumListLoader.LoadManifestAsync(
+            manifestUrl,
+            client,
+            NullLogger.Instance,
+            CancellationToken.None);
+
+        Assert.Single(urls);
+        Assert.Equal("https://raw.githubusercontent.com/CursedCodeStudios/Continuum/main/Playlist-Data/valid.jsonc", urls[0].ToString());
+    }
+
+    [Fact]
     public async Task LoadAllFromUrlsAsync_ReadsRemoteArchiveFiles()
     {
         Uri listUrl = new Uri("https://example.invalid/sample.jsonc");
@@ -155,6 +229,21 @@ public class ContinuumListLoaderTests
             CancellationToken.None);
 
         Assert.Empty(definitions);
+    }
+
+    [Fact]
+    public async Task LoadManifestAsync_ReturnsEmptyWhenManifestIsMissing()
+    {
+        Uri manifestUrl = new Uri("https://example.invalid/playlist-manifest.json");
+        HttpClient client = new HttpClient(new StubHttpMessageHandler(_ => new HttpResponseMessage(HttpStatusCode.NotFound)));
+
+        IReadOnlyList<Uri> urls = await ContinuumListLoader.LoadManifestAsync(
+            manifestUrl,
+            client,
+            NullLogger.Instance,
+            CancellationToken.None);
+
+        Assert.Empty(urls);
     }
 
     private sealed class StubHttpMessageHandler(Func<HttpRequestMessage, HttpResponseMessage> responseFactory) : HttpMessageHandler

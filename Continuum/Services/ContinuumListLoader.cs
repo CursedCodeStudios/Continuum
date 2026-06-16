@@ -22,8 +22,14 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
     /// <inheritdoc />
     public async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllAsync(CancellationToken cancellationToken)
     {
+        IReadOnlyList<Uri> listUrls = await LoadManifestAsync(
+            ContinuumArchiveCatalog.GetManifestUrl(),
+            httpClient,
+            logger,
+            cancellationToken).ConfigureAwait(false);
+
         return await LoadAllFromUrlsAsync(
-            ContinuumArchiveCatalog.GetListUrls(),
+            listUrls,
             httpClient,
             logger,
             cancellationToken).ConfigureAwait(false);
@@ -105,6 +111,73 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
         return results;
     }
 
+    internal static async Task<IReadOnlyList<Uri>> LoadManifestAsync(
+        Uri manifestUrl,
+        HttpClient client,
+        ILogger logger,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            using HttpResponseMessage response = await SendArchiveRequestAsync(
+                manifestUrl,
+                client,
+                cancellationToken).ConfigureAwait(false);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                logger.LogWarning(
+                    "Continuum playlist manifest at {Url} returned HTTP {StatusCode}.",
+                    manifestUrl,
+                    (int)response.StatusCode);
+                return [];
+            }
+
+            string json = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+            string[] fileNames = DeserializeManifest(json);
+
+            List<Uri> urls = [];
+            foreach (string fileName in fileNames
+                         .Where(fileName => !string.IsNullOrWhiteSpace(fileName))
+                         .Distinct(StringComparer.OrdinalIgnoreCase))
+            {
+                if (fileName.Contains("/", StringComparison.Ordinal) || fileName.Contains("\\", StringComparison.Ordinal))
+                {
+                    logger.LogWarning(
+                        "Skipping invalid Continuum manifest entry {Entry} because nested paths are not supported.",
+                        fileName);
+                    continue;
+                }
+
+                urls.Add(ContinuumArchiveCatalog.GetListUrl(fileName));
+            }
+
+            if (urls.Count == 0)
+            {
+                logger.LogWarning("Continuum playlist manifest at {Url} did not contain any valid playlist file names.", manifestUrl);
+                return [];
+            }
+
+            logger.LogInformation("Loaded {Count} Continuum playlist file reference(s) from the live manifest.", urls.Count);
+            return urls;
+        }
+        catch (JsonException ex)
+        {
+            logger.LogError(ex, "Failed to parse Continuum playlist manifest from {Url}.", manifestUrl);
+            return [];
+        }
+        catch (HttpRequestException ex)
+        {
+            logger.LogWarning(ex, "Failed to fetch Continuum playlist manifest from {Url}.", manifestUrl);
+            return [];
+        }
+        catch (TaskCanceledException ex) when (!cancellationToken.IsCancellationRequested)
+        {
+            logger.LogWarning(ex, "Timed out while fetching Continuum playlist manifest from {Url}.", manifestUrl);
+            return [];
+        }
+    }
+
     internal static ContinuumListDefinition? DeserializeDefinition(string json)
     {
         ContinuumListDefinition? definition = JsonSerializer.Deserialize<ContinuumListDefinition>(json, SerializerOptions);
@@ -119,5 +192,28 @@ public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<Continuum
         }
 
         return definition;
+    }
+
+    internal static string[] DeserializeManifest(string json)
+    {
+        string[]? fileNames = JsonSerializer.Deserialize<string[]>(json, SerializerOptions);
+        return fileNames ?? [];
+    }
+
+    private static async Task<HttpResponseMessage> SendArchiveRequestAsync(
+        Uri url,
+        HttpClient client,
+        CancellationToken cancellationToken)
+    {
+        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
+        request.Headers.CacheControl = new CacheControlHeaderValue
+        {
+            NoCache = true
+        };
+
+        return await client.SendAsync(
+            request,
+            HttpCompletionOption.ResponseHeadersRead,
+            cancellationToken).ConfigureAwait(false);
     }
 }
