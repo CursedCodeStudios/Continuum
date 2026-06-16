@@ -1,0 +1,40 @@
+{
+  "name": "Chicago Universe",
+  "slug": "chicago-universe",
+  "description": "Manual chronological watch order for the Chicago franchise.",
+  "enabled": true,
+  "items": [
+    {
+      "order": 1,
+      "type": "episode",
+      "title": "Chicago Fire S01E01",
+      "providers": {
+        "tvdbSeriesId": "258541",
+        "tmdbSeriesId": "44006"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+    {
+      "order": 2,
+      "type": "episode",
+      "title": "Chicago P.D. S01E01",
+      "providers": {
+        "tvdbSeriesId": "269641",
+        "tmdbSeriesId": "58841"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+    {
+      "order": 3,
+      "type": "movie",
+      "title": "Example Movie",
+      "providers": {
+        "tmdbMovieId": "123456",
+        "imdbId": "tt1234567"
+      },
+      "year": 2020
+    }
+  ]
+}
