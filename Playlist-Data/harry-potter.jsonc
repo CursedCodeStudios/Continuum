@@ -1,0 +1,95 @@
+{
+  "name": "Harry Potter",
+  "slug": "harry-potter",
+  "description": "Harry Potter movies",
+  "enabled": true,
+  "items": [
+    // Fantastic Beasts and Where to Find Them
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "259316"
+      }
+    },
+
+    // Fantastic Beasts: The Crimes of Grindelwald
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "338952"
+      }
+    },
+
+    // Fantastic Beasts: The Secrets of Dumbledore
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "338953"
+      }
+    },
+
+    // Harry Potter and the Sorcerer’s Stone
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "671"
+      }
+    },
+
+    // Harry Potter and the Chamber of Secrets
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "672"
+      }
+    },
+
+    // Harry Potter and the Prisoner of Azkaban
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "673"
+      }
+    },
+
+    // Harry Potter and the Goblet of Fire
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "674"
+      }
+    },
+
+    // Harry Potter and the Order of the Phoenix
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "675"
+      }
+    },
+
+    // Harry Potter and the Half-Blood Prince
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "767"
+      }
+    },
+
+    // Harry Potter and the Deathly Hallows – Part 1
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "12444"
+      }
+    },
+
+    // Harry Potter and the Deathly Hallows – Part 2
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "12445"
+      }
+    }
+  ]
+}
