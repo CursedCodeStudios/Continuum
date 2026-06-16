@@ -16,7 +16,8 @@ permissions:
 
 env:
   PLUGIN_NAME: Continuum
-  PLUGIN_ID: Jellyfin.Plugin.Continuum
+  PLUGIN_ID: Continuum
+  PLUGIN_ASSEMBLY_NAME: Jellyfin.Plugin.Continuum
   PROJECT_PATH: Continuum/Continuum.csproj
   TARGET_ABI: 10.11.0.0
   MANIFEST_REPO: CursedCodeStudios/Jellyfin-Plugins
@@ -138,8 +139,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ ! -f "artifacts/publish/${PLUGIN_ID}.dll" ]]; then
-            echo "Expected publish output artifacts/publish/${PLUGIN_ID}.dll was not found." >&2
+          if [[ ! -f "artifacts/publish/${PLUGIN_ASSEMBLY_NAME}.dll" ]]; then
+            echo "Expected publish output artifacts/publish/${PLUGIN_ASSEMBLY_NAME}.dll was not found." >&2
             ls -la artifacts/publish || true
             exit 1
           fi

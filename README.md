@@ -140,7 +140,7 @@ git push origin v0.1.0.0
 The release workflow will:
 
 1. build the plugin;
-2. create `Jellyfin.Plugin.Continuum_0.1.0.0.zip`;
+2. create `Continuum_0.1.0.0.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;
