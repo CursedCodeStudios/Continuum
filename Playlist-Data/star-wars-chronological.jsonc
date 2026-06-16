@@ -2582,6 +2582,278 @@
       },
       "seasonNumber": 4,
       "episodeNumber": 16
+    },
+
+    // Andor - S01E01 - Kassa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Andor - S01E02 - That Would Be Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Andor - S01E03 - Reckoning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Andor - S01E04 - Aldhani
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Andor - S01E05 - The Axe Forgets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Andor - S01E06 - The Eye
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Andor - S01E07 - Announcement
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Andor - S01E08 - Narkina 5
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Andor - S01E09 - Nobody's Listening!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Andor - S01E10 - One Way Out
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Andor - S01E11 - Daughter of Ferrix
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Andor - S01E12 - Rix Road
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Andor - S02E01 - One Year Later
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Andor - S02E02 - Sagrona Teema
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Andor - S02E03 - Harvest
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Andor - S02E04 - Ever Been to Ghorman?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Andor - S02E05 - I Have Friends Everywhere
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Andor - S02E06 - What a Festive Evening
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Andor - S02E07 - Messenger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Andor - S02E08 - Who Are You?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Andor - S02E09 - Welcome to the Rebellion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Andor - S02E10 - Make It Stop
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Andor - S02E11 - Who Else Knows?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Andor - S02E12 - Jedha, Kyber, Erso
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393189"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Rogue One: A Star Wars Story
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "330459"
+      }
+    },
+
+    // Star Wars
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "11"
+      }
+    },
+
+    // The Empire Strikes Back
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1891"
+      }
+    },
+
+    // Return of the Jedi
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1892"
+      }
     }
   ]
 }
