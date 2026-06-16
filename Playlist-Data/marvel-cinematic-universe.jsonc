@@ -238,6 +238,78 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 10
+    },
+
+    // Captain Marvel
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "299537"
+      }
+    },
+
+    // Iron Man
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1726"
+      }
+    },
+
+    // Iron Man 2
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "10138"
+      }
+    },
+
+    // The Incredible Hulk
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "1724"
+      }
+    },
+
+    // Marvel One-Shot: The Consultant
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "76122"
+      }
+    },
+
+    // Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "76535"
+      }
+    },
+
+    // Thor
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "10195"
+      }
+    },
+
+    // The Avengers
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "24428"
+      }
+    },
+
+    // Marvel One-Shot: Item 47
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "119569"
+      }
     }
   ]
 }
