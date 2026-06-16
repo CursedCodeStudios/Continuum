@@ -11,6 +11,14 @@
         "tvdbSeriesId": "361753",
         "tvdbEpisodeId": "7133857"
       }
+    },
+    {
+      "order": 2,
+      "type": "movie",
+      "title": "Star Wars: The Rise of Skywalker",
+      "providers": {
+        "tmdbMovieId": "181812"
+      }
     }
   ]
 }
