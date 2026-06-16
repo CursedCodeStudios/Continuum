@@ -606,6 +606,646 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 22
+    },
+
+    // Star Wars: The Clone Wars - S03E05 - Corruption
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Clone Wars - S03E06 - The Academy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Clone Wars - S03E07 - Assassin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Clone Wars - S03E02 - ARC Troopers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Clone Wars - S03E04 - Sphere of Influence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Clone Wars - S03E08 - Evil Plans
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Clone Wars - S01E22 - Hostage Crisis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Star Wars: The Clone Wars - S03E09 - Hunt for Ziro
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Clone Wars - S03E10 - Heroes on Both Sides
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Clone Wars - S03E11 - Pursuit of Peace
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Clone Wars - S02E15 - Senate Murders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Clone Wars - S03E12 - Nightsisters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Clone Wars - S03E13 - Monster
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Clone Wars - S03E14 - Witches of the Mist
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Wars: The Clone Wars - S03E15 - Overlords
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Clone Wars - S03E16 - Altar of Mortis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Clone Wars - S03E17 - Ghosts of Mortis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Wars: The Clone Wars - S03E18 - The Citadel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Wars: The Clone Wars - S03E19 - Counterattack
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Wars: The Clone Wars - S03E20 - Citadel Rescue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Wars: The Clone Wars - S03E21 - Padawan Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Wars: The Clone Wars - S03E22 - Wookiee Hunt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Star Wars: The Clone Wars - S04E01 - Water War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Clone Wars - S04E02 - Gungan Attack
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Clone Wars - S04E03 - Prisoners
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Clone Wars - S04E04 - Shadow Warrior
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Clone Wars - S04E05 - Mercy Mission
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Clone Wars - S04E06 - Nomad Droids
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Clone Wars - S04E07 - Darkness on Umbara
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Clone Wars - S04E08 - The General
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Clone Wars - S04E09 - Plan of Dissent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Clone Wars - S04E10 - Carnage of Krell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Clone Wars - S04E11 - Kidnapped
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Clone Wars - S04E12 - Slaves of the Republic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Clone Wars - S04E13 - Escape from Kadavo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Clone Wars - S04E14 - A Friend in Need
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 14
+    },
+
+    // Star Wars: The Clone Wars - S04E15 - Deception
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Clone Wars - S04E16 - Friends and Enemies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Clone Wars - S04E17 - The Box
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 17
+    },
+
+    // Star Wars: The Clone Wars - S04E18 - Crisis on Naboo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 18
+    },
+
+    // Star Wars: The Clone Wars - S04E19 - Massacre
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 19
+    },
+
+    // Star Wars: The Clone Wars - S04E20 - Bounty
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 20
+    },
+
+    // Star Wars: The Clone Wars - S04E21 - Brothers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 21
+    },
+
+    // Star Wars: The Clone Wars - S04E22 - Revenge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 22
+    },
+
+    // Star Wars: The Clone Wars - S05E02 - A War on Two Fronts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 2
+    },
+
+    // Star Wars: The Clone Wars - S05E03 - Front Runners
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 3
+    },
+
+    // Star Wars: The Clone Wars - S05E04 - The Soft War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 4
+    },
+
+    // Star Wars: The Clone Wars - S05E05 - Tipping Points
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 5
+    },
+
+    // Star Wars: The Clone Wars - S05E06 - The Gathering
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 6
+    },
+
+    // Star Wars: The Clone Wars - S05E07 - A Test of Strength
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 7
+    },
+
+    // Star Wars: The Clone Wars - S05E08 - Bound for Rescue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 8
+    },
+
+    // Star Wars: The Clone Wars - S05E09 - A Necessary Bond
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 9
+    },
+
+    // Star Wars: The Clone Wars - S05E10 - Secret Weapons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 10
+    },
+
+    // Star Wars: The Clone Wars - S05E11 - A Sunny Day in the Void
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 11
+    },
+
+    // Star Wars: The Clone Wars - S05E12 - Missing in Action
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 12
+    },
+
+    // Star Wars: The Clone Wars - S05E13 - Point of No Return
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 13
+    },
+
+    // Star Wars: The Clone Wars - S05E01 - Revival
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 1
+    },
+
+    // Star Wars: The Clone Wars - S05E14 - Eminence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 14
+    },
+
+    // Star Wars: The Clone Wars - S05E15 - Shades of Reason
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 15
+    },
+
+    // Star Wars: The Clone Wars - S05E16 - The Lawless
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 16
+    },
+
+    // Star Wars: The Clone Wars - S05E17 - Sabotage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 17
+    },
+
+    // Star Wars: The Clone Wars - S05E18 - The Jedi Who Knew Too Much
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 18
+    },
+
+    // Star Wars: The Clone Wars - S05E19 - To Catch a Jedi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 19
+    },
+
+    // Star Wars: The Clone Wars - S05E20 - The Wrong Jedi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "83268"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 20
     }
   ]
 }
