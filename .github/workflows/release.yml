@@ -21,6 +21,7 @@ env:
   PROJECT_PATH: Continuum/Continuum.csproj
   TARGET_ABI: 10.11.0.0
   MANIFEST_REPO: CursedCodeStudios/Jellyfin-Plugins
+  MANIFEST_BRANCH: main
   MANIFEST_REPOSITORY_NAME: CursedCodeStudios Jellyfin Plugins
   MANIFEST_REPOSITORY_URL: https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manifest.json
   SOURCE_URL: https://github.com/CursedCodeStudios/Continuum
@@ -199,7 +200,7 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Dispatch manifest update
+      - name: Update manifest repository
         env:
           MANIFEST_REPO_TOKEN: ${{ secrets.MANIFEST_REPO_TOKEN }}
           VERSION: ${{ steps.version.outputs.version }}
@@ -216,40 +217,103 @@ jobs:
             exit 1
           fi
 
-          PAYLOAD="$(python3 - <<'PY'
+          mkdir -p artifacts/manifest
+
+          MANIFEST_PATH="artifacts/manifest/manifest.json"
+          RESPONSE_PATH="artifacts/manifest/contents-response.json"
+          SHA_PATH="artifacts/manifest/manifest.sha"
+          CONTENTS_URL="https://api.github.com/repos/${MANIFEST_REPO}/contents/manifest.json?ref=${MANIFEST_BRANCH}"
+
+          STATUS_CODE="$(curl -sS -w "%{http_code}" -o "${RESPONSE_PATH}" \
+            -H "Authorization: Bearer ${MANIFEST_REPO_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "${CONTENTS_URL}")"
+
+          MANIFEST_SHA=""
+
+          if [[ "${STATUS_CODE}" == "200" ]]; then
+            export RESPONSE_PATH MANIFEST_PATH SHA_PATH
+            python3 - <<'PY'
+            import base64
+            import json
+            import os
+            from pathlib import Path
+
+            response_path = Path(os.environ["RESPONSE_PATH"])
+            manifest_path = Path(os.environ["MANIFEST_PATH"])
+            sha_path = Path(os.environ["SHA_PATH"])
+            payload = json.loads(response_path.read_text(encoding="utf-8"))
+
+            encoded_content = str(payload.get("content", "")).replace("\n", "")
+            if encoded_content:
+                manifest_path.write_text(
+                    base64.b64decode(encoded_content).decode("utf-8"),
+                    encoding="utf-8",
+                )
+            else:
+                manifest_path.write_text("[]\n", encoding="utf-8")
+
+            sha_path.write_text(str(payload.get("sha", "")), encoding="utf-8")
+            PY
+          elif [[ "${STATUS_CODE}" == "404" ]]; then
+            echo "[]" > "${MANIFEST_PATH}"
+          else
+            echo "Failed to fetch manifest.json from ${MANIFEST_REPO} (HTTP ${STATUS_CODE})." >&2
+            cat "${RESPONSE_PATH}" >&2
+            exit 1
+          fi
+
+          if [[ -f "artifacts/manifest/manifest.sha" ]]; then
+            MANIFEST_SHA="$(cat artifacts/manifest/manifest.sha)"
+          fi
+
+          python3 scripts/update_manifest.py \
+            --manifest-path "${MANIFEST_PATH}" \
+            --plugin-guid "${PLUGIN_GUID}" \
+            --plugin-name "${PLUGIN_NAME}" \
+            --description "${PLUGIN_DESCRIPTION}" \
+            --overview "${PLUGIN_OVERVIEW}" \
+            --owner "${OWNER_NAME}" \
+            --category "${CATEGORY}" \
+            --version "${VERSION}" \
+            --target-abi "${TARGET_ABI}" \
+            --checksum "${CHECKSUM}" \
+            --timestamp "${TIMESTAMP}" \
+            --source-url "${SOURCE_URL}" \
+            --changelog "Release ${VERSION}." \
+            --repository-name "${MANIFEST_REPOSITORY_NAME}" \
+            --repository-url "${MANIFEST_REPOSITORY_URL}" \
+            --url "${RELEASE_URL}"
+
+          export MANIFEST_PATH PLUGIN_NAME VERSION MANIFEST_BRANCH MANIFEST_SHA
+          PUT_PAYLOAD="$(python3 - <<'PY'
+          import base64
           import json
           import os
+          from pathlib import Path
+
+          manifest_path = Path(os.environ["MANIFEST_PATH"])
+          content = base64.b64encode(manifest_path.read_bytes()).decode("ascii")
 
           payload = {
-              "event_type": "update-plugin-release",
-              "client_payload": {
-                  "pluginGuid": os.environ["PLUGIN_GUID"],
-                  "pluginName": os.environ["PLUGIN_NAME"],
-                  "description": os.environ["PLUGIN_DESCRIPTION"],
-                  "overview": os.environ["PLUGIN_OVERVIEW"],
-                  "owner": os.environ["OWNER_NAME"],
-                  "category": os.environ["CATEGORY"],
-                  "version": os.environ["VERSION"],
-                  "targetAbi": os.environ["TARGET_ABI"],
-                  "checksum": os.environ["CHECKSUM"],
-                  "timestamp": os.environ["TIMESTAMP"],
-                  "sourceUrl": os.environ["SOURCE_URL"],
-                  "changelog": f"Release {os.environ['VERSION']}.",
-                  "repositoryName": os.environ["MANIFEST_REPOSITORY_NAME"],
-                  "repositoryUrl": os.environ["MANIFEST_REPOSITORY_URL"],
-                  "url": os.environ["RELEASE_URL"],
-              },
+              "message": f"Update {os.environ['PLUGIN_NAME']} {os.environ['VERSION']}",
+              "content": content,
+              "branch": os.environ["MANIFEST_BRANCH"],
           }
+
+          manifest_sha = os.environ.get("MANIFEST_SHA", "").strip()
+          if manifest_sha:
+              payload["sha"] = manifest_sha
 
           print(json.dumps(payload))
           PY
           )"
 
-          curl -X POST \
+          curl --fail-with-body -sS -X PUT \
             -H "Authorization: Bearer ${MANIFEST_REPO_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${MANIFEST_REPO}/dispatches \
-            -d "${PAYLOAD}"
+            https://api.github.com/repos/${MANIFEST_REPO}/contents/manifest.json \
+            -d "${PUT_PAYLOAD}"
 
       - name: Print summary
         shell: bash
@@ -257,5 +321,5 @@ jobs:
           echo "Released ${PLUGIN_NAME} ${{ steps.version.outputs.version }}"
           echo "ZIP: ${{ steps.version.outputs.zip_path }}"
           echo "SHA256: ${{ steps.checksum.outputs.checksum }}"
-          echo "Manifest dispatch sent to ${MANIFEST_REPO}"
+          echo "Manifest repository updated in ${MANIFEST_REPO}"
           echo "Jellyfin repo URL: ${MANIFEST_REPOSITORY_URL}"
