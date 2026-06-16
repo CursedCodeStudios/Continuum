@@ -310,6 +310,274 @@
       "providers": {
         "tmdbMovieId": "119569"
       }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E01 - Pilot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E02 - 0-8-4
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E03 - The Asset
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E04 - Eye Spy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E05 - Girl in the Flower Dress
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E06 - F.Z.Z.T.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E07 - The Hub
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Thor: The Dark World
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "76338"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E08 - The Well
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E09 - Repairs
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E10 - The Bridge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E11 - The Magical Place
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E12 - Seeds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E13 - T.R.A.C.K.S.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E14 - T.A.H.I.T.I.
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E15 - Yes Men
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E16 - End of the Beginning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Iron Man 3
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "68721"
+      }
+    },
+
+    // Marvel One-Shot: All Hail the King
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "253980"
+      }
+    },
+
+    // Captain America: The Winter Soldier
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "100402"
+      }
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E17 - Turn, Turn, Turn
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E18 - Providence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E19 - The Only Light in the Darkness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E20 - Nothing Personal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E21 - Ragtag
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 21
+    },
+
+    // Marvel's Agents of S.H.I.E.L.D. - S01E22 - Beginning of the End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "263365"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Guardians of the Galaxy
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "118340"
+      }
+    },
+
+    // Guardians of the Galaxy Vol. 2
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "283995"
+      }
     }
   ]
 }
