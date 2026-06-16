@@ -4330,6 +4330,488 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 6
+    },
+
+    // What If...? - S01E01 - What If... Captain Carter Were the First Avenger?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // What If...? - S01E02 - What If... T'Challa Became a Star-Lord?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // What If...? - S01E03 - What If... the World Lost Its Mightiest Heroes?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // What If...? - S01E04 - What If... Doctor Strange Lost His Heart Instead of His Hands?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // What If...? - S01E05 - What If... Zombies?!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // What If...? - S01E06 - What If... Killmonger Rescued Tony Stark?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // What If...? - S01E07 - What If... Thor Were an Only Child?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // What If...? - S01E08 - What If... Ultron Won?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // What If...? - S01E09 - What If... the Watcher Broke His Oath?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // What If...? - S02E01 - What If... Nebula Joined the Nova Corps?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // What If...? - S02E02 - What If... Peter Quill Attacked Earth's Mightiest Heroes?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // What If...? - S02E03 - What If... Happy Hogan Saved Christmas?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // What If...? - S02E04 - What If... Iron Man Crashed into the Grandmaster?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // What If...? - S02E05 - What If... Captain Carter Fought the Hydra Stomper?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // What If...? - S02E06 - What If... Kahhori Reshaped the World?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // What If...? - S02E07 - What If... Hela Found the Ten Rings?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // What If...? - S02E08 - What If... the Avengers Assembled in 1602?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // What If...? - S02E09 - What If... Strange Supreme Intervened?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // What If...? - S03E01 - What If... the Hulk Fought the Mech Avengers?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // What If...? - S03E02 - What If... Agatha Went to Hollywood?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // What If...? - S03E03 - What If... the Red Guardian Stopped the Winter Soldier?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // What If...? - S03E04 - What If... Howard the Duck Got Hitched?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // What If...? - S03E05 - What If... the Emergence Destroyed the Earth?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // What If...? - S03E06 - What If... 1872?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // What If...? - S03E07 - What If... the Watcher Disappeared?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // What If...? - S03E08 - What If... What If?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367147"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Marvel Zombies - S01E01 - Episode 1
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412428"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Marvel Zombies - S01E02 - Episode 2
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412428"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Marvel Zombies - S01E03 - Episode 3
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412428"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Marvel Zombies - S01E04 - Episode 4
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "412428"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // WandaVision - S01E01 - Filmed Before a Live Studio Audience
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // WandaVision - S01E02 - Don't Touch That Dial
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // WandaVision - S01E03 - Now in Color
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // WandaVision - S01E04 - We Interrupt This Program
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // WandaVision - S01E05 - On a Very Special Episode...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // WandaVision - S01E06 - All-New Halloween Spooktacular!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // WandaVision - S01E07 - Breaking the Fourth Wall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // WandaVision - S01E08 - Previously On
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // WandaVision - S01E09 - The Series Finale
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362392"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Deadpool & Wolverine
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "533535"
+      }
+    },
+
+    // Shang-Chi and the Legend of the Ten Rings
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "566525"
+      }
+    },
+
+    // The Falcon and The Winter Soldier - S01E01 - New World Order
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // The Falcon and The Winter Soldier - S01E02 - The Star-Spangled Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // The Falcon and The Winter Soldier - S01E03 - Power Broker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // The Falcon and The Winter Soldier - S01E04 - The Whole World Is Watching
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // The Falcon and The Winter Soldier - S01E05 - Truth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // The Falcon and The Winter Soldier - S01E06 - One World, One People
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "362496"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Eternals
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "524434"
+      }
+    },
+
+    // Spider-Man: Far From Home
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "429617"
+      }
     }
   ]
 }
