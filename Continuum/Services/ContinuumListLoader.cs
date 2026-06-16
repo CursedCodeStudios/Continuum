@@ -1,15 +1,15 @@
 using Continuum.Models;
-using MediaBrowser.Common.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Net.Http.Headers;
 
 namespace Continuum.Services;
 
 /// <summary>
-/// Loads Continuum manual list files from the bundled community archive.
+/// Loads Continuum manual list files from the live GitHub community archive.
 /// </summary>
-public sealed class ContinuumListLoader : IContinuumListLoader
+public sealed class ContinuumListLoader(HttpClient httpClient, ILogger<ContinuumListLoader> logger) : IContinuumListLoader
 {
     private static readonly JsonSerializerOptions SerializerOptions = new()
     {
@@ -19,82 +19,89 @@ public sealed class ContinuumListLoader : IContinuumListLoader
         Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
     };
 
-    private readonly IApplicationPaths _applicationPaths;
-    private readonly ILogger<ContinuumListLoader> _logger;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ContinuumListLoader"/> class.
-    /// </summary>
-    public ContinuumListLoader(IApplicationPaths applicationPaths, ILogger<ContinuumListLoader> logger)
-    {
-        _applicationPaths = applicationPaths;
-        _logger = logger;
-    }
-
     /// <inheritdoc />
     public async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllAsync(CancellationToken cancellationToken)
     {
-        string listsDirectory = ContinuumPaths.GetBundledListsDirectory();
-        return await LoadAllFromDirectoryAsync(listsDirectory, _logger, cancellationToken).ConfigureAwait(false);
+        return await LoadAllFromUrlsAsync(
+            ContinuumArchiveCatalog.GetListUrls(),
+            httpClient,
+            logger,
+            cancellationToken).ConfigureAwait(false);
     }
 
-    internal static async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllFromDirectoryAsync(
-        string listsDirectory,
+    internal static void ConfigureHttpClient(HttpClient client)
+    {
+        client.Timeout = TimeSpan.FromSeconds(30);
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("Continuum/0.1");
+        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+    }
+
+    internal static async Task<IReadOnlyList<ContinuumListDefinition>> LoadAllFromUrlsAsync(
+        IReadOnlyList<Uri> listUrls,
+        HttpClient client,
         ILogger logger,
         CancellationToken cancellationToken)
     {
-        if (!Directory.Exists(listsDirectory))
+        if (listUrls.Count == 0)
         {
-            logger.LogWarning("Continuum bundled playlist archive was not found at {Path}.", listsDirectory);
+            logger.LogWarning("Continuum does not have any live GitHub playlist archive URLs configured.");
             return [];
         }
 
-        string[] files = Directory
-            .EnumerateFiles(listsDirectory, "*.json", SearchOption.TopDirectoryOnly)
-            .OrderBy(path => path, StringComparer.OrdinalIgnoreCase)
-            .ToArray();
+        List<ContinuumListDefinition> results = new List<ContinuumListDefinition>(listUrls.Count);
 
-        if (files.Length == 0)
-        {
-            logger.LogWarning("Continuum bundled playlist archive at {Path} does not contain any JSON list files.", listsDirectory);
-            return [];
-        }
-
-        List<ContinuumListDefinition> results = new List<ContinuumListDefinition>(files.Length);
-
-        foreach (string filePath in files)
+        foreach (Uri listUrl in listUrls)
         {
             cancellationToken.ThrowIfCancellationRequested();
 
             try
             {
-                string json = await File.ReadAllTextAsync(filePath, cancellationToken).ConfigureAwait(false);
+                using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, listUrl);
+                request.Headers.CacheControl = new CacheControlHeaderValue
+                {
+                    NoCache = true
+                };
+
+                using HttpResponseMessage response = await client.SendAsync(
+                    request,
+                    HttpCompletionOption.ResponseHeadersRead,
+                    cancellationToken).ConfigureAwait(false);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    logger.LogWarning(
+                        "Skipping Continuum archive URL {Url} because GitHub returned HTTP {StatusCode}.",
+                        listUrl,
+                        (int)response.StatusCode);
+                    continue;
+                }
+
+                string json = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
                 ContinuumListDefinition? definition = DeserializeDefinition(json);
 
                 if (definition is null || string.IsNullOrWhiteSpace(definition.Name) || string.IsNullOrWhiteSpace(definition.Slug))
                 {
-                    logger.LogWarning("Skipping invalid Continuum list file {Path}.", filePath);
+                    logger.LogWarning("Skipping invalid Continuum list payload from {Url}.", listUrl);
                     continue;
                 }
-
-                definition.Items = definition.Items
-                    .OrderBy(item => item.Order)
-                    .ThenBy(item => item.Title, StringComparer.OrdinalIgnoreCase)
-                    .ToList();
 
                 results.Add(definition);
             }
             catch (JsonException ex)
             {
-                logger.LogError(ex, "Failed to parse Continuum list file {Path}.", filePath);
+                logger.LogError(ex, "Failed to parse Continuum list payload from {Url}.", listUrl);
             }
-            catch (IOException ex)
+            catch (HttpRequestException ex)
             {
-                logger.LogError(ex, "Failed to read Continuum list file {Path}.", filePath);
+                logger.LogWarning(ex, "Failed to fetch Continuum list payload from {Url}.", listUrl);
+            }
+            catch (TaskCanceledException ex) when (!cancellationToken.IsCancellationRequested)
+            {
+                logger.LogWarning(ex, "Timed out while fetching Continuum list payload from {Url}.", listUrl);
             }
         }
 
-        logger.LogInformation("Loaded {Count} Continuum list definition(s) from the bundled archive.", results.Count);
+        logger.LogInformation("Loaded {Count} Continuum list definition(s) from the live GitHub archive.", results.Count);
         return results;
     }
 

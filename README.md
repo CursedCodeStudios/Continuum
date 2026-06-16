@@ -26,7 +26,7 @@ Supported matching today:
 
 ## How It Works
 
-1. Continuum loads `*.json` files from the bundled community archive in `Playlist-Data/`.
+1. Continuum fetches live `*.json` files from hardcoded raw GitHub archive URLs that point at this repository's `Playlist-Data/` directory.
 2. Each manual entry is resolved against existing Jellyfin library metadata.
 3. Resolved entries keep the original manual order.
 4. For every eligible Jellyfin user, Continuum filters out fully watched items.
@@ -64,7 +64,7 @@ Sanitization rules:
 
 ## Manual List Format
 
-Continuum v1 uses JSON only. Files live in this repository and ship with each plugin release:
+Continuum v1 uses JSON only. Files live in this repository under:
 
 ```text
 Playlist-Data/*.json
@@ -104,9 +104,11 @@ Example:
 }
 ```
 
-The community archive currently includes [`Playlist-Data/chicago-universe.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.json).
+At runtime, the plugin fetches the raw `main` branch versions of those files directly from GitHub, so edits merged to this repository can go live without publishing a new plugin build.
 
-To contribute a community playlist archive entry, update or add a JSON file in `Playlist-Data/`, submit it through git, and ship it in the next plugin release.
+The community archive currently includes [`Playlist-Data/chicago-universe.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/chicago-universe.json) and [`Playlist-Data/star-wars-test.json`](/Volumes/Vault/Projects/CursedCode/Continuum/Playlist-Data/star-wars-test.json).
+
+To contribute a community playlist archive entry, update or add a JSON file in `Playlist-Data/`, merge it to `main`, and Continuum will pick it up on the next refresh.
 
 ## Build
 
@@ -135,14 +137,14 @@ The token must be able to call `repository_dispatch` on:
 ### Create a release
 
 ```bash
-git tag v0.1.3.2
-git push origin v0.1.3.2
+git tag v0.1.3.3
+git push origin v0.1.3.3
 ```
 
 The release workflow will:
 
 1. build the plugin;
-2. create `Continuum_0.1.3.2.zip`;
+2. create `Continuum_0.1.3.3.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;
@@ -178,13 +180,12 @@ https://raw.githubusercontent.com/CursedCodeStudios/Jellyfin-Plugins/main/manife
 2. Copy the contents of `Continuum/bin/<Configuration>/net9.0/` into your Jellyfin plugin folder, or package it according to your server setup.
 3. Restart Jellyfin.
 4. Open the Continuum plugin settings page in the admin dashboard.
-5. Verify the published plugin includes the `Playlist-Data/` directory from this repository.
-6. Run the scheduled task `Refresh Continuum Playlists` or wait for the interval trigger.
+5. Run the scheduled task `Refresh Continuum Playlists` or wait for the interval trigger.
 
 ## Known Limitations
 
 - JSON only; YAML is not implemented yet.
-- The bundled playlist archive is read-only at runtime; local server overrides are not supported yet.
+- The live playlist archive depends on GitHub availability and successful outbound HTTP access from the Jellyfin server.
 - The admin controller endpoints are intentionally omitted in this starter because the current plugin package surface for controller registration should be verified against a live Jellyfin host.
 - Refresh interval changes are not dynamically pushed into Jellyfin's task scheduler; restarting Jellyfin or manually adjusting the task may be required.
 - The episode fallback matcher is intentionally conservative and skips ambiguous results.

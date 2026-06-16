@@ -9,7 +9,7 @@
                     <div>
                         <h2>Continuum</h2>
                         <p class="continuumLead">
-                            Continuum turns the bundled community archive in <code>Playlist-Data/</code> into rolling per-user Jellyfin playlists.
+                            Continuum turns the live community archive in this repository's <code>Playlist-Data/</code> folder into rolling per-user Jellyfin playlists by fetching the raw GitHub JSON on demand.
                             This admin page is shared between the plugin dashboard and the Plugins sidebar entry.
                         </p>
                     </div>
@@ -119,8 +119,8 @@
                 <div class="continuumCard">
                     <div class="continuumSectionTitleRow">
                         <div>
-                            <div class="continuumSectionTitle">Bundled Lists</div>
-                            <div class="continuumMuted">These lists ship from this repository and are read-only on the server.</div>
+                            <div class="continuumSectionTitle">Live Archive Lists</div>
+                            <div class="continuumMuted">These lists are fetched live from this repository's raw GitHub URLs and are read-only on the server.</div>
                         </div>
                         <div id="ContinuumListsSummary" class="continuumMuted">Loading lists...</div>
                     </div>
@@ -131,7 +131,7 @@
                 <div class="continuumCard">
                     <div class="continuumSectionTitle">Settings</div>
                     <div class="continuumMuted continuumSettingsIntro">
-                        These settings apply to every bundled Continuum list on this server.
+                        These settings apply to every Continuum list fetched from the live GitHub archive on this server.
                     </div>
 
                     <form id="ContinuumConfigForm">
@@ -846,7 +846,7 @@
                 listsContainer.innerHTML = "";
 
                 if (!lists || !lists.length) {
-                    listsSummary.textContent = "No bundled Continuum lists were found in Playlist-Data/.";
+                    listsSummary.textContent = "No live Continuum lists could be loaded from the GitHub Playlist-Data archive.";
                     return;
                 }
 

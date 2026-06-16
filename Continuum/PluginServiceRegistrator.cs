@@ -13,7 +13,7 @@ public static class PluginServiceRegistrator
     /// </summary>
     public static void RegisterServices(IServiceCollection services)
     {
-        services.AddSingleton<IContinuumListLoader, ContinuumListLoader>();
+        services.AddHttpClient<IContinuumListLoader, ContinuumListLoader>(ContinuumListLoader.ConfigureHttpClient);
         services.AddSingleton<IContinuumItemResolver, ContinuumItemResolver>();
         services.AddSingleton<IUserWatchStateFilter, UserWatchStateFilter>();
         services.AddSingleton<IContinuumPlaylistService, ContinuumPlaylistService>();

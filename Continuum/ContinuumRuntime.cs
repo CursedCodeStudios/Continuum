@@ -12,6 +12,7 @@ namespace Continuum;
 public static class ContinuumRuntime
 {
     private static readonly object Sync = new();
+    private static readonly HttpClient ListLoaderHttpClient = CreateListLoaderHttpClient();
     private static IContinuumItemResolver? _itemResolver;
     private static IContinuumRefreshService? _refreshService;
 
@@ -57,7 +58,7 @@ public static class ContinuumRuntime
 
             IContinuumItemResolver itemResolver = GetItemResolver(libraryManager, loggerFactory);
             IContinuumListLoader listLoader = new ContinuumListLoader(
-                applicationPaths,
+                ListLoaderHttpClient,
                 loggerFactory.CreateLogger<ContinuumListLoader>());
             IUserWatchStateFilter watchStateFilter = new UserWatchStateFilter(
                 userDataManager,
@@ -80,5 +81,12 @@ public static class ContinuumRuntime
 
             return _refreshService;
         }
+    }
+
+    private static HttpClient CreateListLoaderHttpClient()
+    {
+        HttpClient client = new HttpClient();
+        ContinuumListLoader.ConfigureHttpClient(client);
+        return client;
     }
 }
