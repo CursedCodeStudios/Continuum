@@ -3892,6 +3892,616 @@
       },
       "seasonNumber": 6,
       "episodeNumber": 22
+    },
+
+    // Chicago Med - S05E01 - Never Going Back to Normal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S08E01 - Sacred Ground
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 1
+    },
+
+    // Chicago PD - S07E01 - Doubt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 1
+    },
+
+    // Chicago Med - S05E02 - We’re Lost in the Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 2
+    },
+
+    // Chicago Fire - S08E02 - A Real Shot in the Arm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 2
+    },
+
+    // Chicago PD - S07E02 - Assets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S05E03 - In the Valley of the Shadows
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S08E03 - Badlands
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 3
+    },
+
+    // Chicago PD - S07E03 - Familia
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 3
+    },
+
+    // Chicago Fire - S08E04 - Infection: Part I
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 4
+    },
+
+    // Chicago Med - S05E04 - Infection: Part II
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 4
+    },
+
+    // Chicago PD - S07E04 - Infection: Part III
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 4
+    },
+
+    // Chicago Med - S05E05 - Got a Friend in Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 5
+    },
+
+    // Chicago Fire - S08E05 - Buckle Up
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 5
+    },
+
+    // Chicago PD - S07E05 - Brother’s Keeper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S05E06 - It’s All in the Family
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S08E06 - What Went Wrong
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 6
+    },
+
+    // Chicago PD - S07E06 - False Positive
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 6
+    },
+
+    // Chicago Med - S05E07 - Who Knows What Tomorrow Brings
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 7
+    },
+
+    // Chicago Fire - S08E07 - Welcome to Crazytown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 7
+    },
+
+    // Chicago PD - S07E07 - Informant
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 7
+    },
+
+    // Chicago Med - S05E08 - Too Close to the Sun
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S08E08 - Seeing Is Believing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 8
+    },
+
+    // Chicago PD - S07E08 - No Regrets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S05E09 - I Can’t Imagine the Future
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 9
+    },
+
+    // Chicago Fire - S08E09 - Best Friend Magic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 9
+    },
+
+    // Chicago PD - S07E09 - Absolution
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 9
+    },
+
+    // Chicago Med - S05E10 - Guess It Doesn’t Matter Anymore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S08E10 - Hold Our Ground
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 10
+    },
+
+    // Chicago PD - S07E10 - Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 10
+    },
+
+    // Chicago Med - S05E11 - The Ground Shifts Beneath Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 11
+    },
+
+    // Chicago Fire - S08E11 - Where We End Up
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 11
+    },
+
+    // Chicago PD - S07E11 - 43rd and Normal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S05E12 - Leave the Choice to Solomon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S08E12 - Then Nick Porter Happened
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 12
+    },
+
+    // Chicago PD - S07E12 - The Devil You Know
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 12
+    },
+
+    // Chicago Med - S05E13 - Pain Is for the Living
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 13
+    },
+
+    // Chicago Fire - S08E13 - A Chicago Welcome
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 13
+    },
+
+    // Chicago PD - S07E13 - I Was Here
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S05E14 - It May Not Be Forever
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 14
+    },
+
+    // Chicago Fire - S08E14 - Shut It Down
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 14
+    },
+
+    // Chicago PD - S07E14 - Center Mass
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 14
+    },
+
+    // Chicago Med - S05E15 - I Will Do No Harm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 15
+    },
+
+    // Chicago Fire - S08E15 - Off the Grid
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 15
+    },
+
+    // Chicago PD - S07E15 - Burden of Truth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 15
+    },
+
+    // Chicago Med - S05E16 - Who Should Be the Judge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S08E16 - The Tendency of a Drowning Victim
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 16
+    },
+
+    // Chicago PD - S07E16 - Intimate Violence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S08E17 - Protect a Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 17
+    },
+
+    // Chicago PD - S07E17 - Before the Fall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 17
+    },
+
+    // Chicago Med - S05E17 - The Ghosts of the Past
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 17
+    },
+
+    // Chicago Fire - S08E18 - I’ll Cover You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 18
+    },
+
+    // Chicago Med - S05E18 - In the Name of Love
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 18
+    },
+
+    // Chicago PD - S07E18 - Lines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 18
+    },
+
+    // FBI - S02E19 - Emotional Rescue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "350071"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Chicago Fire - S08E19 - Light Things Up
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 19
+    },
+
+    // Chicago PD - S07E19 - Buried Secrets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 19
+    },
+
+    // Chicago Med - S05E19 - Just a River in Egypt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 19
+    },
+
+    // Chicago Fire - S08E20 - 51′s Original Bell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 20
+    },
+
+    // Chicago Med - S05E20 - A Needle in the Heart
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 20
+    },
+
+    // Chicago PD - S07E20 - Silence of the Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 20
     }
   ]
 }
