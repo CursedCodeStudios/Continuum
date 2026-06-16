@@ -20,17 +20,17 @@ public sealed class ContinuumEpisodeResolverTestRequestValidatorTests
     }
 
     [Fact]
-    public void Validate_ReturnsErrorForNonPositiveSeason()
+    public void Validate_ReturnsErrorForNegativeSeason()
     {
         ContinuumEpisodeResolverTestRequest request = new()
         {
             Title = "Pilot",
-            SeasonNumber = 0
+            SeasonNumber = -1
         };
 
         string? error = ContinuumEpisodeResolverTestRequestValidator.Validate(request);
 
-        Assert.Equal("Season number must be a positive integer when provided.", error);
+        Assert.Equal("Season number must be zero or a positive integer when provided.", error);
     }
 
     [Fact]
@@ -54,6 +54,21 @@ public sealed class ContinuumEpisodeResolverTestRequestValidatorTests
         {
             TvdbSeriesId = "tvdb-series-1",
             SeasonNumber = 1,
+            EpisodeNumber = 1
+        };
+
+        string? error = ContinuumEpisodeResolverTestRequestValidator.Validate(request);
+
+        Assert.Null(error);
+    }
+
+    [Fact]
+    public void Validate_AllowsSeasonZeroForSpecials()
+    {
+        ContinuumEpisodeResolverTestRequest request = new()
+        {
+            TvdbSeriesId = "tvdb-series-1",
+            SeasonNumber = 0,
             EpisodeNumber = 1
         };
 

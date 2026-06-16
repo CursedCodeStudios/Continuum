@@ -9,9 +9,9 @@ internal static class ContinuumEpisodeResolverTestRequestValidator
 {
     public static string? Validate(ContinuumEpisodeResolverTestRequest request)
     {
-        if (request.SeasonNumber.HasValue && request.SeasonNumber.Value < 1)
+        if (request.SeasonNumber.HasValue && request.SeasonNumber.Value < 0)
         {
-            return "Season number must be a positive integer when provided.";
+            return "Season number must be zero or a positive integer when provided.";
         }
 
         if (request.EpisodeNumber.HasValue && request.EpisodeNumber.Value < 1)

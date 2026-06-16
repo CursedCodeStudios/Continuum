@@ -70,7 +70,7 @@
                             </div>
 
                             <div class="inputContainer">
-                                <input id="ResolverSeasonNumber" type="number" min="1" step="1" is="emby-input" />
+                                <input id="ResolverSeasonNumber" type="number" min="0" step="1" is="emby-input" />
                                 <label class="inputLabel inputLabelUnfocused" for="ResolverSeasonNumber">Season number</label>
                             </div>
 
@@ -714,6 +714,20 @@
                 return parsed;
             }
 
+            function readOptionalNonNegativeInteger(selector, label) {
+                const raw = readTrimmedValue(selector);
+                if (!raw) {
+                    return null;
+                }
+
+                const parsed = parseInt(raw, 10);
+                if (!Number.isFinite(parsed) || parsed < 0) {
+                    throw new Error(label + " must be zero or a positive integer.");
+                }
+
+                return parsed;
+            }
+
             function isValidGuid(value) {
                 return /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/.test(value);
             }
@@ -725,7 +739,7 @@
                 const tmdbSeriesId = readTrimmedValue("#ResolverTmdbSeriesId");
                 const tmdbEpisodeId = readTrimmedValue("#ResolverTmdbEpisodeId");
                 const title = readTrimmedValue("#ResolverTitle");
-                const seasonNumber = readOptionalPositiveInteger("#ResolverSeasonNumber", "Season number");
+                const seasonNumber = readOptionalNonNegativeInteger("#ResolverSeasonNumber", "Season number");
                 const episodeNumber = readOptionalPositiveInteger("#ResolverEpisodeNumber", "Episode number");
 
                 if (jellyfinItemId && !isValidGuid(jellyfinItemId)) {

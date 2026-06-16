@@ -103,6 +103,33 @@ public sealed class ContinuumEpisodeResolverDiagnosticsTests
     }
 
     [Fact]
+    public void Resolve_UsesSpecialsFolderFallbackForSeasonZero()
+    {
+        ContinuumEpisodeResolverCandidate candidate = CreateCandidate(
+            Guid.NewGuid(),
+            "Children in Need Born Again",
+            "Doctor Who",
+            seasonNumber: null,
+            episodeNumber: 1,
+            seriesProviderIds: new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["Tvdb"] = "tvdb-series-doctor-who"
+            },
+            itemPath: "/mnt/truenas/hdds/media/tvshows/Doctor Who (2005) [tvdbid-78804]/Specials/Doctor Who (2005) - S00E01 - Children in Need Born Again.mkv");
+
+        ContinuumEpisodeResolverDiagnosticResult result = ContinuumEpisodeResolverDiagnostics.Resolve(
+            CreateList(),
+            CreateEntry(tvdbSeriesId: "tvdb-series-doctor-who", seasonNumber: 0, episodeNumber: 1),
+            _ => new ContinuumEpisodeResolverExactLookupResult(),
+            [candidate]);
+
+        Assert.Equal("resolved", result.Response.Outcome);
+        Assert.Equal("tvdb-series-season-episode", result.Response.FinalStrategy);
+        Assert.Equal("resolved", result.Response.Trace[3].Status);
+        Assert.Contains("Specials folder fallback", result.Response.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
     public void Resolve_SkipsStrategiesWithoutRequiredInputs()
     {
         ContinuumEpisodeResolverDiagnosticResult result = ContinuumEpisodeResolverDiagnostics.Resolve(
@@ -197,10 +224,11 @@ public sealed class ContinuumEpisodeResolverDiagnosticsTests
         Guid jellyfinItemId,
         string episodeTitle,
         string seriesTitle,
-        int seasonNumber,
+        int? seasonNumber,
         int episodeNumber,
         IReadOnlyDictionary<string, string>? episodeProviderIds = null,
-        IReadOnlyDictionary<string, string>? seriesProviderIds = null)
+        IReadOnlyDictionary<string, string>? seriesProviderIds = null,
+        string? itemPath = null)
     {
         return new ContinuumEpisodeResolverCandidate
         {
@@ -209,6 +237,7 @@ public sealed class ContinuumEpisodeResolverDiagnosticsTests
             SeriesTitle = seriesTitle,
             SeasonNumber = seasonNumber,
             EpisodeNumber = episodeNumber,
+            Path = itemPath,
             EpisodeProviderIds = episodeProviderIds ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase),
             SeriesProviderIds = seriesProviderIds ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
         };

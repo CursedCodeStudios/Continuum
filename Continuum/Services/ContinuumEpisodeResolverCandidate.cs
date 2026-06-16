@@ -21,6 +21,8 @@ internal sealed class ContinuumEpisodeResolverCandidate
 
     public int? ProductionYear { get; init; }
 
+    public string? Path { get; init; }
+
     public IReadOnlyDictionary<string, string> EpisodeProviderIds { get; init; } = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
     public IReadOnlyDictionary<string, string> SeriesProviderIds { get; init; } = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);

@@ -168,13 +168,63 @@ internal static class ContinuumEpisodeResolverDiagnostics
             return null;
         }
 
-        ContinuumEpisodeResolverCandidate[] candidates = episodes
+        ContinuumEpisodeResolverCandidate[] seriesMatches = episodes
             .Where(episode => TryGetProviderId(episode.SeriesProviderIds, providerName, out string? value)
                 && string.Equals(value, seriesProviderId, StringComparison.OrdinalIgnoreCase))
+            .ToArray();
+
+        ContinuumEpisodeResolverCandidate[] candidates = seriesMatches
             .Where(episode => EpisodeMatchesNumbers(episode, entry))
             .ToArray();
 
-        return BuildCandidateResult(strategyKey, displayName, candidates, trace);
+        if (candidates.Length > 0)
+        {
+            return BuildCandidateResult(strategyKey, displayName, candidates, trace);
+        }
+
+        if (entry.SeasonNumber == 0)
+        {
+            ContinuumEpisodeResolverCandidate[] specialsCandidates = seriesMatches
+                .Where(episode => EpisodeMatchesSpecialsFallback(episode, entry))
+                .ToArray();
+
+            if (specialsCandidates.Length == 1)
+            {
+                return CreateResolvedResult(
+                    strategyKey,
+                    displayName,
+                    $"Resolved by {displayName} using Specials folder fallback.",
+                    specialsCandidates[0],
+                    trace);
+            }
+
+            if (specialsCandidates.Length > 1)
+            {
+                IReadOnlyList<ContinuumEpisodeResolverItemSummary> summaries = specialsCandidates
+                    .Select(CreateItemSummary)
+                    .ToArray();
+                trace.Add(CreateStep(
+                    strategyKey,
+                    displayName,
+                    "ambiguous",
+                    $"Multiple library items matched by {displayName} using Specials folder fallback.",
+                    summaries));
+
+                return new ContinuumEpisodeResolverDiagnosticResult
+                {
+                    Response = new ContinuumEpisodeResolverTestResponse
+                    {
+                        Outcome = "ambiguous",
+                        FinalStrategy = strategyKey,
+                        Message = $"Multiple library items matched by {displayName} using Specials folder fallback.",
+                        Trace = trace.ToArray()
+                    }
+                };
+            }
+        }
+
+        trace.Add(CreateStep(strategyKey, displayName, "no-match", $"No library items matched by {displayName}."));
+        return null;
     }
 
     private static ContinuumEpisodeResolverDiagnosticResult? TryResolveByTitleFallback(
@@ -298,6 +348,34 @@ internal static class ContinuumEpisodeResolverDiagnostics
     {
         return (!entry.SeasonNumber.HasValue || candidate.SeasonNumber == entry.SeasonNumber.Value)
             && (!entry.EpisodeNumber.HasValue || candidate.EpisodeNumber == entry.EpisodeNumber.Value);
+    }
+
+    private static bool EpisodeMatchesSpecialsFallback(ContinuumEpisodeResolverCandidate candidate, ContinuumListEntry entry)
+    {
+        if (entry.SeasonNumber != 0)
+        {
+            return false;
+        }
+
+        if (entry.EpisodeNumber.HasValue && candidate.EpisodeNumber != entry.EpisodeNumber.Value)
+        {
+            return false;
+        }
+
+        return candidate.SeasonNumber == 0 || IsInSpecialsFolder(candidate.Path);
+    }
+
+    private static bool IsInSpecialsFolder(string? path)
+    {
+        if (string.IsNullOrWhiteSpace(path))
+        {
+            return false;
+        }
+
+        return path.Contains("/Specials/", StringComparison.OrdinalIgnoreCase)
+            || path.Contains("\\Specials\\", StringComparison.OrdinalIgnoreCase)
+            || path.EndsWith("/Specials", StringComparison.OrdinalIgnoreCase)
+            || path.EndsWith("\\Specials", StringComparison.OrdinalIgnoreCase);
     }
 
     private static bool TryGetProviderId(

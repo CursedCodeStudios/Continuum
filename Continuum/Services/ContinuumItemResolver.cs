@@ -285,6 +285,7 @@ public sealed class ContinuumItemResolver(ILibraryManager libraryManager, ILogge
             SeasonNumber = episode.ParentIndexNumber,
             EpisodeNumber = episode.IndexNumber,
             ProductionYear = episode.ProductionYear,
+            Path = episode.Path,
             EpisodeProviderIds = ToProviderLookup(episode),
             SeriesProviderIds = ToProviderLookup(episode.Series)
         };
