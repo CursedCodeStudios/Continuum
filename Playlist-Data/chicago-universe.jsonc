@@ -4502,6 +4502,496 @@
       },
       "seasonNumber": 7,
       "episodeNumber": 20
+    },
+
+    // Chicago PD - S08E01 - Fighting Ghosts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 1
+    },
+
+    // Chicago PD - S08E02 - White Knuckle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S06E01 - When Did We Begin to Change?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S09E01 - Rattle Second City
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 1
+    },
+
+    // Chicago Fire - S09E02 - That Kind of Heat
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 2
+    },
+
+    // Chicago Med - S06E02 - Those Things Hidden in Plain Sight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 2
+    },
+
+    // Chicago Fire - S09E03 - Smash Therapy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 3
+    },
+
+    // Chicago Med - S06E03 - Do You Know the Way Home?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 3
+    },
+
+    // Chicago PD - S08E03 - Tender Age
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 3
+    },
+
+    // Chicago PD - S08E04 - Unforgiven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S09E04 - Funny What Things Remind Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 4
+    },
+
+    // Chicago Fire - S09E05 - My Lucky Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 5
+    },
+
+    // Chicago PD - S08E05 - In Your Care
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S06E04 - In Search of Forgiveness, Not Permission
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Chicago Med - S06E05 - When Your Heart Rules Your Head
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Chicago Med - S06E06 - Don’t Want to Face This Now
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Chicago Fire - S09E06 - Blow This Up Somehow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 6
+    },
+
+    // Chicago PD - S08E06 - Equal Justice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 6
+    },
+
+    // Chicago Med - S06E07 - Better Is the Enemy of Good
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Chicago Fire - S09E07 - Dead of Winter
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 7
+    },
+
+    // Chicago PD - S08E07 - Instinct
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 7
+    },
+
+    // Chicago Med - S06E08 - Fathers and Mothers, Daughters and Sons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Chicago Med - S06E09 - For the Want of a Nail
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 9
+    },
+
+    // Chicago PD - S08E08 - Protect and Serve
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S09E08 - Escape Route
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 8
+    },
+
+    // Chicago Fire - S09E09 - Double Red
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 9
+    },
+
+    // Chicago PD - S08E09 - Impossible Dream
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 9
+    },
+
+    // Chicago Med - S06E10 - So Many Things We’ve Kept Buried
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 10
+    },
+
+    // Chicago Fire - S09E10 - One Crazy Shift
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 10
+    },
+
+    // Chicago PD - S08E10 - The Radical Truth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 10
+    },
+
+    // Chicago Med - S06E11 - Letting Go Only to Come Together
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 11
+    },
+
+    // Chicago Fire - S09E11 - A Couple Hundred Degrees
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 11
+    },
+
+    // Chicago PD - S08E11 - Signs of Violence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 11
+    },
+
+    // Chicago Med - S06E12 - Some Things Are Worth the Risk
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 12
+    },
+
+    // Chicago Fire - S09E12 - Natural Born Firefighter
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 12
+    },
+
+    // Chicago PD - S08E12 - Due Process
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 12
+    },
+
+    // Chicago Med - S06E13 - What a Tangled Web We Weave
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 13
+    },
+
+    // Chicago PD - S08E13 - Trouble Dolls
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 13
+    },
+
+    // Chicago Med - S06E14 - A Red Pill, a Blue Pill
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 14
+    },
+
+    // Chicago PD - S08E14 - Safe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 14
+    },
+
+    // Chicago Fire - S09E13 - Don’t Hang Up
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 13
+    },
+
+    // Chicago Fire - S09E14 - What Comes Next
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 14
+    },
+
+    // Chicago PD - S08E15 - The Right Thing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 15
+    },
+
+    // Chicago PD - S08E16 - The Other Side
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 8,
+      "episodeNumber": 16
+    },
+
+    // Chicago PD - S09E01 - Closure
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "269641"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 1
+    },
+
+    // Chicago Med - S06E15 - Stories, Secrets, Half Truths and Lies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 15
+    },
+
+    // Chicago Med - S06E16 - I Will Come to Save You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "295640"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 16
+    },
+
+    // Chicago Fire - S09E15 - A White-Knuckle Panic
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 15
+    },
+
+    // Chicago Fire - S09E16 - No Survivors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "258541"
+      },
+      "seasonNumber": 9,
+      "episodeNumber": 16
     }
   ]
 }
