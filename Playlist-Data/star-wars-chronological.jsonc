@@ -1,0 +1,87 @@
+{
+  "name": "Star Wars Chronological",
+  "slug": "star-wars-chronological",
+  "description": "Star Wars Chronological",
+  "enabled": true,
+  "items": [
+    // The Acolyte - S01E01 - Lost / Found
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // The Acolyte - S01E02 - Revenge / Justice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // The Acolyte - S01E03 - Destiny
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // The Acolyte - S01E04 - Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // The Acolyte - S01E05 - Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // The Acolyte - S01E06 - Teach / Corrupt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // The Acolyte - S01E07 - Choice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // The Acolyte - S01E08 - The Acolyte
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "393197"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    }
+  ]
+}
