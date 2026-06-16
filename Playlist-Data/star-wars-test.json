@@ -1,0 +1,16 @@
+{
+  "name": "Star Wars Test",
+  "slug": "star-wars-test",
+  "description": "Minimal test list for validating Star Wars episode resolution.",
+  "enabled": true,
+  "items": [
+    {
+      "order": 1,
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "361753",
+        "tvdbEpisodeId": "7133857"
+      }
+    }
+  ]
+}
