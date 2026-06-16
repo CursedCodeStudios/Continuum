@@ -66,6 +66,12 @@ Sanitization rules:
 - Per-list enablement defaults to `off` until each server admin checks the list on the Continuum admin page
 - If both watch-state include flags are false, Continuum treats both as enabled and logs a warning
 
+The playlist suffix is treated as the visible tail text of the generated playlist name, and Continuum inserts one space before it. For example:
+
+- `- Continuum` becomes `Chicago Universe - Continuum`
+- `(Dynamic)` becomes `Chicago Universe (Dynamic)`
+- blank becomes `Chicago Universe`
+
 ## Manual List Format
 
 Continuum v1 uses JSONC so list files can include comments. Files live in this repository under:
@@ -139,14 +145,14 @@ The token must be able to call `repository_dispatch` on:
 ### Create a release
 
 ```bash
-git tag v0.1.5.0
-git push origin v0.1.5.0
+git tag v0.1.5.1
+git push origin v0.1.5.1
 ```
 
 The release workflow will:
 
 1. build the plugin;
-2. create `Continuum_0.1.5.0.zip`;
+2. create `Continuum_0.1.5.1.zip`;
 3. calculate SHA256;
 4. create/update the GitHub Release;
 5. trigger `CursedCodeStudios/Jellyfin-Plugins`;

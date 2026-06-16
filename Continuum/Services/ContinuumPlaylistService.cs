@@ -155,11 +155,13 @@ public sealed class ContinuumPlaylistService : IContinuumPlaylistService
 
     internal static string BuildDefaultPlaylistName(string listName, string playlistSuffix)
     {
-        return $"{listName} - {playlistSuffix}";
+        return string.IsNullOrWhiteSpace(playlistSuffix)
+            ? listName
+            : listName + " " + playlistSuffix.Trim();
     }
 
     internal static string BuildUserQualifiedPlaylistName(string listName, string userName, string playlistSuffix)
     {
-        return $"{listName} - {userName} - {playlistSuffix}";
+        return BuildDefaultPlaylistName($"{listName} - {userName}", playlistSuffix);
     }
 }

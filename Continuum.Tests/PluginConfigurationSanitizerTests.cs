@@ -44,7 +44,7 @@ public class PluginConfigurationSanitizerTests
 
         PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
 
-        Assert.Equal("Continuum", sanitized.PlaylistSuffix);
+        Assert.Equal("- Continuum", sanitized.PlaylistSuffix);
     }
 
     [Fact]
@@ -52,12 +52,40 @@ public class PluginConfigurationSanitizerTests
     {
         PluginConfiguration configuration = new PluginConfiguration
         {
-            PlaylistSuffix = "  Rolling Watch  "
+            PlaylistSuffix = "  (Dynamic)  "
         };
 
         PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
 
-        Assert.Equal("Rolling Watch", sanitized.PlaylistSuffix);
+        Assert.Equal("(Dynamic)", sanitized.PlaylistSuffix);
+    }
+
+    [Fact]
+    public void Sanitize_MigratesLegacySuffixUsingLegacySeparator()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            PlaylistSuffix = "Continuum",
+            PlaylistSuffixSeparator = " - "
+        };
+
+        PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
+
+        Assert.Equal("- Continuum", sanitized.PlaylistSuffix);
+    }
+
+    [Fact]
+    public void Sanitize_PreservesPlainSuffixWhenLegacySeparatorWasBlank()
+    {
+        PluginConfiguration configuration = new PluginConfiguration
+        {
+            PlaylistSuffix = "RollingWatch",
+            PlaylistSuffixSeparator = string.Empty
+        };
+
+        PluginConfiguration sanitized = PluginConfigurationSanitizer.Sanitize(configuration);
+
+        Assert.Equal("RollingWatch", sanitized.PlaylistSuffix);
     }
 
     [Fact]

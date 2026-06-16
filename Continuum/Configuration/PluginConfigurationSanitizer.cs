@@ -17,7 +17,8 @@ public static class PluginConfigurationSanitizer
             Enabled = configuration.Enabled,
             RefreshIntervalMinutes = Math.Max(5, configuration.RefreshIntervalMinutes),
             PlaylistSize = Math.Clamp(configuration.PlaylistSize, 1, 150),
-            PlaylistSuffix = SanitizePlaylistSuffix(configuration.PlaylistSuffix),
+            PlaylistSuffix = SanitizePlaylistSuffix(configuration.PlaylistSuffix, configuration.PlaylistSuffixSeparator),
+            PlaylistSuffixSeparator = configuration.PlaylistSuffixSeparator ?? " - ",
             CreatePlaylistsForDisabledUsers = configuration.CreatePlaylistsForDisabledUsers,
             IncludePartiallyWatched = configuration.IncludePartiallyWatched,
             IncludeUnwatched = configuration.IncludeUnwatched,
@@ -36,10 +37,38 @@ public static class PluginConfigurationSanitizer
         return sanitized;
     }
 
-    private static string SanitizePlaylistSuffix(string? playlistSuffix)
+    private static string SanitizePlaylistSuffix(string? playlistSuffix, string? legacyPlaylistSuffixSeparator)
     {
         string sanitized = (playlistSuffix ?? string.Empty).Trim();
-        return string.IsNullOrWhiteSpace(sanitized) ? "Continuum" : sanitized;
+        if (string.IsNullOrWhiteSpace(sanitized))
+        {
+            return "- Continuum";
+        }
+
+        if (LooksLikeNewStyleSuffix(sanitized))
+        {
+            return sanitized;
+        }
+
+        string legacySeparator = legacyPlaylistSuffixSeparator ?? " - ";
+        if (string.IsNullOrEmpty(legacySeparator))
+        {
+            return sanitized;
+        }
+
+        string trimmedLegacySeparator = legacySeparator.Trim();
+        if (string.IsNullOrEmpty(trimmedLegacySeparator))
+        {
+            return sanitized;
+        }
+
+        return trimmedLegacySeparator + " " + sanitized;
+    }
+
+    private static bool LooksLikeNewStyleSuffix(string playlistSuffix)
+    {
+        char firstCharacter = playlistSuffix[0];
+        return char.IsPunctuation(firstCharacter) || char.IsWhiteSpace(firstCharacter);
     }
 
     private static Dictionary<string, bool> SanitizeEnabledLists(Dictionary<string, bool>? enabledLists)

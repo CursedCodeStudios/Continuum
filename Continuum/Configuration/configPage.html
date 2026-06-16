@@ -152,7 +152,17 @@
 
                         <div class="inputContainer">
                             <input id="PlaylistSuffix" name="PlaylistSuffix" type="text" is="emby-input" />
-                            <label class="inputLabel inputLabelUnfocused" for="PlaylistSuffix">Playlist suffix</label>
+                            <label class="inputLabel inputLabelUnfocused" for="PlaylistSuffix">Playlist suffix text</label>
+                        </div>
+
+                        <div class="continuumMuted">
+                            Continuum adds one space before this suffix. Examples: <code>- Continuum</code>, <code>(Dynamic)</code>, or <code>Dynamic</code>.
+                        </div>
+
+                        <div class="continuumPreviewCard">
+                            <div class="continuumPreviewTitle">Sample preview</div>
+                            <div id="PlaylistSuffixPreviewDefault" class="continuumPreviewValue">Chicago Universe - Continuum</div>
+                            <div id="PlaylistSuffixPreviewUserQualified" class="continuumPreviewValue">Chicago Universe - derek - Continuum</div>
                         </div>
 
                         <button id="SaveSettingsButton" is="emby-button" type="submit" class="raised button-submit block">
@@ -416,6 +426,26 @@
             margin-bottom: 1rem;
         }
 
+        #ContinuumConfigPage .continuumPreviewCard {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.025);
+            padding: 0.9rem 1rem;
+            margin-top: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        #ContinuumConfigPage .continuumPreviewTitle {
+            font-weight: 600;
+            margin-bottom: 0.45rem;
+        }
+
+        #ContinuumConfigPage .continuumPreviewValue {
+            color: var(--secondaryTextColor);
+            font-family: monospace;
+            line-height: 1.5;
+        }
+
         #ContinuumConfigPage .hide {
             display: none;
         }
@@ -454,6 +484,9 @@
             const toggleResolverTestButton = document.querySelector("#ToggleResolverTestButton");
             const reloadDashboardButton = document.querySelector("#ReloadDashboardButton");
             const saveSettingsButton = document.querySelector("#SaveSettingsButton");
+            const playlistSuffixInput = document.querySelector("#PlaylistSuffix");
+            const playlistSuffixPreviewDefault = document.querySelector("#PlaylistSuffixPreviewDefault");
+            const playlistSuffixPreviewUserQualified = document.querySelector("#PlaylistSuffixPreviewUserQualified");
             const resolverDrawer = document.querySelector("#ContinuumResolverDrawer");
             const resolverForm = document.querySelector("#ContinuumResolverTestForm");
             const runResolverTestButton = document.querySelector("#RunResolverTestButton");
@@ -586,6 +619,7 @@
             function normalizeConfig(config) {
                 const normalized = config || {};
                 normalized.EnabledLists = normalizeEnabledLists(readValue(normalized, "enabledLists", "EnabledLists", {}));
+                normalized.PlaylistSuffixSeparator = "";
                 state.pluginConfig = normalized;
                 return normalized;
             }
@@ -653,6 +687,17 @@
             function readTrimmedValue(selector) {
                 const element = document.querySelector(selector);
                 return element && element.value ? element.value.trim() : "";
+            }
+
+            function buildPlaylistNamePreview(baseName, suffix) {
+                const trimmedSuffix = (suffix || "").trim();
+                return trimmedSuffix ? baseName + " " + trimmedSuffix : baseName;
+            }
+
+            function renderPlaylistSuffixPreview() {
+                const suffix = playlistSuffixInput.value || "";
+                playlistSuffixPreviewDefault.textContent = buildPlaylistNamePreview("Chicago Universe", suffix);
+                playlistSuffixPreviewUserQualified.textContent = buildPlaylistNamePreview("Chicago Universe - derek", suffix);
             }
 
             function readOptionalPositiveInteger(selector, label) {
@@ -1066,7 +1111,8 @@
                     document.querySelector("#Enabled").checked = !!readValue(normalizedConfig, "enabled", "Enabled", true);
                     document.querySelector("#RefreshIntervalMinutes").value = readValue(normalizedConfig, "refreshIntervalMinutes", "RefreshIntervalMinutes", 60);
                     document.querySelector("#PlaylistSize").value = readValue(normalizedConfig, "playlistSize", "PlaylistSize", 100);
-                    document.querySelector("#PlaylistSuffix").value = readValue(normalizedConfig, "playlistSuffix", "PlaylistSuffix", "Continuum");
+                    document.querySelector("#PlaylistSuffix").value = readValue(normalizedConfig, "playlistSuffix", "PlaylistSuffix", "- Continuum");
+                    renderPlaylistSuffixPreview();
                     state.configLoaded = true;
                 });
             }
@@ -1210,7 +1256,8 @@
                     config.Enabled = document.querySelector("#Enabled").checked;
                     config.RefreshIntervalMinutes = parseInt(document.querySelector("#RefreshIntervalMinutes").value || "60", 10);
                     config.PlaylistSize = parseInt(document.querySelector("#PlaylistSize").value || "100", 10);
-                    config.PlaylistSuffix = (document.querySelector("#PlaylistSuffix").value || "Continuum").trim();
+                    config.PlaylistSuffix = document.querySelector("#PlaylistSuffix").value ?? "- Continuum";
+                    config.PlaylistSuffixSeparator = "";
                     return savePluginConfig(config, "Continuum settings saved.", "Failed to save Continuum settings.");
                 }).catch(function (error) {
                     return null;
@@ -1223,6 +1270,8 @@
             page.addEventListener("pageshow", function () {
                 loadPage();
             });
+
+            playlistSuffixInput.addEventListener("input", renderPlaylistSuffixPreview);
 
             page.addEventListener("pagehide", function () {
                 stopPolling();

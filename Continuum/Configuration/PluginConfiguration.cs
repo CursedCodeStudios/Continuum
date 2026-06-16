@@ -26,7 +26,12 @@ public class PluginConfiguration : BasePluginConfiguration
     /// <summary>
     /// Gets or sets the suffix appended to generated playlist names.
     /// </summary>
-    public string PlaylistSuffix { get; set; } = "Continuum";
+    public string PlaylistSuffix { get; set; } = "- Continuum";
+
+    /// <summary>
+    /// Gets or sets the legacy separator inserted before the playlist suffix.
+    /// </summary>
+    public string PlaylistSuffixSeparator { get; set; } = " - ";
 
     /// <summary>
     /// Gets or sets a value indicating whether disabled users should receive playlists.
