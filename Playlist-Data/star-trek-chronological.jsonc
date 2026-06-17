@@ -8606,6 +8606,376 @@
       },
       "seasonNumber": 3,
       "episodeNumber": 1
+    },
+
+    // Star Trek: Picard - S03E02 - Disengage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Picard - S03E03 - Seventeen Seconds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Picard - S03E04 - No Win Scenario
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Picard - S03E05 - Imposters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Picard - S03E06 - The Bounty
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Picard - S03E07 - Dominion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Picard - S03E08 - Surrender
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Picard - S03E09 - Võx
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Picard - S03E10 - The Last Generation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Voyager - S04E23 - Living Witness
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Discovery - S03E01 - That Hope Is You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Discovery - S03E02 - Far from Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Discovery - S03E03 - People of Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Discovery - S03E04 - Forget Me Not
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Discovery - S03E05 - Die Trying
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Discovery - S03E06 - Scavengers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Discovery - S03E07 - Unification III
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Discovery - S03E08 - The Sanctuary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Discovery - S03E09 - Terra Firma
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Discovery - S03E10 - Terra Firma
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Discovery - S03E11 - Su'Kal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Discovery - S03E12 - There Is a Tide...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Discovery - S03E13 - That Hope Is You
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Discovery - S04E01 - Kobayashi Maru
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Discovery - S04E02 - Anomaly
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Discovery - S04E03 - Choose to Live
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Discovery - S04E04 - All Is Possible
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Discovery - S04E05 - The Examples
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Discovery - S04E06 - Stormy Weather
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Discovery - S04E07 - ...But to Connect
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Discovery - S04E08 - All In
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Discovery - S04E09 - Rubicon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Discovery - S04E10 - The Galactic Barrier
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Discovery - S04E11 - Rosetta
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Discovery - S04E12 - Species Ten-C
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Discovery - S04E13 - Coming Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "328711"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Short Treks - S01E02 - Calypso
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "376108"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
     }
   ]
 }
