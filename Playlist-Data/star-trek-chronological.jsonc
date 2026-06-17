@@ -4730,6 +4730,434 @@
       },
       "seasonNumber": 7,
       "episodeNumber": 22
+    },
+
+    // Star Trek: Deep Space Nine - S02E22 - The Wire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: The Next Generation - S07E23 - Emergence
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Deep Space Nine - S02E23 - Crossover
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: The Next Generation - S07E24 - Preemptive Strike
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Deep Space Nine - S02E24 - The Collaborator
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Deep Space Nine - S02E25 - Tribunal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: The Next Generation - S07E25 - All Good Things...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Deep Space Nine - S02E26 - The Jem'Hadar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Deep Space Nine - S03E01 - The Search
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S03E02 - The Search
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S03E03 - The House of Quark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Deep Space Nine - S03E04 - Equilibrium
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Deep Space Nine - S03E05 - Second Skin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S03E06 - The Abandoned
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Deep Space Nine - S03E07 - Civil Defense
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Voyager - S01E01 - Caretaker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S03E08 - Meridian
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S01E02 - Parallax
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S03E09 - Defiant
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S03E10 - Fascination
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Deep Space Nine - S03E11 - Past Tense
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S03E12 - Past Tense
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Voyager - S01E03 - Time and Again
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Deep Space Nine - S03E13 - Life Support
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Deep Space Nine - S03E14 - Heart of Stone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Voyager - S01E04 - Phage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Deep Space Nine - S03E15 - Destiny
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Voyager - S01E05 - The Cloud
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S03E16 - Prophet Motive
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Deep Space Nine - S03E17 - Visionary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Voyager - S01E06 - Eye of the Needle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Voyager - S01E07 - Ex Post Facto
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Voyager - S01E08 - Emanations
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S01E09 - Prime Factors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S03E18 - Distant Voices
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Trek Generations
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "193"
+      }
+    },
+
+    // Star Trek: Voyager - S01E10 - State of Flux
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Deep Space Nine - S03E19 - Through the Looking Glass
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Voyager - S01E11 - Heroes and Demons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S03E20 - Improbable Cause
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Deep Space Nine - S03E21 - The Die Is Cast
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Voyager - S01E12 - Cathexis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Deep Space Nine - S03E22 - Explorers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
     }
   ]
 }
