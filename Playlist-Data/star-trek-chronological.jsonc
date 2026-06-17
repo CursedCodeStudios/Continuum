@@ -8162,6 +8162,450 @@
       },
       "seasonNumber": 4,
       "episodeNumber": 7
+    },
+
+    // Star Trek: Lower Decks - S04E08 - Caves
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Lower Decks - S04E09 - The Inner Fight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Lower Decks - S04E10 - Old Friends, New Planets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Prodigy - S01E01 - Lost and Found
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Prodigy - S01E02 - Starstruck
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Prodigy - S01E03 - Dream Catcher
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Prodigy - S01E04 - Terror Firma
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Prodigy - S01E05 - Kobayashi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Prodigy - S01E06 - First Con-tact
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Prodigy - S01E07 - Time Amok
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Prodigy - S01E08 - A Moral Star
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Prodigy - S01E10 - Asylum
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Prodigy - S01E11 - Let Sleeping Borg Lie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Prodigy - S01E12 - All the World's a Stage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Prodigy - S01E13 - Crossroads
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Prodigy - S01E14 - Masquerade
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Prodigy - S01E15 - Preludes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Prodigy - S01E16 - Ghost in the Machine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Prodigy - S01E17 - Mindwalk
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Prodigy - S01E18 - Supernova
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "385811"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Star Trek
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "13475"
+      }
+    },
+
+    // Star Trek Into Darkness
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "54138"
+      }
+    },
+
+    // Star Trek Beyond
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "188927"
+      }
+    },
+
+    // Star Trek: Short Treks - S02E06 - Children of Mars
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "376108"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Picard - S01E01 - Remembrance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Picard - S01E02 - Maps and Legends
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Picard - S01E03 - The End Is the Beginning
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Picard - S01E04 - Absolute Candor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Picard - S01E05 - Stardust City Rag
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Picard - S01E06 - The Impossible Box
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Picard - S01E07 - Nepenthe
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Picard - S01E08 - Broken Pieces
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Picard - S01E09 - Et in Arcadia Ego
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Picard - S01E10 - Et in Arcadia Ego
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Picard - S02E01 - The Star Gazer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Picard - S02E02 - Penance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Picard - S02E03 - Assimilation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Picard - S02E04 - Watcher
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Picard - S02E05 - Fly Me to the Moon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Picard - S02E06 - Two of One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Picard - S02E07 - Monsters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Picard - S02E08 - Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Picard - S02E09 - Hide and Seek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Picard - S02E10 - Farewell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Picard - S03E01 - The Next Generation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "364093"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
     }
   ]
 }
