@@ -442,6 +442,436 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 18
+    },
+
+    // Star Trek: Enterprise - S02E19 - Judgment
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Enterprise - S02E20 - Horizon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Enterprise - S02E21 - The Breach
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Enterprise - S02E22 - Cogenitor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Enterprise - S02E23 - Regeneration
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Enterprise - S02E24 - First Flight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Enterprise - S02E25 - Bounty
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Enterprise - S02E26 - The Expanse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Enterprise - S03E01 - The Xindi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Enterprise - S03E02 - Anomaly
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Enterprise - S03E03 - Extinction
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Enterprise - S03E04 - Rajiin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Enterprise - S03E05 - Impulse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Enterprise - S03E06 - Exile
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Enterprise - S03E07 - The Shipment
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Enterprise - S03E08 - Twilight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Enterprise - S03E09 - North Star
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Enterprise - S03E10 - Similitude
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Enterprise - S03E11 - Carpenter Street
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Enterprise - S03E12 - Chosen Realm
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Enterprise - S03E13 - Proving Ground
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Enterprise - S03E14 - Stratagem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Enterprise - S03E15 - Harbinger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Enterprise - S03E16 - Doctor's Orders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Enterprise - S03E17 - Hatchery
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Enterprise - S03E18 - Azati Prime
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Enterprise - S03E19 - Damage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Enterprise - S03E20 - The Forgotten
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Enterprise - S03E21 - E²
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Enterprise - S03E22 - The Council
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Enterprise - S03E23 - Countdown
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Enterprise - S03E24 - Zero Hour
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Enterprise - S04E01 - Storm Front
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Enterprise - S04E02 - Storm Front
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Enterprise - S04E03 - Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Enterprise - S04E04 - Borderland
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Enterprise - S04E05 - Cold Station 12
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Enterprise - S04E06 - The Augments
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Enterprise - S04E07 - The Forge
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Enterprise - S04E08 - Awakening
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Enterprise - S04E09 - Kir'Shara
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Enterprise - S04E10 - Daedalus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Enterprise - S04E11 - Observer Effect
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
     }
   ]
 }
