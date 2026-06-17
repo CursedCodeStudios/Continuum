@@ -1,0 +1,447 @@
+{
+  "name": "Star Trek Chronological",
+  "slug": "star-trek-chronological",
+  "description": "Star Trek Chronological",
+  "enabled": true,
+  "items": [
+    // Star Trek: Enterprise - S01E01 - Broken Bow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Enterprise - S01E02 - Broken Bow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Enterprise - S01E03 - Fight or Flight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Enterprise - S01E04 - Strange New World
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Enterprise - S01E05 - Unexpected
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Enterprise - S01E06 - Terra Nova
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Enterprise - S01E07 - The Andorian Incident
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Enterprise - S01E08 - Breaking the Ice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Enterprise - S01E09 - Civilization
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Enterprise - S01E10 - Fortunate Son
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Enterprise - S01E11 - Cold Front
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Enterprise - S01E12 - Silent Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Enterprise - S01E13 - Dear Doctor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Enterprise - S01E14 - Sleeping Dogs
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Enterprise - S01E15 - Shadows of P'Jem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Enterprise - S01E16 - Shuttlepod One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Enterprise - S01E17 - Fusion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Enterprise - S01E18 - Rogue Planet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Enterprise - S01E19 - Acquisition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Enterprise - S01E20 - Oasis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Enterprise - S01E21 - Detained
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Enterprise - S01E22 - Vox Sola
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Enterprise - S01E23 - Fallen Hero
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Enterprise - S01E24 - Desert Crossing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Enterprise - S01E25 - Two Days and Two Nights
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Enterprise - S01E26 - Shockwave
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Enterprise - S02E01 - Shockwave
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Enterprise - S02E02 - Carbon Creek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Enterprise - S02E03 - Minefield
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Enterprise - S02E04 - Dead Stop
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Enterprise - S02E05 - A Night in Sickbay
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Enterprise - S02E06 - Marauders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Enterprise - S02E07 - The Seventh
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Enterprise - S02E08 - The Communicator
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Enterprise - S02E09 - Singularity
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Enterprise - S02E10 - Vanishing Point
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Enterprise - S02E11 - Precious Cargo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Enterprise - S02E12 - The Catwalk
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Enterprise - S02E13 - Dawn
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Enterprise - S02E14 - Stigma
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Enterprise - S02E15 - Cease Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Enterprise - S02E16 - Future Tense
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Enterprise - S02E17 - Canamar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Enterprise - S02E18 - The Crossing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    }
+  ]
+}
