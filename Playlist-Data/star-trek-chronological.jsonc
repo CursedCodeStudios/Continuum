@@ -4300,6 +4300,436 @@
       },
       "seasonNumber": 7,
       "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S02E01 - The Homecoming
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S02E02 - The Circle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S02E03 - The Siege
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S07E02 - Liaisons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Next Generation - S07E04 - Gambit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S07E05 - Gambit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S02E05 - Cardassians
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S02E04 - Invasive Procedures
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S07E03 - Interface
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S07E06 - Phantasms
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Deep Space Nine - S02E06 - Melora
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S07E07 - Dark Page
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Deep Space Nine - S02E07 - Rules of Acquisition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Deep Space Nine - S02E08 - Necessary Evil
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S07E08 - Attached
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S07E09 - Force of Nature
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S02E09 - Second Sight
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S02E10 - Sanctuary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S07E11 - Parallels
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S02E11 - Rivals
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S02E12 - The Alternate
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: The Next Generation - S07E10 - Inheritance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S07E13 - Homeward
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S07E12 - The Pegasus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Enterprise - S04E22 - These Are the Voyages...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Deep Space Nine - S02E13 - Armageddon Game
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S07E14 - Sub Rosa
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Next Generation - S07E15 - Lower Decks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Deep Space Nine - S02E15 - Paradise
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Deep Space Nine - S02E14 - Whispers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S02E16 - Shadowplay
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S07E16 - Thine Own Self
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S07E17 - Masks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Deep Space Nine - S02E17 - Playing God
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: The Next Generation - S07E18 - Eye of the Beholder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Deep Space Nine - S02E18 - Profit and Loss
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: The Next Generation - S07E19 - Genesis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Deep Space Nine - S02E19 - Blood Oath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: The Next Generation - S07E20 - Journey's End
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Deep Space Nine - S02E20 - The Maquis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Deep Space Nine - S02E21 - The Maquis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S07E21 - Firstborn
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S07E22 - Bloodlines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 22
     }
   ]
 }
