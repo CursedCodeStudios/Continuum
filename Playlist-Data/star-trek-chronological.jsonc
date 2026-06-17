@@ -5158,6 +5158,436 @@
       },
       "seasonNumber": 3,
       "episodeNumber": 22
+    },
+
+    // Star Trek: Voyager - S01E13 - Faces
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Deep Space Nine - S03E23 - Family Business
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Voyager - S01E14 - Jetrel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S03E24 - Shakaar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Voyager - S01E15 - Learning Curve
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Deep Space Nine - S03E25 - Facets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Voyager - S02E03 - Projections
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Voyager - S02E04 - Elogium
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Deep Space Nine - S03E26 - The Adversary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Voyager - S02E01 - The 37's
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Voyager - S02E02 - Initiations
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Voyager - S02E05 - Non Sequitur
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S04E01 - The Way of the Warrior
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Voyager - S02E06 - Twisted
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Deep Space Nine - S04E02 - The Visitor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S04E03 - Hippocratic Oath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Voyager - S02E07 - Parturition
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Deep Space Nine - S04E04 - Indiscretion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Voyager - S02E08 - Persistence of Vision
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S02E09 - Tattoo
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Voyager - S02E10 - Cold Fire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Deep Space Nine - S04E05 - Rejoined
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Voyager - S02E11 - Maneuvers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S04E06 - Starship Down
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Deep Space Nine - S04E07 - Little Green Men
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Deep Space Nine - S04E08 - The Sword of Kahless
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S02E12 - Resistance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Deep Space Nine - S04E09 - Our Man Bashir
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S04E10 - Homefront
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Deep Space Nine - S04E11 - Paradise Lost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Voyager - S02E13 - Prototype
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Voyager - S02E18 - Death Wish
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Voyager - S02E14 - Alliances
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S04E12 - Crossfire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Voyager - S02E15 - Threshold
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Deep Space Nine - S04E13 - Return to Grace
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Voyager - S02E16 - Meld
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Voyager - S02E17 - Dreadnought
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Voyager - S02E19 - Lifesigns
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Voyager - S02E20 - Investigations
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Voyager - S02E21 - Deadlock
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Deep Space Nine - S04E14 - Sons of Mogh
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S04E15 - Bar Association
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 15
     }
   ]
 }
