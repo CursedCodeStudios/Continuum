@@ -7304,6 +7304,436 @@
       },
       "seasonNumber": 6,
       "episodeNumber": 2
+    },
+
+    // Star Trek: Voyager - S06E03 - Barge of the Dead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Voyager - S06E04 - Tinker, Tenor, Doctor, Spy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Voyager - S06E07 - Dragon's Teeth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Voyager - S06E05 - Alice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Voyager - S06E06 - Riddles
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Voyager - S06E08 - One Small Step
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S06E09 - The Voyager Conspiracy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Voyager - S06E10 - Pathfinder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Voyager - S06E11 - Fair Haven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Voyager - S06E15 - Tsunkatse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Voyager - S06E12 - Blink of an Eye
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Voyager - S06E13 - Virtuoso
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Voyager - S06E16 - Collective
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Voyager - S06E14 - Memorial
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Voyager - S06E17 - Spirit Folk
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Voyager - S06E18 - Ashes to Ashes
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Voyager - S06E19 - Child's Play
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Voyager - S06E20 - Good Shepherd
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Voyager - S06E23 - Fury
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Voyager - S06E21 - Live Fast and Prosper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Voyager - S06E24 - Life Line
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Voyager - S06E22 - Muse
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Voyager - S06E25 - The Haunting of Deck Twelve
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Voyager - S06E26 - Unimatrix Zero
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Voyager - S07E01 - Unimatrix Zero
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Voyager - S07E03 - Drive
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Voyager - S07E04 - Repression
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Voyager - S07E02 - Imperfection
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Voyager - S07E05 - Critical Care
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Voyager - S07E06 - Inside Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Voyager - S07E07 - Body and Soul
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Voyager - S07E08 - Nightingale
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S07E09 - Flesh and Blood
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Voyager - S07E10 - Shattered
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Voyager - S07E11 - Lineage
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Voyager - S07E12 - Repentance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Voyager - S07E13 - Prophecy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Voyager - S07E14 - The Void
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Voyager - S07E16 - Workforce
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Voyager - S07E17 - Workforce
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Voyager - S07E18 - Human Error
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Voyager - S07E19 - Q2
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Voyager - S07E20 - Author, Author
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 20
     }
   ]
 }
