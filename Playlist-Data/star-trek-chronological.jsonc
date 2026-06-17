@@ -7734,6 +7734,434 @@
       },
       "seasonNumber": 7,
       "episodeNumber": 20
+    },
+
+    // Star Trek: Voyager - S07E21 - Friendship One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Voyager - S07E22 - Natural Law
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Voyager - S07E23 - Homestead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Voyager - S07E24 - Renaissance Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Voyager - S07E25 - Endgame
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Nemesis
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "201"
+      }
+    },
+
+    // Star Trek: Lower Decks - S01E01 - Second Contact
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Lower Decks - S01E02 - Envoys
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Lower Decks - S01E03 - Temporal Edict
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Lower Decks - S01E04 - Moist Vessel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Lower Decks - S01E05 - Cupid's Errant Arrow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Lower Decks - S01E06 - Terminal Provocations
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Lower Decks - S01E07 - Much Ado About Boimler
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Lower Decks - S01E08 - Veritas
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Lower Decks - S01E09 - Crisis Point
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Lower Decks - S01E10 - No Small Parts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Lower Decks - S02E01 - Strange Energies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Lower Decks - S02E02 - Kayshon, His Eyes Open
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Lower Decks - S02E03 - We'll Always Have Tom Paris
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Lower Decks - S02E04 - Mugato, Gumato
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Lower Decks - S02E05 - An Embarrassment of Dooplers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Lower Decks - S02E06 - The Spy Humongous
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Lower Decks - S02E07 - Where Pleasant Fountains Lie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Lower Decks - S02E08 - I, Excretus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Lower Decks - S02E09 - wej Duj
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Lower Decks - S02E10 - First First Contact
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Lower Decks - S03E01 - Grounded
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Lower Decks - S03E02 - The Least Dangerous Game
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Lower Decks - S03E03 - Mining the Mind's Mines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Lower Decks - S03E04 - Room for Growth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Lower Decks - S03E05 - Reflections
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Lower Decks - S03E06 - Hear All, Trust Nothing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Lower Decks - S03E08 - Crisis Point 2: Paradoxus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Lower Decks - S03E09 - Trusted Sources
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Lower Decks - S03E10 - The Stars at Night
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Strange New Worlds - S02E07 - Those Old Scientists
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Lower Decks - S04E01 - Twovix
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Lower Decks - S04E02 - I Have No Bones Yet I Must Flee
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Lower Decks - S04E03 - In the Cradle of Vexilon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Lower Decks - S04E04 - Something Borrowed, Something Green
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Lower Decks - S04E05 - Empathalogical Fallacies
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Lower Decks - S04E06 - Parth Ferengi's Heart Place
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Lower Decks - S04E07 - A Few Badgeys More
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "367138"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
     }
   ]
 }
