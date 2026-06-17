@@ -3870,6 +3870,436 @@
       },
       "seasonNumber": 6,
       "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S06E04 - Relics
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S06E05 - Schisms
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S06E06 - True Q
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S06E07 - Rascals
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S06E08 - A Fistful of Datas
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S06E09 - The Quality of Life
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Next Generation - S06E10 - Chain of Command
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S06E11 - Chain of Command
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S01E01 - Emissary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S01E02 - Past Prologue
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S01E03 - A Man Alone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Deep Space Nine - S01E04 - Babel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S06E12 - Ship in a Bottle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Deep Space Nine - S01E05 - Captive Pursuit
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S06E13 - Aquiel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: Deep Space Nine - S01E06 - Q-Less
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S06E14 - Face of the Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S01E07 - Dax
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S06E15 - Tapestry
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Deep Space Nine - S01E08 - The Passenger
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S06E16 - Birthright
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S06E17 - Birthright
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Deep Space Nine - S01E09 - Move Along Home
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S01E10 - The Nagus
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S06E18 - Starship Mine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: The Next Generation - S06E19 - Lessons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Deep Space Nine - S01E11 - Vortex
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: Deep Space Nine - S01E12 - Battle Lines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: Deep Space Nine - S01E13 - The Storyteller
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S06E20 - The Chase
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: The Next Generation - S06E21 - Frame of Mind
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S06E22 - Suspicions
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Deep Space Nine - S01E14 - Progress
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Next Generation - S06E23 - Rightful Heir
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Deep Space Nine - S01E15 - If Wishes Were Horses
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: The Next Generation - S06E24 - Second Chances
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Deep Space Nine - S01E17 - Dramatis Personae
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Deep Space Nine - S01E16 - The Forsaken
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Deep Space Nine - S01E19 - Duet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: The Next Generation - S06E25 - Timescape
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Deep Space Nine - S01E20 - In the Hands of the Prophets
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: The Next Generation - S06E26 - Descent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: The Next Generation - S07E01 - Descent
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 7,
+      "episodeNumber": 1
     }
   ]
 }
