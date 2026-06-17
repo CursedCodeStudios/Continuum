@@ -1302,6 +1302,436 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 13
+    },
+
+    // Star Trek: Short Treks - S02E03 - Ask Not
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "376108"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Strange New Worlds - S01E01 - Strange New Worlds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Strange New Worlds - S01E02 - Children of the Comet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Strange New Worlds - S01E03 - Ghosts of Illyria
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Strange New Worlds - S01E04 - Memento Mori
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Strange New Worlds - S01E05 - Spock Amok
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Strange New Worlds - S01E06 - Lift Us Where Suffering Cannot Reach
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Strange New Worlds - S01E07 - The Serene Squall
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Strange New Worlds - S01E08 - The Elysian Kingdom
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Strange New Worlds - S01E09 - All Those Who Wander
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Strange New Worlds - S01E10 - A Quality of Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: Strange New Worlds - S02E01 - The Broken Circle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Strange New Worlds - S02E02 - Ad Astra per Aspera
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Strange New Worlds - S02E03 - Tomorrow and Tomorrow and Tomorrow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Strange New Worlds - S02E04 - Among the Lotus Eaters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Strange New Worlds - S02E05 - Charades
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Strange New Worlds - S02E06 - Lost in Translation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Strange New Worlds - S02E07 - Under the Cloak of War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Strange New Worlds - S02E09 - Subspace Rhapsody
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Strange New Worlds - S02E10 - Hegemony
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "382389"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek - S01E03 - Where No Man Has Gone Before
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek - S01E10 - The Corbomite Maneuver
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek - S01E06 - Mudd's Women
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek - S01E05 - The Enemy Within
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek - S01E01 - The Man Trap
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek - S01E04 - The Naked Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek - S01E02 - Charlie X
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek - S01E14 - Balance of Terror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek - S01E07 - What Are Little Girls Made Of?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek - S01E09 - Dagger of the Mind
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek - S01E08 - Miri
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek - S01E13 - The Conscience of the King
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek - S01E16 - The Galileo Seven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek - S01E20 - Court Martial
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Star Trek - S01E11 - The Menagerie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek - S01E12 - The Menagerie
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek - S01E15 - Shore Leave
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek - S01E17 - The Squire of Gothos
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Trek - S01E18 - Arena
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Star Trek - S01E27 - The Alternative Factor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 27
+    },
+
+    // Star Trek - S01E19 - Tomorrow Is Yesterday
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Star Trek - S01E21 - The Return of the Archons
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 21
+    },
+
+    // Star Trek - S01E23 - A Taste of Armageddon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 23
     }
   ]
 }
