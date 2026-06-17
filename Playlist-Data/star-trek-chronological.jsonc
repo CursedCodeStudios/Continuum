@@ -6018,6 +6018,434 @@
       },
       "seasonNumber": 3,
       "episodeNumber": 15
+    },
+
+    // Star Trek: Voyager - S03E16 - Blood Fever
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: First Contact
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "199"
+      }
+    },
+
+    // Star Trek: Deep Space Nine - S05E14 - In Purgatory's Shadow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: Deep Space Nine - S05E15 - By Inferno's Light
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: Voyager - S03E17 - Unity
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Voyager - S03E18 - Darkling
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Deep Space Nine - S05E16 - Doctor Bashir, I Presume
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: Voyager - S03E19 - Rise
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Deep Space Nine - S05E17 - A Simple Investigation
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: Deep Space Nine - S05E18 - Business as Usual
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: Deep Space Nine - S05E19 - Ties of Blood and Water
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: Voyager - S03E20 - Favorite Son
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Deep Space Nine - S05E20 - Ferengi Love Songs
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: Deep Space Nine - S05E21 - Soldiers of the Empire
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Deep Space Nine - S05E22 - Children of Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Voyager - S03E21 - Before and After
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: Voyager - S03E22 - Real Life
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Voyager - S03E23 - Distant Origin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Voyager - S03E24 - Displaced
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Deep Space Nine - S05E23 - Blaze of Glory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: Voyager - S03E25 - Worst Case Scenario
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Deep Space Nine - S05E24 - Empok Nor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: Voyager - S03E26 - Scorpion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Voyager - S04E01 - Scorpion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Voyager - S04E02 - The Gift
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S05E25 - In the Cards
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: Deep Space Nine - S05E26 - Call to Arms
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 5,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: Voyager - S04E03 - Day of Honor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Voyager - S04E04 - Nemesis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Voyager - S04E05 - Revulsion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S06E01 - A Time to Stand
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: Deep Space Nine - S06E02 - Rocks and Shoals
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: Deep Space Nine - S06E03 - Sons and Daughters
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: Deep Space Nine - S06E04 - Behind the Lines
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: Deep Space Nine - S06E05 - Favor the Bold
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: Deep Space Nine - S06E06 - Sacrifice of Angels
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Voyager - S04E06 - The Raven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: Voyager - S04E07 - Scientific Method
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Deep Space Nine - S06E07 - You Are Cordially Invited...
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: Voyager - S04E08 - Year of Hell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S04E09 - Year of Hell
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Deep Space Nine - S06E08 - Resurrection
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "72073"
+      },
+      "seasonNumber": 6,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: Voyager - S04E10 - Random Thoughts
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "74550"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
     }
   ]
 }
