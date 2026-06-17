@@ -3010,6 +3010,436 @@
       },
       "seasonNumber": 2,
       "episodeNumber": 17
+    },
+
+    // Star Trek: The Next Generation - S02E18 - Up the Long Ladder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: The Next Generation - S02E19 - Manhunt
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: The Next Generation - S02E20 - The Emissary
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: The Next Generation - S02E21 - Peak Performance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S02E22 - Shades of Gray
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: The Next Generation - S03E01 - Evolution
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Next Generation - S03E03 - The Survivors
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S03E02 - The Ensigns of Command
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Next Generation - S03E04 - Who Watches the Watchers?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S03E05 - The Bonding
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S03E06 - Booby Trap
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S03E07 - The Enemy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S03E08 - The Price
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S03E09 - The Vengeance Factor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Next Generation - S03E10 - The Defector
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S03E11 - The Hunted
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: The Next Generation - S03E12 - The High Ground
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: The Next Generation - S03E13 - Deja Q
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S03E14 - A Matter of Perspective
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Next Generation - S03E15 - Yesterday's Enterprise
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: The Next Generation - S03E16 - The Offspring
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S03E17 - Sins of the Father
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: The Next Generation - S03E18 - Allegiance
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: The Next Generation - S03E19 - Captain's Holiday
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: The Next Generation - S03E20 - Tin Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: The Next Generation - S03E21 - Hollow Pursuits
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S03E22 - The Most Toys
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: The Next Generation - S03E23 - Sarek
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: The Next Generation - S03E24 - Ménage à Troi
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: The Next Generation - S03E25 - Transfigurations
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: The Next Generation - S03E26 - The Best of Both Worlds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 26
+    },
+
+    // Star Trek: The Next Generation - S04E01 - The Best of Both Worlds
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Next Generation - S04E02 - Family
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Next Generation - S04E03 - Brothers
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S04E04 - Suddenly Human
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S04E05 - Remember Me
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S04E06 - Legacy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S04E07 - Reunion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S04E08 - Future Imperfect
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S04E09 - Final Mission
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Next Generation - S04E10 - The Loss
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S04E11 - Data's Day
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: The Next Generation - S04E12 - The Wounded
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 12
     }
   ]
 }
