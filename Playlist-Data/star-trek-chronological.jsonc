@@ -1732,6 +1732,436 @@
       },
       "seasonNumber": 1,
       "episodeNumber": 23
+    },
+
+    // Star Trek - S01E22 - Space Seed
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: Short Treks - S02E04 - Ephraim and Dot
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "376108"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek - S01E24 - This Side of Paradise
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 24
+    },
+
+    // Star Trek - S01E25 - Devil in the Dark
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 25
+    },
+
+    // Star Trek - S01E26 - Errand of Mercy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 26
+    },
+
+    // Star Trek - S01E28 - The City on the Edge of Forever
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 28
+    },
+
+    // Star Trek - S01E29 - Operation: Annihilate!
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 29
+    },
+
+    // Star Trek - S02E07 - Catspaw
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek - S02E09 - Metamorphosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek - S02E03 - Friday's Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek - S02E02 - Who Mourns for Adonais?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek - S02E01 - Amok Time
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek - S02E06 - The Doomsday Machine
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek - S02E14 - Wolf in the Fold
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Trek - S02E03 - The Changeling
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek - S02E05 - The Apple
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek - S02E04 - Mirror, Mirror
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek - S02E11 - The Deadly Years
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Trek - S02E12 - I, Mudd
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Trek - S02E15 - The Trouble with Tribbles
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Trek - S02E25 - Bread and Circuses
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 25
+    },
+
+    // Star Trek - S02E10 - Journey to Babel
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek - S02E19 - A Private Little War
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 19
+    },
+
+    // Star Trek - S02E17 - The Gamesters of Triskelion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
+    },
+
+    // Star Trek - S02E13 - Obsession
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Trek - S02E18 - The Immunity Syndrome
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 18
+    },
+
+    // Star Trek - S02E20 - A Piece of the Action
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 20
+    },
+
+    // Star Trek - S02E22 - By Any Other Name
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 22
+    },
+
+    // Star Trek - S02E21 - Return to Tomorrow
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 21
+    },
+
+    // Star Trek - S02E23 - Patterns of Force
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 23
+    },
+
+    // Star Trek - S02E24 - The Ultimate Computer
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 24
+    },
+
+    // Star Trek - S02E25 - The Omega Glory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 25
+    },
+
+    // Star Trek - S02E26 - Assignment: Earth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 26
+    },
+
+    // Star Trek - S03E01 - Spectre of the Gun
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 1
+    },
+
+    // Star Trek - S03E02 - Elaan of Troyius
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 2
+    },
+
+    // Star Trek - S03E03 - The Paradise Syndrome
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 3
+    },
+
+    // Star Trek - S03E04 - The Enterprise Incident
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 4
+    },
+
+    // Star Trek - S03E05 - And the Children Shall Lead
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 5
+    },
+
+    // Star Trek - S03E06 - Spock's Brain
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 6
+    },
+
+    // Star Trek - S03E07 - Is There in Truth No Beauty?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek - S03E12 - The Empath
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 12
+    },
+
+    // Star Trek - S03E09 - The Tholian Web
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: Enterprise - S04E18 - In a Mirror, Darkly
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 18
     }
   ]
 }
