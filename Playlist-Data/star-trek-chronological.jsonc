@@ -2162,6 +2162,426 @@
       },
       "seasonNumber": 4,
       "episodeNumber": 18
+    },
+
+    // Star Trek: Enterprise - S04E19 - In a Mirror, Darkly
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73893"
+      },
+      "seasonNumber": 4,
+      "episodeNumber": 19
+    },
+
+    // Star Trek - S03E08 - For the World Is Hollow and I Have Touched the Sky
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 8
+    },
+
+    // Star Trek - S03E07 - Day of the Dove
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 7
+    },
+
+    // Star Trek - S03E10 - Plato's Stepchildren
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 10
+    },
+
+    // Star Trek - S03E11 - Wink of an Eye
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 11
+    },
+
+    // Star Trek - S03E17 - That Which Survives
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 17
+    },
+
+    // Star Trek - S03E15 - Let That Be Your Last Battlefield
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 15
+    },
+
+    // Star Trek - S03E14 - Whom Gods Destroy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 14
+    },
+
+    // Star Trek - S03E16 - The Mark of Gideon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 16
+    },
+
+    // Star Trek - S03E18 - The Lights of Zetar
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 18
+    },
+
+    // Star Trek - S03E21 - The Cloud Minders
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 21
+    },
+
+    // Star Trek - S03E20 - The Way to Eden
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 20
+    },
+
+    // Star Trek - S03E19 - Requiem for Methuselah
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 19
+    },
+
+    // Star Trek - S03E22 - The Savage Curtain
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 22
+    },
+
+    // Star Trek - S03E23 - All Our Yesterdays
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 23
+    },
+
+    // Star Trek - S03E24 - Turnabout Intruder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "77526"
+      },
+      "seasonNumber": 3,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: The Animated Series - S01E01 - Beyond the Farthest Star
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Animated Series - S01E02 - Yesteryear
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Animated Series - S01E03 - One of Our Planets Is Missing
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Animated Series - S01E04 - The Lorelei Signal
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Animated Series - S01E05 - More Tribbles, More Troubles
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Animated Series - S01E06 - The Survivor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Animated Series - S01E07 - The Infinite Vulcan
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Animated Series - S01E08 - The Magicks of Megas-tu
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Animated Series - S01E09 - Once Upon a Planet
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Animated Series - S01E10 - Mudd's Passion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Animated Series - S01E11 - The Terratin Incident
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: The Animated Series - S01E12 - The Time Trap
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: The Animated Series - S01E13 - The Ambergris Element
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Animated Series - S01E14 - The Slaver Weapon
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Animated Series - S01E15 - The Eye of the Beholder
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: The Animated Series - S01E16 - The Jihad
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Animated Series - S02E01 - The Pirates of Orion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Animated Series - S02E02 - Bem
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Animated Series - S02E03 - The Practical Joker
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Animated Series - S02E04 - Albatross
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Animated Series - S02E05 - How Sharper Than a Serpent's Tooth
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Animated Series - S02E06 - The Counter-Clock Incident
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "73566"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Motion Picture
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "152"
+      }
+    },
+
+    // Star Trek II: The Wrath of Khan
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "154"
+      }
+    },
+
+    // Star Trek III: The Search for Spock
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "157"
+      }
+    },
+
+    // Star Trek IV: The Voyage Home
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "168"
+      }
+    },
+
+    // Star Trek V: The Final Frontier
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "172"
+      }
     }
   ]
 }
