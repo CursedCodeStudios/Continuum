@@ -2582,6 +2582,434 @@
       "providers": {
         "tmdbMovieId": "172"
       }
+    },
+
+    // Star Trek VI: The Undiscovered Country
+    {
+      "type": "movie",
+      "providers": {
+        "tmdbMovieId": "174"
+      }
+    },
+
+    // Star Trek: The Next Generation - S01E01 - Encounter at Farpoint
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Next Generation - S01E02 - The Naked Now
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Next Generation - S01E03 - Code of Honor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S01E04 - The Last Outpost
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S01E05 - Where No One Has Gone Before
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S01E06 - Lonely Among Us
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S01E07 - Justice
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S01E08 - The Battle
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S01E09 - Hide and Q
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Next Generation - S01E10 - Haven
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S01E11 - The Big Goodbye
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: The Next Generation - S01E12 - Datalore
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: The Next Generation - S01E13 - Angel One
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S01E14 - 11001001
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Next Generation - S01E15 - Too Short a Season
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: The Next Generation - S01E16 - When the Bough Breaks
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S01E17 - Home Soil
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 17
+    },
+
+    // Star Trek: The Next Generation - S01E18 - Coming of Age
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 18
+    },
+
+    // Star Trek: The Next Generation - S01E19 - Heart of Glory
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 19
+    },
+
+    // Star Trek: The Next Generation - S01E20 - The Arsenal of Freedom
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 20
+    },
+
+    // Star Trek: The Next Generation - S01E21 - Symbiosis
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 21
+    },
+
+    // Star Trek: The Next Generation - S01E22 - Skin of Evil
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 22
+    },
+
+    // Star Trek: The Next Generation - S01E23 - We'll Always Have Paris
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 23
+    },
+
+    // Star Trek: The Next Generation - S01E24 - Conspiracy
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 24
+    },
+
+    // Star Trek: The Next Generation - S01E25 - The Neutral Zone
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 1,
+      "episodeNumber": 25
+    },
+
+    // Star Trek: The Next Generation - S02E01 - The Child
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 1
+    },
+
+    // Star Trek: The Next Generation - S02E02 - Where Silence Has Lease
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 2
+    },
+
+    // Star Trek: The Next Generation - S02E03 - Elementary, Dear Data
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 3
+    },
+
+    // Star Trek: The Next Generation - S02E04 - The Outrageous Okona
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 4
+    },
+
+    // Star Trek: The Next Generation - S02E05 - Loud as a Whisper
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 5
+    },
+
+    // Star Trek: The Next Generation - S02E06 - The Schizoid Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 6
+    },
+
+    // Star Trek: The Next Generation - S02E07 - Unnatural Selection
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 7
+    },
+
+    // Star Trek: The Next Generation - S02E08 - A Matter of Honor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 8
+    },
+
+    // Star Trek: The Next Generation - S02E09 - The Measure of a Man
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 9
+    },
+
+    // Star Trek: The Next Generation - S02E10 - The Dauphin
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 10
+    },
+
+    // Star Trek: The Next Generation - S02E11 - Contagion
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 11
+    },
+
+    // Star Trek: The Next Generation - S02E12 - The Royale
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 12
+    },
+
+    // Star Trek: The Next Generation - S02E13 - Time Squared
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 13
+    },
+
+    // Star Trek: The Next Generation - S02E14 - The Icarus Factor
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 14
+    },
+
+    // Star Trek: The Next Generation - S02E15 - Pen Pals
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 15
+    },
+
+    // Star Trek: The Next Generation - S02E16 - Q Who?
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 16
+    },
+
+    // Star Trek: The Next Generation - S02E17 - Samaritan Snare
+    {
+      "type": "episode",
+      "providers": {
+        "tvdbSeriesId": "71470"
+      },
+      "seasonNumber": 2,
+      "episodeNumber": 17
     }
   ]
 }
